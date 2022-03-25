@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
-    [SerializeField] float turnSpeed = 5f;
+    [SerializeField] float turnSpeed = 100f;    //Angle of Turn
 
     Vector2 moveInput;
     Animator animator;
