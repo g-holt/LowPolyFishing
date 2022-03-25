@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     float MoveZPos;
     string isWalking;
 
+    public bool isFishing;
+
     void Start()
     {
         isWalking = "IsWalking";
@@ -31,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
+        if(isFishing) { return; }
+
         moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
         MoveZPos = moveInput.y * moveSpeed * Time.deltaTime;
 
