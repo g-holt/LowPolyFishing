@@ -9347,6 +9347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 27.889
       objectReference: {fileID: 0}
+    - target: {fileID: 1740565298936544231, guid: 40d42d207ad74a649a3ac144483f01b9, type: 3}
+      propertyPath: turnSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7098484872911491043, guid: 40d42d207ad74a649a3ac144483f01b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9393,6 +9397,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7103958476521656513, guid: 40d42d207ad74a649a3ac144483f01b9, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073679504614340924, guid: 40d42d207ad74a649a3ac144483f01b9, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 5e38789b8c481024bb8eca277adcf25b, type: 3}
+    - target: {fileID: 8073679504614340924, guid: 40d42d207ad74a649a3ac144483f01b9, type: 3}
+      propertyPath: m_DefaultActionMap
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []

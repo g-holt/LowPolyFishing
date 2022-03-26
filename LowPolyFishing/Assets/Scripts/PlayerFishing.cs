@@ -8,13 +8,14 @@ public class PlayerFishing : MonoBehaviour
     Animator animator;
     PlayerMovement playerMovement;
 
-    string isFishing;
-    string isWalking;
+    bool isFishing;
+    string isFishingAnim;
+    string isWalkingAnim;
 
     void Start()
     {
-        isFishing = "IsFishing";
-        isWalking = "IsWalking";
+        isFishingAnim = "IsFishing";
+        isWalkingAnim = "IsWalking";
 
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
@@ -25,17 +26,25 @@ public class PlayerFishing : MonoBehaviour
     {
         if(Keyboard.current.spaceKey.isPressed)
         {
-            animator.SetBool(isFishing, false);
+            isFishing = false;
+            animator.SetBool(isFishingAnim, false);
+            animator.SetFloat("ReelIn", -1);
             playerMovement.isFishing = false;
+        }
+
+        if(Keyboard.current.rKey.isPressed && isFishing)
+        {
+            animator.SetFloat("ReelIn", 1);
         }
     }
 
 
     void OnCast()
     {
+        isFishing = true;
         playerMovement.isFishing = true;
         
-        animator.SetBool(isWalking, false);
-        animator.SetBool(isFishing, true);
+        animator.SetBool(isWalkingAnim, false);
+        animator.SetBool(isFishingAnim, true);
     }
 }
