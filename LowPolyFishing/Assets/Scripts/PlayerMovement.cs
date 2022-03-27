@@ -13,13 +13,15 @@ public class PlayerMovement : MonoBehaviour
 
     float moveXPos;
     float MoveZPos;
-    string isWalking;
+    string isWalkingAnim;
+    string isFishingAnim;
 
     public bool isFishing;
 
     void Start()
     {
-        isWalking = "IsWalking";
+        isWalkingAnim = "IsWalking";
+        isFishingAnim = "IsFishing";
 
         animator = GetComponent<Animator>();
     }
@@ -33,20 +35,23 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        if(isFishing) { return; }
-
         moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
         MoveZPos = moveInput.y * moveSpeed * Time.deltaTime;
 
         if(moveXPos != 0f || MoveZPos != 0f)
         {
-            animator.SetBool(isWalking, true);
+            if(isFishing) 
+            {    
+                animator.SetBool("IsFishing", false);
+            }
+            
+            animator.SetBool(isWalkingAnim, true);
             transform.Translate(0f, 0f, MoveZPos);
             transform.Rotate(0f, moveXPos, 0f, Space.Self);
         }
         else
         {
-            animator.SetBool(isWalking, false);
+            animator.SetBool(isWalkingAnim, false);
         }
     }
 
@@ -54,6 +59,5 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue Value)
     {
         moveInput = Value.Get<Vector2>();
-        Debug.Log(moveInput);
     }
 }

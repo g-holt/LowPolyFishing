@@ -6,9 +6,12 @@ using UnityEngine.InputSystem;
 public class PlayerFishing : MonoBehaviour
 {
     Animator animator;
+    InputActionMap player;
+    InputActionMap fishing;
+    PlayerInput playerInput;
     PlayerMovement playerMovement;
 
-    bool isFishing;
+    //bool isFishing;
     string isFishingAnim;
     string isWalkingAnim;
 
@@ -18,7 +21,11 @@ public class PlayerFishing : MonoBehaviour
         isWalkingAnim = "IsWalking";
 
         animator = GetComponent<Animator>();
+        playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
+
+        player = playerInput.actions.FindActionMap("Player");
+        fishing = playerInput.actions.FindActionMap("Fishing");
     }
 
     
@@ -26,25 +33,24 @@ public class PlayerFishing : MonoBehaviour
     {
         if(Keyboard.current.spaceKey.isPressed)
         {
-            isFishing = false;
             animator.SetBool(isFishingAnim, false);
             animator.SetFloat("ReelIn", -1);
-            playerMovement.isFishing = false;
-        }
-
-        if(Keyboard.current.rKey.isPressed && isFishing)
-        {
-            animator.SetFloat("ReelIn", 1);
+            playerInput.SwitchCurrentActionMap("Player");
         }
     }
 
 
     void OnCast()
     {
-        isFishing = true;
         playerMovement.isFishing = true;
-        
+
         animator.SetBool(isWalkingAnim, false);
         animator.SetBool(isFishingAnim, true);
     }
+
+
+    // void OnReelIn()
+    // {
+    //     animator.SetFloat("ReelIn", 1);
+    // }
 }

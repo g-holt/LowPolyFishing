@@ -791,6 +791,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Fishing",
+            "id": "ef70fbd4-4e1f-4b4c-9136-315955b39e35",
+            "actions": [
+                {
+                    "name": "ReelIn",
+                    "type": "Button",
+                    "id": "2465987a-3af2-4a68-9add-788026735196",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "eacca156-515f-4721-94e7-280328577961",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "ReelIn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
