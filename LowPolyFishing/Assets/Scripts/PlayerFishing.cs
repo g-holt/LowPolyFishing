@@ -34,7 +34,7 @@ public class PlayerFishing : MonoBehaviour
         if(Keyboard.current.spaceKey.isPressed)
         {
             animator.SetBool(isFishingAnim, false);
-            animator.SetFloat("ReelIn", -1);
+            animator.SetBool("Reel", false);
             playerInput.SwitchCurrentActionMap("Player");
         }
     }
@@ -46,11 +46,13 @@ public class PlayerFishing : MonoBehaviour
 
         animator.SetBool(isWalkingAnim, false);
         animator.SetBool(isFishingAnim, true);
+
+        playerInput.SwitchCurrentActionMap("Fishing");
     }
 
 
-    // void OnReelIn()
-    // {
-    //     animator.SetFloat("ReelIn", 1);
-    // }
+    void OnReelIn()
+    {
+        animator.SetBool("Reel", true);
+    }
 }

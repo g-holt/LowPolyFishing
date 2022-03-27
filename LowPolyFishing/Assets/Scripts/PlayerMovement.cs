@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 moveInput;
     Animator animator;
+    PlayerInput playerInput;
 
     float moveXPos;
     float MoveZPos;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         isFishingAnim = "IsFishing";
 
         animator = GetComponent<Animator>();
+        playerInput = GetComponent<PlayerInput>();
     }
 
     
@@ -40,9 +42,12 @@ public class PlayerMovement : MonoBehaviour
 
         if(moveXPos != 0f || MoveZPos != 0f)
         {
-            if(isFishing) 
+            //TODO: When fish catching added return if Reel and FishCaught are true 
+            if(isFishing)
             {    
+                playerInput.SwitchCurrentActionMap("Player");
                 animator.SetBool("IsFishing", false);
+                animator.SetBool("Reel", false);
             }
             
             animator.SetBool(isWalkingAnim, true);
