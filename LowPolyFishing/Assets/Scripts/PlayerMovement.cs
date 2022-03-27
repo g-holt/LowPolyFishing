@@ -14,13 +14,17 @@ public class PlayerMovement : MonoBehaviour
 
     float moveXPos;
     float MoveZPos;
+
+    string reelAnim;
     string isWalkingAnim;
     string isFishingAnim;
 
     public bool isFishing;
 
+
     void Start()
     {
+        reelAnim = "Reel";
         isWalkingAnim = "IsWalking";
         isFishingAnim = "IsFishing";
 
@@ -42,13 +46,9 @@ public class PlayerMovement : MonoBehaviour
 
         if(moveXPos != 0f || MoveZPos != 0f)
         {
-            //TODO: When fish catching added return if Reel and FishCaught are true 
-            if(isFishing)
-            {    
-                playerInput.SwitchCurrentActionMap("Player");
-                animator.SetBool("IsFishing", false);
-                animator.SetBool("Reel", false);
-            }
+            //TODO: When fish catching added return if Reel and FishCaught are true so 
+            //Reel animation can't be stopped by player movement if a fish is being caught
+            IsFishingCheck();
             
             animator.SetBool(isWalkingAnim, true);
             transform.Translate(0f, 0f, MoveZPos);
@@ -57,6 +57,17 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animator.SetBool(isWalkingAnim, false);
+        }
+    }
+
+
+    void IsFishingCheck()
+    {
+        if(isFishing)
+        {    
+            playerInput.SwitchCurrentActionMap("Player");
+            animator.SetBool(isFishingAnim, false);
+            animator.SetBool(reelAnim, false);
         }
     }
 

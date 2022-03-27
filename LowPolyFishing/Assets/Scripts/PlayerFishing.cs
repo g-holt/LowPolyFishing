@@ -11,12 +11,13 @@ public class PlayerFishing : MonoBehaviour
     PlayerInput playerInput;
     PlayerMovement playerMovement;
 
-    //bool isFishing;
+    string reelAnim;
     string isFishingAnim;
     string isWalkingAnim;
 
     void Start()
     {
+        reelAnim = "Reel";
         isFishingAnim = "IsFishing";
         isWalkingAnim = "IsWalking";
 
@@ -34,7 +35,8 @@ public class PlayerFishing : MonoBehaviour
         if(Keyboard.current.spaceKey.isPressed)
         {
             animator.SetBool(isFishingAnim, false);
-            animator.SetBool("Reel", false);
+            animator.SetBool(reelAnim, false);
+            
             playerInput.SwitchCurrentActionMap("Player");
         }
     }
@@ -53,6 +55,6 @@ public class PlayerFishing : MonoBehaviour
 
     void OnReelIn()
     {
-        animator.SetBool("Reel", true);
+        animator.SetBool(reelAnim, true);
     }
 }
