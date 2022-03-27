@@ -798,12 +798,12 @@
             "actions": [
                 {
                     "name": "ReelIn",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "2465987a-3af2-4a68-9add-788026735196",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Move",

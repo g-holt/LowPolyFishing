@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
     void IsFishingCheck()
     {
+        //if isFishing and player tries to walk cancel fishing
         if(isFishing)
         {    
             playerInput.SwitchCurrentActionMap("Player");
@@ -76,4 +77,5 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput = Value.Get<Vector2>();
     }
+    
 }

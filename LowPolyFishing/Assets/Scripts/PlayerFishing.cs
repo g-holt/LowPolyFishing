@@ -24,9 +24,6 @@ public class PlayerFishing : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
-
-        player = playerInput.actions.FindActionMap("Player");
-        fishing = playerInput.actions.FindActionMap("Fishing");
     }
 
     
@@ -53,8 +50,17 @@ public class PlayerFishing : MonoBehaviour
     }
 
 
-    void OnReelIn()
+    void OnReelIn(InputValue value)
     {
-        animator.SetBool(reelAnim, true);
+        if(!animator.GetBool(isFishingAnim)) { return; }
+
+        if(value.isPressed)
+        {
+            animator.SetBool(reelAnim, true);    
+        }
+        else if(!value.isPressed)
+        {
+            animator.SetBool(reelAnim, false);    
+        }
     }
 }
