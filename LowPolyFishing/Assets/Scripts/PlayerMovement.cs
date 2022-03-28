@@ -39,8 +39,9 @@ public class PlayerMovement : MonoBehaviour
         isFishingAnim = "IsFishing";
 
         animator = GetComponent<Animator>();
-        playerInput = GetComponent<PlayerInput>();     Cursor.visible = false;
+        playerInput = GetComponent<PlayerInput>();     
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
     }
 
     
@@ -52,13 +53,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
         MoveZPos = moveInput.y * moveSpeed * Time.deltaTime;
 
         transform.rotation = Quaternion.Euler(0f, mousePosition.x * maxRotationSpeed + transform.rotation.eulerAngles.y, 0f);
         Debug.Log(transform.rotation.eulerAngles.y);
 
-        if(moveXPos != 0f || MoveZPos != 0f)
+        if(moveXPos != 0f)
         {
             //TODO: When fish catching added return if Reel and FishCaught are true so 
             //Reel animation can't be stopped by player movement if a fish is being caught
@@ -66,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
             
             animator.SetBool(isWalkingAnim, true);
             transform.Translate(0f, 0f, MoveZPos);
-            transform.Rotate(0f, moveXPos, 0f, Space.Self);
         }
         else
         {

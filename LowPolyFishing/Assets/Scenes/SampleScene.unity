@@ -9509,6 +9509,10 @@ PrefabInstance:
       propertyPath: turnSpeed
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 1740565298936544231, guid: 40d42d207ad74a649a3ac144483f01b9, type: 3}
+      propertyPath: maxRotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7098484872911491043, guid: 40d42d207ad74a649a3ac144483f01b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
