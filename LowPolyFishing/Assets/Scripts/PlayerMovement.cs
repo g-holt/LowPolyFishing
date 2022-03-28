@@ -12,15 +12,19 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     PlayerInput playerInput;
     PlayerFishing playerFishing;
+    GameObject door;
   
     float moveXPos;
     float moveZPos;
     string reelAnim;
     string isWalkingAnim;
     string isFishingAnim;
+    bool doorCollision;
+    bool openDoor;
 
     public bool isFishing;
 
+Rigidbody rb;
 
     void Start()
     {
@@ -31,22 +35,49 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();     
         playerFishing = GetComponent<PlayerFishing>();
+        rb = GetComponent<Rigidbody>();
     }
 
     
     void Update()
     {
-        Move();
+        //Move();
+    }
+
+    
+    void FixedUpdate() 
+    {
+        Move();    
+    }
+
+
+    private void OnCollisionEnter(Collision other) 
+    {
+        if(other.gameObject.CompareTag("Door"))
+        {
+          doorCollision = true;
+          door = other.gameObject;
+        }
+    }
+
+
+    private void OnCollisionExit(Collision other) 
+    {
+        if(other.gameObject.CompareTag("Door"))
+        {
+            doorCollision = false;
+        }    
     }
 
 
     void Move()
     {
-        moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
-        moveZPos = moveInput.y * moveSpeed * Time.deltaTime;
-
-        if(moveXPos != 0f || moveZPos != 0f)
+        Debug.Log(moveInput.x + " " + moveInput.y + " " + rb.velocity);
+        if(moveInput.x != 0f || moveInput.y != 0f)
         {
+            moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
+            moveZPos = moveInput.y * moveSpeed * Time.deltaTime;
+            
             //TODO: When fish catching added return if Reel and FishCaught are true so 
             //Reel animation can't be stopped by player movement if a fish is being caught
             IsFishingCheck();
@@ -81,6 +112,33 @@ public class PlayerMovement : MonoBehaviour
         moveInput = Value.Get<Vector2>();
     }
 
+
+    void OnOpenDoor()
+    {
+        OpenDoor();
+    }
+
+
+    void OpenDoor()
+    {
+        if(door == null){ Debug.Log("return"); return; }
+        
+        if(doorCollision)
+        {
+            door.transform.Rotate(0f, -90, 0f);
+            StartCoroutine("CloseDoor");
+        }
+    }
+
+
+    IEnumerator CloseDoor()
+    {
+        yield return new WaitForSeconds(2f);
+
+        door.transform.Rotate(0f, 90, 0f);
+        door = null;
+    }
+
 }
 
 
@@ -110,6 +168,31 @@ public class PlayerMovement : MonoBehaviour
             
     //         animator.SetBool(isWalkingAnim, true);
     //         transform.Translate(0f, 0f, moveZPos);
+    //     }
+    //     else
+    //     {
+    //         animator.SetBool(isWalkingAnim, false);
+    //     }
+    // }
+
+
+
+
+
+    //    void Move()
+    // {
+    //     moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
+    //     moveZPos = moveInput.y * moveSpeed * Time.deltaTime;
+
+    //     if(moveXPos != 0f || moveZPos != 0f)
+    //     {
+    //         //TODO: When fish catching added return if Reel and FishCaught are true so 
+    //         //Reel animation can't be stopped by player movement if a fish is being caught
+    //         IsFishingCheck();
+            
+    //         animator.SetBool(isWalkingAnim, true);
+    //         transform.Translate(0f, 0f, moveZPos);
+    //         transform.Rotate(0f, moveXPos, 0f, Space.Self);
     //     }
     //     else
     //     {
