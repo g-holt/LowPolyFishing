@@ -51,9 +51,7 @@ public class PlayerFishing : MonoBehaviour
 
 
     void OnReelIn(InputValue value)
-    {
-        if(!animator.GetBool(isFishingAnim)) { return; }
-
+    {   
         if(value.isPressed)
         {
             animator.SetBool(reelAnim, true);    
