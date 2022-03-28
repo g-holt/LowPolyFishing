@@ -67,11 +67,10 @@ public class PlayerMovement : MonoBehaviour
         //if isFishing and player tries to walk cancel fishing
         if(isFishing)
         {    
-            
             playerInput.SwitchCurrentActionMap("Player");
             animator.SetBool(isFishingAnim, false);
             animator.SetBool(reelAnim, false);
-            
+
             playerFishing.fishingRod.SetActive(false);
         }
     }
