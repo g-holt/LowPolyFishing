@@ -7,29 +7,18 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float turnSpeed = 100f;    //Angle of Turn
-    [SerializeField] float maxRotationSpeed = 5f;
 
-    InputAction movement;
     Vector2 moveInput;
     Animator animator;
     PlayerInput playerInput;
-    Vector2 mousePosition;
-    Vector3 lastPosition;
-
+  
     float moveXPos;
-    float MoveZPos;
+    float moveZPos;
     string reelAnim;
     string isWalkingAnim;
     string isFishingAnim;
 
     public bool isFishing;
-
-
-    private void OnAwake() 
-    {
-   
-        //lastPosition = this.transform.position;
-    }
 
 
     void Start()
@@ -40,8 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();     
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = false;
     }
 
     
@@ -53,30 +40,23 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        MoveZPos = moveInput.y * moveSpeed * Time.deltaTime;
+        moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
+        moveZPos = moveInput.y * moveSpeed * Time.deltaTime;
 
-        transform.rotation = Quaternion.Euler(0f, mousePosition.x * maxRotationSpeed + transform.rotation.eulerAngles.y, 0f);
-        Debug.Log(transform.rotation.eulerAngles.y);
-
-        if(moveXPos != 0f)
+        if(moveXPos != 0f || moveZPos != 0f)
         {
             //TODO: When fish catching added return if Reel and FishCaught are true so 
             //Reel animation can't be stopped by player movement if a fish is being caught
             IsFishingCheck();
             
             animator.SetBool(isWalkingAnim, true);
-            transform.Translate(0f, 0f, MoveZPos);
+            transform.Translate(0f, 0f, moveZPos);
+            transform.Rotate(0f, moveXPos, 0f, Space.Self);
         }
         else
         {
             animator.SetBool(isWalkingAnim, false);
         }
-    }
-
-
-    void OnMousePosition(InputValue value)
-    {
-        mousePosition = value.Get<Vector2>();
     }
 
 
@@ -102,22 +82,30 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+    //Vector2 mousePosition;
 
-    //Old Input With A and D for Turning
+
+    // void OnMousePosition(InputValue value)
+    // {
+    //     mousePosition = value.Get<Vector2>();
+    // }
+    
+    
+    //Player left and right rotation done with mouse 
     // void Move()
     // {
-    //     moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
-    //     MoveZPos = moveInput.y * moveSpeed * Time.deltaTime;
+    //     moveZPos = moveInput.y * moveSpeed * Time.deltaTime;
 
-    //     if(moveXPos != 0f || MoveZPos != 0f)
+    //     transform.rotation = Quaternion.Euler(0f, mousePosition.x * maxRotationSpeed + transform.rotation.eulerAngles.y, 0f);
+
+    //     if(moveZPos != 0f)
     //     {
     //         //TODO: When fish catching added return if Reel and FishCaught are true so 
     //         //Reel animation can't be stopped by player movement if a fish is being caught
     //         IsFishingCheck();
             
     //         animator.SetBool(isWalkingAnim, true);
-    //         transform.Translate(0f, 0f, MoveZPos);
-    //         transform.Rotate(0f, moveXPos, 0f, Space.Self);
+    //         transform.Translate(0f, 0f, moveZPos);
     //     }
     //     else
     //     {
