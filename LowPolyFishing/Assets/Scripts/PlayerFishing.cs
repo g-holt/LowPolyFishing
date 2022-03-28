@@ -6,8 +6,6 @@ using UnityEngine.InputSystem;
 public class PlayerFishing : MonoBehaviour
 {
     Animator animator;
-    InputActionMap player;
-    InputActionMap fishing;
     PlayerInput playerInput;
     PlayerMovement playerMovement;
 
@@ -15,11 +13,15 @@ public class PlayerFishing : MonoBehaviour
     string isFishingAnim;
     string isWalkingAnim;
 
+    public GameObject fishingRod;
+
+
     void Start()
     {
         reelAnim = "Reel";
         isFishingAnim = "IsFishing";
         isWalkingAnim = "IsWalking";
+        fishingRod.SetActive(false);
 
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
@@ -43,6 +45,7 @@ public class PlayerFishing : MonoBehaviour
     {
         playerMovement.isFishing = true;
 
+        fishingRod.SetActive(true);
         animator.SetBool(isWalkingAnim, false);
         animator.SetBool(isFishingAnim, true);
 

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Animator animator;
     PlayerInput playerInput;
+    PlayerFishing playerFishing;
   
     float moveXPos;
     float moveZPos;
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();     
+        playerFishing = GetComponent<PlayerFishing>();
     }
 
     
@@ -65,9 +67,12 @@ public class PlayerMovement : MonoBehaviour
         //if isFishing and player tries to walk cancel fishing
         if(isFishing)
         {    
+            
             playerInput.SwitchCurrentActionMap("Player");
             animator.SetBool(isFishingAnim, false);
             animator.SetBool(reelAnim, false);
+            
+            playerFishing.fishingRod.SetActive(false);
         }
     }
 
@@ -82,16 +87,16 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    //Vector2 mousePosition;
 
+    //Player left and right rotation done with mouse
+
+    //Vector2 mousePosition;
 
     // void OnMousePosition(InputValue value)
     // {
     //     mousePosition = value.Get<Vector2>();
     // }
     
-    
-    //Player left and right rotation done with mouse 
     // void Move()
     // {
     //     moveZPos = moveInput.y * moveSpeed * Time.deltaTime;
