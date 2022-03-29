@@ -5,8 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerFishing : MonoBehaviour
 {
-    [SerializeField] GameObject bobber;
-
+    Bobber bobber;
     Animator animator;
     PlayerInput playerInput;
     PlayerMovement playerMovement;
@@ -24,8 +23,9 @@ public class PlayerFishing : MonoBehaviour
         isFishingAnim = "IsFishing";
         isWalkingAnim = "IsWalking";
         fishingRod.SetActive(false);
-        bobber.SetActive(false);
+        //bobber.SetActive(false);
 
+        bobber = GetComponent<Bobber>();
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
@@ -53,7 +53,7 @@ public class PlayerFishing : MonoBehaviour
         animator.SetBool(isFishingAnim, true);
 
         playerInput.SwitchCurrentActionMap("Fishing");
-        ThrowLine();
+        bobber.ThrowLine();
     }
 
 
@@ -69,10 +69,4 @@ public class PlayerFishing : MonoBehaviour
         }
     }
 
-
-    public void ThrowLine()
-    {
-        Debug.Log("Line Out");
-        bobber.SetActive(true);
-    }
 }
