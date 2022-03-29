@@ -821,6 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b33b0f45880ca409e849d906e0e681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bobber: {fileID: 6912863073524365678}
   fishingRod: {fileID: 2421844659457126063}
 --- !u!54 &1443075386
 Rigidbody:
@@ -1500,5 +1501,10 @@ Transform:
 --- !u!1 &2421844659457126063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1227151180703798, guid: 4a956257707cdb9478fdaf3ecbec2af8, type: 3}
+  m_PrefabInstance: {fileID: 2420758417634772633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6912863073524365678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9112803646013046775, guid: 4a956257707cdb9478fdaf3ecbec2af8, type: 3}
   m_PrefabInstance: {fileID: 2420758417634772633}
   m_PrefabAsset: {fileID: 0}
