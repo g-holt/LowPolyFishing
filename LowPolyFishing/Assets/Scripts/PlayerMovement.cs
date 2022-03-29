@@ -74,10 +74,10 @@ public class PlayerMovement : MonoBehaviour
             moveXPos = moveInput.x * turnSpeed * Time.deltaTime;
             moveZPos = moveInput.y * moveSpeed * Time.deltaTime;
             
-            if(moveZPos < 0)
-            {
-                moveXPos *= Mathf.Sign(moveZPos);
-            }
+            // if(moveZPos < 0)
+            // {
+            //     moveXPos *= Mathf.Sign(moveZPos);
+            // }
 
             //TODO: When fish catching added return if Reel and FishCaught are true so 
             //Reel animation can't be stopped by player movement if a fish is being caught
