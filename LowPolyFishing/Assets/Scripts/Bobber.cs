@@ -10,8 +10,9 @@ public class Bobber : MonoBehaviour
     //bobber Prefab is visible or not based on pole visibility, so don't have to SetActive() it independently
     public void ThrowLine()
     {
+        Transform player = GetComponentInParent<Transform>();
         Debug.Log("Line Out: Throw Bobber");
-        transform.Translate(castStrength, 0, castStrength, Space.Self);
+        transform.Translate(player.forward * castStrength, Space.Self);
     }
 
 }
