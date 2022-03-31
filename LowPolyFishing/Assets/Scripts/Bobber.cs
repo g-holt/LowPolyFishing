@@ -7,13 +7,31 @@ public class Bobber : MonoBehaviour
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
     [SerializeField] Transform bobberContainer;
-    
+    [SerializeField] Transform[] points;
+
     Rigidbody rb;
+    LineRenderer lineRenderer;
 
 
     void OnEnable() 
     {
         rb = GetComponent<Rigidbody>();    
+        lineRenderer = GetComponent<LineRenderer>();
+    }
+
+
+    void Update()
+    {
+        DrawFishingLine();
+    }
+
+
+    void DrawFishingLine()
+    {
+        for(int i = 0; i < points.Length; i++)
+        {
+            lineRenderer.SetPosition(i, points[i].position);
+        }
     }
 
 
@@ -23,7 +41,6 @@ public class Bobber : MonoBehaviour
         rb.useGravity = true;
         Vector3 bobberForce = new Vector3(transform.forward.x * horizontalCastStrength * 100, verticalCastStrength * 100, transform.forward.z * horizontalCastStrength * 100);
         rb.AddForce(bobberForce);
-        
     }
 
 
