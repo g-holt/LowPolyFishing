@@ -5,10 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerFishing : MonoBehaviour
 {
+    Bobber bobber;
     Animator animator;
     PlayerInput playerInput;
     PlayerMovement playerMovement;
-    Bobber bobber;
 
     string reelAnim;
     string isFishingAnim;
@@ -19,14 +19,15 @@ public class PlayerFishing : MonoBehaviour
 
     void Start()
     {
+        reelAnim = "Reel";
+        isFishingAnim = "IsFishing";
+        isWalkingAnim = "IsWalking";
+
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
         bobber = GetComponentInChildren<Bobber>();
 
-        reelAnim = "Reel";
-        isFishingAnim = "IsFishing";
-        isWalkingAnim = "IsWalking";
         fishingRod.SetActive(false);
         bobber.gameObject.SetActive(false);
     }

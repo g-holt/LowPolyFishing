@@ -1462,9 +1462,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d264343ac71ffee4293d2452993152ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reelSpeed: 2
   verticalCastStrength: 2
   horizontalCastStrength: 4
+  rodToBobberDistance: 2.5
   bobberContainer: {fileID: 8401207650276645383}
+  points: []
+  reelIn: 0
 --- !u!4 &2314478299988254368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4345424732384608, guid: 612a517c8db7f5848b9052e26106c8a4, type: 3}
