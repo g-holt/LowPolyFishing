@@ -15,6 +15,7 @@ public class PlayerFishing : MonoBehaviour
     string isWalkingAnim;
 
     public GameObject fishingRod;
+    public bool canFish;
 
 
     void Start()
@@ -47,6 +48,12 @@ public class PlayerFishing : MonoBehaviour
 
     void OnCast()
     {
+        if(!canFish)
+        {
+            Debug.Log("You are not in a fish Zone");
+            return;
+        }
+        
         playerMovement.isFishing = true;
 
         fishingRod.SetActive(true);

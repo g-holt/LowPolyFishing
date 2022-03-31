@@ -84,7 +84,7 @@ public class Bobber : MonoBehaviour
         {
             ResetBobber();
         }
-
+        Debug.Log(BobberToContainerDist());
         transform.position = Vector3.MoveTowards(transform.position, bobberContainer.position, reelSpeed * Time.deltaTime);
     }
 
