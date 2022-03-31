@@ -11,7 +11,7 @@ public class Bobber : MonoBehaviour
     Rigidbody rb;
 
 
-    void Start() 
+    void OnEnable() 
     {
         rb = GetComponent<Rigidbody>();    
     }
@@ -20,12 +20,8 @@ public class Bobber : MonoBehaviour
     //bobber Prefab is visible or not based on pole visibility, so don't have to SetActive() it independently
     public void ThrowLine()
     {
-        
-        Debug.Log("Line Out: Throw Bobber");
         rb.useGravity = true;
-        Vector3 facing = transform.TransformDirection(transform.position);
-        Debug.Log(facing.ToString());
-        Vector3 bobberForce = new Vector3(facing.x * horizontalCastStrength * 100, verticalCastStrength * 100, facing.z * horizontalCastStrength * 100);
+        Vector3 bobberForce = new Vector3(transform.forward.x * horizontalCastStrength * 100, verticalCastStrength * 100, transform.forward.z * horizontalCastStrength * 100);
         rb.AddForce(bobberForce);
         
     }
