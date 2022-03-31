@@ -19,15 +19,16 @@ public class PlayerFishing : MonoBehaviour
 
     void Start()
     {
-        reelAnim = "Reel";
-        isFishingAnim = "IsFishing";
-        isWalkingAnim = "IsWalking";
-        fishingRod.SetActive(false);
-
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
         bobber = GetComponentInChildren<Bobber>();
+
+        reelAnim = "Reel";
+        isFishingAnim = "IsFishing";
+        isWalkingAnim = "IsWalking";
+        fishingRod.SetActive(false);
+        bobber.gameObject.SetActive(false);
     }
 
     
@@ -48,10 +49,18 @@ public class PlayerFishing : MonoBehaviour
         playerMovement.isFishing = true;
 
         fishingRod.SetActive(true);
+
         animator.SetBool(isWalkingAnim, false);
         animator.SetBool(isFishingAnim, true);
 
         playerInput.SwitchCurrentActionMap("Fishing");
+    }
+
+
+    //Casting Animation Event
+    void HandleBobber()
+    {
+        bobber.gameObject.SetActive(true);
         bobber.ThrowLine();
     }
 

@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerInput playerInput;
     PlayerFishing playerFishing;
     GameObject door;
+    Bobber bobber;
   
     float moveXPos;
     float moveZPos;
@@ -33,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();     
         playerFishing = GetComponent<PlayerFishing>();
+        
+        bobber = GetComponentInChildren<Bobber>();
     }
 
     
@@ -98,12 +101,14 @@ public class PlayerMovement : MonoBehaviour
     {
         //if isFishing and player tries to walk cancel fishing
         if(isFishing)
-        {    
+        {   
             playerInput.SwitchCurrentActionMap("Player");
             animator.SetBool(isFishingAnim, false);
             animator.SetBool(reelAnim, false);
 
+            bobber.ResetBobber();
             playerFishing.fishingRod.SetActive(false);
+            bobber.gameObject.SetActive(false);
         }
     }
 
