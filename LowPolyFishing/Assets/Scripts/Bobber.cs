@@ -6,23 +6,35 @@ public class Bobber : MonoBehaviour
 {
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
+    [SerializeField] float reelSpeed = 2f;
+    [SerializeField] float rodToBobberDistance = 2.5f;
     [SerializeField] Transform bobberContainer;
     [SerializeField] Transform[] points;
 
     Rigidbody rb;
     LineRenderer lineRenderer;
+    PlayerFishing playerFishing;
 
+    public bool reelIn;
 
     void OnEnable() 
     {
         rb = GetComponent<Rigidbody>();    
         lineRenderer = GetComponent<LineRenderer>();
+        playerFishing = GetComponent<PlayerFishing>();
+    }
+
+
+    void OnDisable() 
+    {
+        reelIn = false;    
     }
 
 
     void Update()
     {
         DrawFishingLine();
+        ReelInBobber();
     }
 
 
@@ -47,10 +59,36 @@ public class Bobber : MonoBehaviour
     public void ResetBobber()
     {
         rb.useGravity = false;
+        reelIn = false;
         transform.position = bobberContainer.position;
         rb.velocity = Vector3.zero;
+        gameObject.SetActive(false);
     }
 
+
+    void ReelInBobber()
+    {
+        if(!reelIn) { return; }
+
+        if(DistanceCheck(transform.position, bobberContainer.position) <= rodToBobberDistance)
+        {
+            rb.useGravity = false;
+        }
+
+        if(DistanceCheck(transform.position, bobberContainer.position) <= .5)
+        {
+            ResetBobber();
+        }
+
+        Debug.Log(DistanceCheck(transform.position, bobberContainer.position));
+        transform.position = Vector3.MoveTowards(transform.position, bobberContainer.position, reelSpeed * Time.deltaTime);
+    }
+
+
+    float DistanceCheck(Vector3 a, Vector3 b)
+    {
+        return Vector3.Distance(a, b);
+    }
 }
 
 

@@ -69,10 +69,12 @@ public class PlayerFishing : MonoBehaviour
     {   
         if(value.isPressed)
         {
+            bobber.reelIn = true;
             animator.SetBool(reelAnim, true);    
         }
         else if(!value.isPressed)
         {
+            bobber.reelIn = false;
             animator.SetBool(reelAnim, false);    
         }
     }

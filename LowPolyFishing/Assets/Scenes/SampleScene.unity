@@ -3267,8 +3267,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1124188162, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: reelSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124188162, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: points.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124188162, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: rodToBobberDistance
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1124188162, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: points.Array.data[0]
@@ -3278,6 +3286,10 @@ PrefabInstance:
       propertyPath: points.Array.data[1]
       value: 
       objectReference: {fileID: 1124188164}
+    - target: {fileID: 1124188163, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 937205027113568126, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: m_RootOrder
       value: 1
