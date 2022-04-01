@@ -7,9 +7,9 @@ public class Bobber : MonoBehaviour
     [SerializeField] float reelSpeed = 2f;
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
-    [SerializeField] float rodToBobberDistance = 2.5f;
-    [SerializeField] Transform bobberContainer;
-    [SerializeField] Transform[] points;
+    [SerializeField] float rodToGearDistance = 2.5f;
+    [SerializeField] Transform gearContainer;
+    [SerializeField] Transform[] gearPoints;
 
     Rigidbody rb;
     LineRenderer lineRenderer;
@@ -23,7 +23,7 @@ public class Bobber : MonoBehaviour
         rb = GetComponent<Rigidbody>();    
         lineRenderer = GetComponent<LineRenderer>();
         playerFishing = FindObjectOfType<PlayerFishing>();
-        lineRenderer.positionCount = points.Length;
+        lineRenderer.positionCount = gearPoints.Length;
     }
 
 
@@ -32,7 +32,7 @@ public class Bobber : MonoBehaviour
         reelIn = false;
         rb.useGravity = false; 
         rb.velocity = Vector3.zero;
-        transform.position = bobberContainer.position;
+        transform.position = gearContainer.position;
     }
 
 
@@ -40,7 +40,7 @@ public class Bobber : MonoBehaviour
     {
         if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater"))
         {
-            ResetBobber();
+            ResetCast();
             return;
         }
 
@@ -55,15 +55,15 @@ public class Bobber : MonoBehaviour
     void Update()
     {
         DrawFishingLine();
-        ReelInBobber();
+        ReelInGear();
     }
 
 
     void DrawFishingLine()
     {
-        for(int i = 0; i < points.Length; i++)
+        for(int i = 0; i < gearPoints.Length; i++)
         {
-            lineRenderer.SetPosition(i, points[i].position);
+            lineRenderer.SetPosition(i, gearPoints[i].position);
         }
     }
 
@@ -76,12 +76,12 @@ public class Bobber : MonoBehaviour
         float throwY = verticalCastStrength * 100;
         float throwZ = transform.forward.z * horizontalCastStrength * 100;
 
-        Vector3 bobberForce = new Vector3(throwX, throwY, throwZ);
-        rb.AddForce(bobberForce);
+        Vector3 castForce = new Vector3(throwX, throwY, throwZ);
+        rb.AddForce(castForce);
     }
 
 
-    public void ResetBobber()
+    public void ResetCast()
     {
         playerFishing.StopFishing();
 
@@ -90,23 +90,23 @@ public class Bobber : MonoBehaviour
     }
 
 
-    void ReelInBobber()
+    void ReelInGear()
     {
         //Set In PlayerFishing.cs
         if(!reelIn) { return; }
 
-        if(BobberToContainerDist() <= .5)
+        if(GearToContainerDist() <= .5)
         {
-            ResetBobber();
+            ResetCast();
         }
         
-        transform.position = Vector3.MoveTowards(transform.position, bobberContainer.position, reelSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, gearContainer.position, reelSpeed * Time.deltaTime);
     }
 
 
-    float BobberToContainerDist()
+    float GearToContainerDist()
     {
-        return Vector3.Distance(transform.position, bobberContainer.position);
+        return Vector3.Distance(transform.position, gearContainer.position);
     }
 
 }

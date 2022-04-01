@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerInput playerInput;
     PlayerFishing playerFishing;
     GameObject door;
-    Bobber bobber;
+    Casting casting;
   
     float moveXPos;
     float moveZPos;
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();     
         playerFishing = GetComponent<PlayerFishing>();
         
-        bobber = GetComponentInChildren<Bobber>();
+        casting = GetComponentInChildren<Casting>();
     }
 
     
@@ -106,9 +106,9 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool(isFishingAnim, false);
             animator.SetBool(reelAnim, false);
 
-            bobber.ResetBobber();
+            casting.ResetCast();
             playerFishing.fishingRod.SetActive(false);
-            bobber.gameObject.SetActive(false);
+            casting.gameObject.SetActive(false);
         }
     }
 

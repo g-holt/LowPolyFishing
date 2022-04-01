@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerFishing : MonoBehaviour
 {
-    Bobber bobber;
+    Casting casting;
     Animator animator;
     PlayerInput playerInput;
     PlayerMovement playerMovement;
@@ -27,10 +27,10 @@ public class PlayerFishing : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
-        bobber = GetComponentInChildren<Bobber>();
+        casting = GetComponentInChildren<Casting>();
 
         fishingRod.SetActive(false);
-        bobber.gameObject.SetActive(false);
+        casting.gameObject.SetActive(false);
     }
 
     
@@ -68,8 +68,8 @@ public class PlayerFishing : MonoBehaviour
     //Casting Animation Event
     void HandleBobber()
     {
-        bobber.gameObject.SetActive(true);
-        bobber.ThrowLine();
+        casting.gameObject.SetActive(true);
+        casting.ThrowLine();
     }
 
 
@@ -77,12 +77,12 @@ public class PlayerFishing : MonoBehaviour
     {   
         if(value.isPressed)
         {
-            bobber.reelIn = true;
+            casting.reelIn = true;
             animator.SetBool(reelAnim, true);    
         }
         else if(!value.isPressed)
         {
-            bobber.reelIn = false;
+            casting.reelIn = false;
             animator.SetBool(reelAnim, false);    
         }
     }
