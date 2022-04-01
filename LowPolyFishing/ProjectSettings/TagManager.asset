@@ -7,6 +7,7 @@ TagManager:
   - Door
   - Bobber
   - Shoreline
+  - Underwater
   layers:
   - Default
   - TransparentFX

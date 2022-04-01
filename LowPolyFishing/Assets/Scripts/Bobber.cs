@@ -22,7 +22,7 @@ public class Bobber : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();    
         lineRenderer = GetComponent<LineRenderer>();
-        playerFishing = GetComponentInParent<PlayerFishing>();
+        playerFishing = FindObjectOfType<PlayerFishing>();
     }
 
 
@@ -83,7 +83,7 @@ public class Bobber : MonoBehaviour
     public void ResetBobber()
     {
         playerFishing.StopFishing();
-        
+
         playerFishing.fishingRod.SetActive(false);
         gameObject.SetActive(false);
     }
