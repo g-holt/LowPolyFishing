@@ -23,6 +23,7 @@ public class Bobber : MonoBehaviour
         rb = GetComponent<Rigidbody>();    
         lineRenderer = GetComponent<LineRenderer>();
         playerFishing = FindObjectOfType<PlayerFishing>();
+        lineRenderer.positionCount = points.Length;
     }
 
 
