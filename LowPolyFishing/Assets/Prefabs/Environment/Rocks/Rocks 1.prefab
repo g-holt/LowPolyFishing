@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8290535740620196964}
   m_Layer: 0
   m_Name: Rocks 1
-  m_TagString: Untagged
+  m_TagString: Underwater
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11,12 +11,6 @@ public class FishingArea : MonoBehaviour
         playerFishing = FindObjectOfType<PlayerFishing>();
     }
 
-    
-    void Update()
-    {
-        
-    }
-
 
     void OnTriggerEnter(Collider other)
     {

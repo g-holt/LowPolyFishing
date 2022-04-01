@@ -17,8 +17,6 @@ public class Bobber : MonoBehaviour
 
     public bool reelIn;
 
-    bool reelUp;
-
 
     void OnEnable() 
     {
@@ -39,9 +37,16 @@ public class Bobber : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
+        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater"))
+        {
+            ResetBobber();
+            return;
+        }
+
         if(other.gameObject.CompareTag("Shoreline"))
-        {Debug.Log("Collision Shoreline");
+        {
             rb.useGravity = false;
+            return;
         }    
     }
 
@@ -77,6 +82,8 @@ public class Bobber : MonoBehaviour
 
     public void ResetBobber()
     {
+        playerFishing.StopFishing();
+        
         playerFishing.fishingRod.SetActive(false);
         gameObject.SetActive(false);
     }
@@ -87,21 +94,10 @@ public class Bobber : MonoBehaviour
         //Set In PlayerFishing.cs
         if(!reelIn) { return; }
 
-        // if(BobberToContainerDist() <= rodToBobberDistance)
-        // {
-        //     rb.useGravity = false;
-        // }
-
-        // if(reelUp)
-        // {
-        //     rb.useGravity = true;
-        // }
-
         if(BobberToContainerDist() <= .5)
         {
             ResetBobber();
         }
-        Debug.Log(reelUp);   
         
         transform.position = Vector3.MoveTowards(transform.position, bobberContainer.position, reelSpeed * Time.deltaTime);
     }

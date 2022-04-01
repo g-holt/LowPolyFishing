@@ -53,7 +53,7 @@ public class PlayerFishing : MonoBehaviour
             Debug.Log("You are not in a fish Zone");
             return;
         }
-        
+
         playerMovement.isFishing = true;
 
         fishingRod.SetActive(true);
@@ -85,6 +85,15 @@ public class PlayerFishing : MonoBehaviour
             bobber.reelIn = false;
             animator.SetBool(reelAnim, false);    
         }
+    }
+
+
+    public void StopFishing()
+    {
+        animator.SetBool(isFishingAnim, false);
+        animator.SetBool(reelAnim, false);
+            
+        playerInput.SwitchCurrentActionMap("Player");
     }
 
 }
