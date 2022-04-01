@@ -7,7 +7,6 @@ public class Casting : MonoBehaviour
     [SerializeField] float reelSpeed = 2f;
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
-    [SerializeField] float rodToGearDistance = 2.5f;
     [SerializeField] Transform gearContainer;
     [SerializeField] Transform[] gearPoints;
 
@@ -38,6 +37,12 @@ public class Casting : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
+        if(other.gameObject.CompareTag("WaterSurface"))
+        {
+
+        }
+
+
         if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater"))
         {
             ResetCast();
