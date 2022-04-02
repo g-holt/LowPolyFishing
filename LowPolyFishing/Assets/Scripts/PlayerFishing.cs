@@ -78,11 +78,13 @@ public class PlayerFishing : MonoBehaviour
         if(value.isPressed)
         {
             casting.reelIn = true;
+            casting.SetGravity(false);
             animator.SetBool(reelAnim, true);    
         }
         else if(!value.isPressed)
         {
             casting.reelIn = false;
+            casting.SetGravity(true);
             animator.SetBool(reelAnim, false);    
         }
     }
