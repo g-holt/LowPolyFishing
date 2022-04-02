@@ -1417,6 +1417,7 @@ GameObject:
   - component: {fileID: 1965803501}
   - component: {fileID: 1965803503}
   - component: {fileID: 1965803502}
+  - component: {fileID: 3369704222340010615}
   m_Layer: 0
   m_Name: Setup
   m_TagString: Untagged
@@ -1570,14 +1571,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reelSpeed: 2
   verticalCastStrength: 5
-  horizontalCastStrength: 10
-  rodToGearDistance: 2.5
+  horizontalCastStrength: 5
   gearContainer: {fileID: 8401207650276645383}
   gearPoints:
   - {fileID: 5109392329569339870}
   - {fileID: 2314478299988254368}
   - {fileID: 4943289781567753764}
   reelIn: 0
+--- !u!114 &3369704222340010615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9137849495445448414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad38494e5de4dcf42b7804b39e0d52b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.5
+  frequency: 1
+  isFloating: 0
 --- !u!1001 &2310872056326271936
 PrefabInstance:
   m_ObjectHideFlags: 0

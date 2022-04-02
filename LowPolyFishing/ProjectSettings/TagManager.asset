@@ -8,11 +8,12 @@ TagManager:
   - Bobber
   - Shoreline
   - Underwater
+  - WaterSurface
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 

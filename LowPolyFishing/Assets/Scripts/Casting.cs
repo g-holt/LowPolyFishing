@@ -11,6 +11,7 @@ public class Casting : MonoBehaviour
     [SerializeField] Transform[] gearPoints;
 
     Rigidbody rb;
+    BobberFloat bobberFloat;
     LineRenderer lineRenderer;
     PlayerFishing playerFishing;
 
@@ -20,6 +21,7 @@ public class Casting : MonoBehaviour
     void OnEnable() 
     {
         rb = GetComponent<Rigidbody>();    
+        bobberFloat = GetComponent<BobberFloat>();
         lineRenderer = GetComponent<LineRenderer>();
         playerFishing = FindObjectOfType<PlayerFishing>();
         lineRenderer.positionCount = gearPoints.Length;
@@ -37,15 +39,9 @@ public class Casting : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.CompareTag("WaterSurface"))
-        {
-
-        }
-
-
-        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater"))
-        {
-            ResetCast();
+        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("WaterSurface"))
+        {Debug.Log("Reset" + " " + other.gameObject.name);
+           // ResetCast();
             return;
         }
 
@@ -55,6 +51,21 @@ public class Casting : MonoBehaviour
             return;
         }    
     }
+
+
+//BobberFloating    
+    // void OnTriggerEnter(Collider other) 
+    // {
+    //     if(other.gameObject.CompareTag("WaterSurface"))
+    //     {
+    //         rb.velocity = Vector3.zero;
+    //         rb.useGravity = false;
+    //         bobberFloat.isFloating = true;
+    //         float newYPos = transform.position.y + .25f;
+    //         transform.position = new Vector3(transform.position.x, newYPos, transform.position.z);
+    //         return;
+    //     }
+    // }
 
 
     void Update()
@@ -88,8 +99,9 @@ public class Casting : MonoBehaviour
 
     public void ResetCast()
     {
-        playerFishing.StopFishing();
+        bobberFloat.isFloating = false;
 
+        playerFishing.StopFishing();
         playerFishing.fishingRod.SetActive(false);
         gameObject.SetActive(false);
     }
