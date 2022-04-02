@@ -7,9 +7,9 @@ public class Casting : MonoBehaviour
     [SerializeField] float reelSpeed = 2f;
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
+    [SerializeField] float bobberHeightFix = .01f;
     [SerializeField] Transform gearContainer;
     [SerializeField] Transform[] gearPoints;
-    [SerializeField] BoxCollider bobberCollider;
 
     Rigidbody rb;
     BobberFloat bobberFloat;
@@ -19,10 +19,9 @@ public class Casting : MonoBehaviour
     Vector3 reelTowards;
 
     bool surfaceCheck;
+    bool shorelineCheck;
     public bool reelIn;
     float rodToWaterDistance;
-
-
 
 
     void OnEnable() 
@@ -65,23 +64,35 @@ public class Casting : MonoBehaviour
     private void OnCollisionEnter(Collision other) 
     {
         if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("WaterSurface"))
-        {Debug.Log("Reset" + " " + other.gameObject.name);
+        {
             ResetCast();
             return;
         }
 
         if(other.gameObject.CompareTag("Shoreline"))
         {
+            shorelineCheck = true;
             surfaceCheck = false;
             rb.useGravity = false;
             return;
         }    
+
+        if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
+        {
+            surfaceCheck = true;
+            rb.velocity = Vector3.zero;
+            rb.useGravity = false;
+            bobberFloat.isFloating = true;
+            float newYPos = transform.position.y + bobberHeightFix;
+            transform.position = new Vector3(transform.position.x, newYPos, transform.position.z);
+            return;
+        } 
     }
 
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(!rb.useGravity && other.gameObject.CompareTag("WaterSurface"))
+        if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
         {
             surfaceCheck = true;
         }    
