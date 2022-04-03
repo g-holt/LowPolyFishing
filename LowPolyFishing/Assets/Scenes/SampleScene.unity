@@ -3502,6 +3502,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: adjustBobberHeight
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 937205027113568126, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -7,7 +7,7 @@ public class Casting : MonoBehaviour
     [SerializeField] float reelSpeed = 2f;
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
-    [SerializeField] float bobberHeightFix = .01f;
+    [SerializeField] float adjustBobberHeight = .05f;
     [SerializeField] Transform gearContainer;
     [SerializeField] Transform[] gearPoints;
 
@@ -22,6 +22,7 @@ public class Casting : MonoBehaviour
     bool shorelineCheck;
     public bool reelIn;
     float rodToWaterDistance;
+    float bobberHeightFix;
 
 
     void OnEnable() 
@@ -66,26 +67,16 @@ public class Casting : MonoBehaviour
         if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("WaterSurface"))
         {
             ResetCast();
-            return;
         }
 
         if(other.gameObject.CompareTag("Shoreline"))
         {
-            shorelineCheck = true;
-            surfaceCheck = false;
-            rb.useGravity = false;
-            return;
+            ShoreLineCollision();
         }    
 
         if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
         {
-            surfaceCheck = true;
-            rb.velocity = Vector3.zero;
-            rb.useGravity = false;
-            bobberFloat.isFloating = true;
-            float newYPos = transform.position.y + bobberHeightFix;
-            transform.position = new Vector3(transform.position.x, newYPos, transform.position.z);
-            return;
+            FloatBobberOnSurface();
         } 
     }
 
@@ -112,13 +103,22 @@ public class Casting : MonoBehaviour
     }
 
 
-    public void ResetCast()
+    void ShoreLineCollision()
     {
-        bobberFloat.isFloating = false;
+        shorelineCheck = true;
+        surfaceCheck = false;
+        rb.useGravity = false;
+    }
 
-        playerFishing.StopFishing();
-        playerFishing.fishingRod.SetActive(false);
-        gameObject.SetActive(false);
+
+    void FloatBobberOnSurface()
+    {
+        surfaceCheck = true;
+        rb.useGravity = false;
+        rb.velocity = Vector3.zero;
+        bobberFloat.isFloating = true;
+        bobberHeightFix = transform.position.y + adjustBobberHeight;
+        transform.position = new Vector3(transform.position.x, bobberHeightFix, transform.position.z);
     }
 
 
@@ -143,6 +143,16 @@ public class Casting : MonoBehaviour
     }
 
 
+    public void ResetCast()
+    {
+        bobberFloat.isFloating = false;
+
+        playerFishing.StopFishing();
+        playerFishing.fishingRod.SetActive(false);
+        gameObject.SetActive(false);
+    }
+
+
     float GearToContainerDist()
     {
         return Vector3.Distance(transform.position, gearContainer.position);
@@ -154,20 +164,3 @@ public class Casting : MonoBehaviour
         rb.useGravity = state;
     }
 }
-
-
-
-
-//BobberFloating    
-    // void OnTriggerEnter(Collider other) 
-    // {
-    //     if(other.gameObject.CompareTag("WaterSurface"))
-    //     {
-    //         rb.velocity = Vector3.zero;
-    //         rb.useGravity = false;
-    //         bobberFloat.isFloating = true;
-    //         float newYPos = transform.position.y + .25f;
-    //         transform.position = new Vector3(transform.position.x, newYPos, transform.position.z);
-    //         return;
-    //     }
-    // }
