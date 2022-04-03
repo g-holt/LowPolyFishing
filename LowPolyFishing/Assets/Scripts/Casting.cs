@@ -40,7 +40,9 @@ public class Casting : MonoBehaviour
     void OnDisable() 
     { 
         reelIn = false;
+        surfaceCheck = false;
         rb.useGravity = false; 
+        shorelineCheck = false;
         rb.velocity = Vector3.zero;
         transform.position = gearContainer.position;
     }
@@ -70,8 +72,9 @@ public class Casting : MonoBehaviour
         }
 
         if(other.gameObject.CompareTag("Shoreline"))
-        {
+        {Debug.Log(other.GetContact(0).thisCollider);
             ShoreLineCollision();
+            return;
         }    
 
         if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
