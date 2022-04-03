@@ -19,20 +19,15 @@ public class FishSchool : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other) 
+    public void EnteredFishSchool()
     {
-        if(other.gameObject.CompareTag("Bait"))
-        {
-            Debug.Log("Fish are here");
-        }
+        Debug.Log("Entered Fish School");
     }
 
 
-    private void OnTriggerExit(Collider other) 
+    public void ExitedFishSchool()
     {
-        if(other.gameObject.CompareTag("Bait"))
-        {
-            Debug.Log("Fish Not Here");
-        }    
+        Debug.Log("Exited Fish School");
     }
+
 }

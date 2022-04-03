@@ -17,6 +17,7 @@ public class Casting : MonoBehaviour
     LineRenderer lineRenderer;
     PlayerFishing playerFishing;
     Vector3 reelTowards;
+    FishSchool fishSchool;
 
     bool surfaceCheck;
     bool shorelineCheck;
@@ -30,6 +31,7 @@ public class Casting : MonoBehaviour
         rb = GetComponent<Rigidbody>();    
         bobberFloat = GetComponent<BobberFloat>();
         lineRenderer = GetComponent<LineRenderer>();
+        fishSchool = FindObjectOfType<FishSchool>();
         playerFishing = FindObjectOfType<PlayerFishing>();
         waterSurface = GameObject.FindGameObjectWithTag("WaterSurface");
 
@@ -55,15 +57,6 @@ public class Casting : MonoBehaviour
     }
 
 
-    void DrawFishingLine()
-    {
-        for(int i = 0; i < gearPoints.Length; i++)
-        {
-            lineRenderer.SetPosition(i, gearPoints[i].position);
-        }
-    }
-
-
     private void OnCollisionEnter(Collision other) 
     {
         if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("WaterSurface"))
@@ -72,9 +65,8 @@ public class Casting : MonoBehaviour
         }
 
         if(other.gameObject.CompareTag("Shoreline"))
-        {Debug.Log(other.GetContact(0).thisCollider);
+        {
             ShoreLineCollision();
-            return;
         }    
 
         if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
@@ -89,6 +81,20 @@ public class Casting : MonoBehaviour
         if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
         {
             surfaceCheck = true;
+        }    
+
+        if(other.gameObject.CompareTag("FishSchool"))
+        {
+            fishSchool.EnteredFishSchool();
+        }
+    }
+
+
+    private void OnTriggerExit(Collider other) 
+    {
+        if(other.gameObject.CompareTag("FishSchool"))
+        {
+            fishSchool.ExitedFishSchool();
         }    
     }
 
@@ -165,5 +171,14 @@ public class Casting : MonoBehaviour
     public void SetGravity(bool state)
     {
         rb.useGravity = state;
+    }
+
+
+    void DrawFishingLine()
+    {
+        for(int i = 0; i < gearPoints.Length; i++)
+        {
+            lineRenderer.SetPosition(i, gearPoints[i].position);
+        }
     }
 }
