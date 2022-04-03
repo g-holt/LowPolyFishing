@@ -33,7 +33,6 @@ public class PlayerFishing : MonoBehaviour
 
         fishingRod.SetActive(false);
         reeling.gameObject.SetActive(false);
-        //casting.gameObject.SetActive(false);
     }
 
     
@@ -73,7 +72,6 @@ public class PlayerFishing : MonoBehaviour
     {
         reeling.gameObject.SetActive(true);
         casting.ThrowLine();
-        //casting.gameObject.SetActive(true);
     }
 
 
@@ -82,14 +80,12 @@ public class PlayerFishing : MonoBehaviour
         if(value.isPressed)
         {
             reeling.reelIn = true;
-            //casting.SetGravity(false);
             reeling.SetGravity(false);
             animator.SetBool(reelAnim, true);    
         }
         else if(!value.isPressed)
         {
             reeling.reelIn = false;
-            //casting.SetGravity(true);
             reeling.SetGravity(true);
             animator.SetBool(reelAnim, false);    
         }
@@ -103,5 +99,4 @@ public class PlayerFishing : MonoBehaviour
             
         playerInput.SwitchCurrentActionMap("Player");
     }
-
 }

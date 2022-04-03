@@ -12,7 +12,7 @@ public class Casting : MonoBehaviour
     BobberFloat bobberFloat;
     PlayerFishing playerFishing;
 
-    public bool shorelineCheck;
+    //public bool shorelineCheck;
 
 
     void OnEnable() 

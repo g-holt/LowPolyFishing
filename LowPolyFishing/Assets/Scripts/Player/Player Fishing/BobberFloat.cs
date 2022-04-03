@@ -10,7 +10,7 @@ public class BobberFloat : MonoBehaviour
 
     Rigidbody rb;
     Vector3 offset;
-    Casting casting;
+    Reeling reeling;
     Vector3 tempPos;
 
     float bobberHeightFix;
@@ -23,7 +23,7 @@ public class BobberFloat : MonoBehaviour
         offset = transform.position;
 
         rb = GetComponent<Rigidbody>();
-        casting = GetComponent<Casting>();
+        reeling = GetComponent<Reeling>();
     }
 
     
@@ -35,7 +35,7 @@ public class BobberFloat : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(!casting.shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
+        if(!reeling.shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
         {
             FloatBobberOnSurface();
         } 
@@ -45,8 +45,8 @@ public class BobberFloat : MonoBehaviour
     void FloatBobberOnSurface()
     {
         isFloating = true;
-        rb.useGravity = false;
         surfaceCheck = true;
+        rb.useGravity = false;
         rb.velocity = Vector3.zero;
         bobberHeightFix = transform.position.y + adjustBobberHeight;
         transform.position = new Vector3(transform.position.x, bobberHeightFix, transform.position.z);
