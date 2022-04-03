@@ -9,7 +9,7 @@ public class BobberFloat : MonoBehaviour
     [SerializeField] float adjustBobberHeight = .08f;
 
     Rigidbody rb;
-    Vector3 offset;
+    //Vector3 offset;
     Reeling reeling;
     Vector3 tempPos;
 
@@ -20,7 +20,7 @@ public class BobberFloat : MonoBehaviour
 
     void Start()
     {
-        offset = transform.position;
+        //offset = transform.position;
 
         rb = GetComponent<Rigidbody>();
         reeling = GetComponent<Reeling>();
