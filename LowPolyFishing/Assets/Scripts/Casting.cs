@@ -7,23 +7,20 @@ public class Casting : MonoBehaviour
     [SerializeField] float reelSpeed = 2f;
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
-    [SerializeField] float adjustBobberHeight = .05f;
     [SerializeField] Transform gearContainer;
     [SerializeField] Transform[] gearPoints;
 
     Rigidbody rb;
+    Vector3 reelTowards;
+    FishSchool fishSchool;
     BobberFloat bobberFloat;
     GameObject waterSurface;
     LineRenderer lineRenderer;
     PlayerFishing playerFishing;
-    Vector3 reelTowards;
-    FishSchool fishSchool;
-
-    bool surfaceCheck;
-    bool shorelineCheck;
+    
     public bool reelIn;
-    float rodToWaterDistance;
-    float bobberHeightFix;
+    public bool surfaceCheck;
+    public bool shorelineCheck;
 
 
     void OnEnable() 
@@ -68,11 +65,6 @@ public class Casting : MonoBehaviour
         {
             ShoreLineCollision();
         }    
-
-        if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
-        {
-            FloatBobberOnSurface();
-        } 
     }
 
 
@@ -117,17 +109,6 @@ public class Casting : MonoBehaviour
         shorelineCheck = true;
         surfaceCheck = false;
         rb.useGravity = false;
-    }
-
-
-    void FloatBobberOnSurface()
-    {
-        surfaceCheck = true;
-        rb.useGravity = false;
-        rb.velocity = Vector3.zero;
-        bobberFloat.isFloating = true;
-        bobberHeightFix = transform.position.y + adjustBobberHeight;
-        transform.position = new Vector3(transform.position.x, bobberHeightFix, transform.position.z);
     }
 
 
