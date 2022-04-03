@@ -15,6 +15,7 @@ public class BobberFloat : MonoBehaviour
 
     float bobberHeightFix;
     public bool isFloating;
+    public bool surfaceCheck;
 
 
     void Start()
@@ -45,7 +46,7 @@ public class BobberFloat : MonoBehaviour
     {
         isFloating = true;
         rb.useGravity = false;
-        casting.surfaceCheck = true;
+        surfaceCheck = true;
         rb.velocity = Vector3.zero;
         bobberHeightFix = transform.position.y + adjustBobberHeight;
         transform.position = new Vector3(transform.position.x, bobberHeightFix, transform.position.z);

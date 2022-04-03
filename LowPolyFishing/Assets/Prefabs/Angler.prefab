@@ -1387,6 +1387,7 @@ GameObject:
   - component: {fileID: 1965803502}
   - component: {fileID: 3369704222340010615}
   - component: {fileID: 9184920242697901054}
+  - component: {fileID: 2807496283445357649}
   m_Layer: 0
   m_Name: Setup
   m_TagString: Untagged
@@ -1538,11 +1539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f646aed4f4a4231409122ab6550a72a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reelSpeed: 2
   verticalCastStrength: 5
   horizontalCastStrength: 5
-  gearContainer: {fileID: 8401207650276645383}
-  reelIn: 0
   surfaceCheck: 0
   shorelineCheck: 0
 --- !u!114 &3369704222340010615
@@ -1577,6 +1575,23 @@ MonoBehaviour:
   - {fileID: 5109392329569339870}
   - {fileID: 2314478299988254368}
   - {fileID: 4943289781567753764}
+--- !u!114 &2807496283445357649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9137849495445448414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f459ef23128944486edbea6b4987c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reelSpeed: 2
+  gearContainer: {fileID: 8401207650276645383}
+  reelIn: 0
+  surfaceCheck: 0
+  shorelineCheck: 0
 --- !u!1001 &2310872056326271936
 PrefabInstance:
   m_ObjectHideFlags: 0

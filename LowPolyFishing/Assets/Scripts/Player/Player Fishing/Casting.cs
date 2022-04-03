@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class Casting : MonoBehaviour
 {
-    [SerializeField] float reelSpeed = 2f;
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
-    [SerializeField] Transform gearContainer;
 
     Rigidbody rb;
-    Vector3 reelTowards;
     FishSchool fishSchool;
     BobberFloat bobberFloat;
-    GameObject waterSurface;
     PlayerFishing playerFishing;
-    
-    public bool reelIn;
-    public bool surfaceCheck;
+
     public bool shorelineCheck;
 
 
@@ -27,24 +21,6 @@ public class Casting : MonoBehaviour
         bobberFloat = GetComponent<BobberFloat>();
         fishSchool = FindObjectOfType<FishSchool>();
         playerFishing = FindObjectOfType<PlayerFishing>();
-        waterSurface = GameObject.FindGameObjectWithTag("WaterSurface");
-    }
-
-
-    void OnDisable() 
-    { 
-        reelIn = false;
-        surfaceCheck = false;
-        rb.useGravity = false; 
-        shorelineCheck = false;
-        rb.velocity = Vector3.zero;
-        transform.position = gearContainer.position;
-    }
-
-
-    void Update()
-    {
-        ReelInGear();
     }
 
 
@@ -54,21 +30,11 @@ public class Casting : MonoBehaviour
         {
             ResetCast();
         }
-
-        if(other.gameObject.CompareTag("Shoreline"))
-        {
-            ShoreLineCollision();
-        }    
     }
 
 
     private void OnTriggerEnter(Collider other) 
-    {
-        if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
-        {
-            surfaceCheck = true;
-        }    
-
+    {  
         if(other.gameObject.CompareTag("FishSchool"))
         {
             fishSchool.EnteredFishSchool();
@@ -98,35 +64,6 @@ public class Casting : MonoBehaviour
     }
 
 
-    void ShoreLineCollision()
-    {
-        shorelineCheck = true;
-        surfaceCheck = false;
-        rb.useGravity = false;
-    }
-
-
-    void ReelInGear()
-    {
-        //Set In PlayerFishing.cs
-        if(!reelIn) { return; }
-
-        reelTowards = gearContainer.position;
-
-        if(GearToContainerDist() <= .5)
-        {
-            ResetCast();
-        }
-
-        if(surfaceCheck)
-        {
-            reelTowards.y = gearContainer.position.y - 2.5f;
-        }
-        
-        transform.position = Vector3.MoveTowards(transform.position, reelTowards, reelSpeed * Time.deltaTime);
-    }
-
-
     public void ResetCast()
     {
         bobberFloat.isFloating = false;
@@ -135,17 +72,4 @@ public class Casting : MonoBehaviour
         playerFishing.fishingRod.SetActive(false);
         gameObject.SetActive(false);
     }
-
-
-    float GearToContainerDist()
-    {
-        return Vector3.Distance(transform.position, gearContainer.position);
-    }
-
-
-    public void SetGravity(bool state)
-    {
-        rb.useGravity = state;
-    }
-
 }

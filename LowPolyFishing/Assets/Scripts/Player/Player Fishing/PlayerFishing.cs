@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerFishing : MonoBehaviour
 {
     Casting casting;
+    Reeling reeling;
     Animator animator;
     PlayerInput playerInput;
     PlayerMovement playerMovement;
@@ -27,10 +28,12 @@ public class PlayerFishing : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
+        reeling = GetComponentInChildren<Reeling>();
         casting = GetComponentInChildren<Casting>();
 
         fishingRod.SetActive(false);
-        casting.gameObject.SetActive(false);
+        reeling.gameObject.SetActive(false);
+        //casting.gameObject.SetActive(false);
     }
 
     
@@ -68,8 +71,9 @@ public class PlayerFishing : MonoBehaviour
     //Casting Animation Event
     void HandleBobber()
     {
-        casting.gameObject.SetActive(true);
+        reeling.gameObject.SetActive(true);
         casting.ThrowLine();
+        //casting.gameObject.SetActive(true);
     }
 
 
@@ -77,14 +81,16 @@ public class PlayerFishing : MonoBehaviour
     {   
         if(value.isPressed)
         {
-            casting.reelIn = true;
-            casting.SetGravity(false);
+            reeling.reelIn = true;
+            //casting.SetGravity(false);
+            reeling.SetGravity(false);
             animator.SetBool(reelAnim, true);    
         }
         else if(!value.isPressed)
         {
-            casting.reelIn = false;
-            casting.SetGravity(true);
+            reeling.reelIn = false;
+            //casting.SetGravity(true);
+            reeling.SetGravity(true);
             animator.SetBool(reelAnim, false);    
         }
     }

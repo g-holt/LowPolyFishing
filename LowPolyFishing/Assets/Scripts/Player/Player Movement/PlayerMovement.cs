@@ -37,13 +37,7 @@ public class PlayerMovement : MonoBehaviour
         
         casting = GetComponentInChildren<Casting>();
     }
-
     
-    void Update()
-    {
-        //Move();
-    }
-
     
     void FixedUpdate() 
     {
