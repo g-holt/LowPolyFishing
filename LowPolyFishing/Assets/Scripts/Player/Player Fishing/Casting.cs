@@ -12,8 +12,6 @@ public class Casting : MonoBehaviour
     BobberFloat bobberFloat;
     PlayerFishing playerFishing;
 
-    //public bool shorelineCheck;
-
 
     void OnEnable() 
     {
@@ -26,7 +24,7 @@ public class Casting : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("WaterSurface"))
+        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("WaterSurface") && !other.gameObject.CompareTag("Fish"))
         {
             ResetCast();
         }

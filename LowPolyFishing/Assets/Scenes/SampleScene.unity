@@ -5349,17 +5349,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1630517081989846238, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1799149137510297956, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_Name
       value: Fish School
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202631795405076626, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
-      propertyPath: m_TagString
-      value: FishSchool
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}

@@ -24,6 +24,7 @@ public class FishSchool : MonoBehaviour
     {
         isFishing = false;
         canSetHook = false;
+        fish.SetActive(false);
 
         bait = GameObject.FindGameObjectWithTag("Bait");
     }
@@ -108,7 +109,7 @@ public class FishSchool : MonoBehaviour
     void CatchFish()
     {
         fishOn = true;
-
+        fish.SetActive(true);
         Debug.Log("Catching Fish");
     }
 }

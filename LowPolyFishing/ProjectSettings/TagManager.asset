@@ -11,6 +11,7 @@ TagManager:
   - WaterSurface
   - Bait
   - FishSchool
+  - Fish
   layers:
   - Default
   - TransparentFX
