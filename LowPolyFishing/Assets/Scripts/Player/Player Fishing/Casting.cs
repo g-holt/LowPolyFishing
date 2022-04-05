@@ -17,6 +17,7 @@ public class Casting : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();    
         bobberFloat = GetComponent<BobberFloat>();
+
         fishSchool = FindObjectOfType<FishSchool>();
         playerFishing = FindObjectOfType<PlayerFishing>();
     }

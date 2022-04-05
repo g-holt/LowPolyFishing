@@ -35,18 +35,6 @@ public class PlayerFishing : MonoBehaviour
         reeling.gameObject.SetActive(false);
     }
 
-    
-    void Update()
-    {
-        if(Keyboard.current.spaceKey.isPressed)
-        {
-            animator.SetBool(isFishingAnim, false);
-            animator.SetBool(reelAnim, false);
-            
-            playerInput.SwitchCurrentActionMap("Player");
-        }
-    }
-
 
     void OnCast()
     {

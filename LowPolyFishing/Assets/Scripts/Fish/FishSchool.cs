@@ -10,7 +10,7 @@ public class FishSchool : MonoBehaviour
     [SerializeField] float timeToSetHook = 5f;
     [SerializeField] GameObject fish;
 
-    GameObject bait;
+    GameObject rig;
 
     bool fishOn;
     bool isFishing;
@@ -26,7 +26,7 @@ public class FishSchool : MonoBehaviour
         canSetHook = false;
         fish.SetActive(false);
 
-        bait = GameObject.FindGameObjectWithTag("Bait");
+        rig = GameObject.FindGameObjectWithTag("Rig");
     }
 
 
@@ -110,6 +110,7 @@ public class FishSchool : MonoBehaviour
     {
         fishOn = true;
         fish.SetActive(true);
+        FindObjectOfType<FishMovement>().onHook = true;
         Debug.Log("Catching Fish");
     }
 }

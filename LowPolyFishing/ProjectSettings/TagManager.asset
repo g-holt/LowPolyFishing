@@ -12,6 +12,7 @@ TagManager:
   - Bait
   - FishSchool
   - Fish
+  - Rig
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Water
   - UI
   - Bait
-  - 
-  - 
+  - Rig
+  - Fish
   - 
   - 
   - 
