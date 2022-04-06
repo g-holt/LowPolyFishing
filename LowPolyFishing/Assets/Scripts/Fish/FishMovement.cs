@@ -8,7 +8,8 @@ public class FishMovement : MonoBehaviour
 
     GameObject bait;
     Vector3 fishDistance;
-    
+
+
     public bool onHook;
     float newZPos;
 
@@ -16,7 +17,7 @@ public class FishMovement : MonoBehaviour
     void Start()
     {
         onHook = false;
-
+        
         bait = GameObject.FindGameObjectWithTag("Bait");
     }
 
@@ -32,11 +33,7 @@ public class FishMovement : MonoBehaviour
         if(!onHook) { return; }
 
         Debug.Log("FollowBait");
-        //transform.SetPositionAndRotation(bait.transform.position, bait.transform.rotation);
         transform.LookAt(bait.transform, transform.up);
-        //newZPos = transform.position.z - 5f;
-        //fishDistance = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         transform.position = Vector3.MoveTowards(transform.position, bait.transform.position, fishSpeed * Time.deltaTime);
-        //transform.position = bait.transform.position;
     }
 }

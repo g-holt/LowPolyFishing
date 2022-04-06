@@ -13,6 +13,7 @@ TagManager:
   - FishSchool
   - Fish
   - Rig
+  - FishContainer
   layers:
   - Default
   - TransparentFX

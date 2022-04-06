@@ -8,7 +8,7 @@ public class Casting : MonoBehaviour
     [SerializeField] float horizontalCastStrength = 10f;
 
     Rigidbody rb;
-    FishSchool fishSchool;
+    //FishSchool fishSchool;
     BobberFloat bobberFloat;
     PlayerFishing playerFishing;
 
@@ -18,36 +18,36 @@ public class Casting : MonoBehaviour
         rb = GetComponent<Rigidbody>();    
         bobberFloat = GetComponent<BobberFloat>();
 
-        fishSchool = FindObjectOfType<FishSchool>();
+        //fishSchool = FindObjectOfType<FishSchool>();
         playerFishing = FindObjectOfType<PlayerFishing>();
     }
 
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("WaterSurface") && !other.gameObject.CompareTag("Fish"))
+        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("FishContainer") && !other.gameObject.CompareTag("WaterSurface") && !other.gameObject.CompareTag("Fish"))
         {
             ResetCast();
         }
     }
 
 
-    private void OnTriggerEnter(Collider other) 
-    {  
-        if(other.gameObject.CompareTag("FishSchool"))
-        {
-            fishSchool.EnteredFishSchool();
-        }
-    }
+    // private void OnTriggerEnter(Collider other) 
+    // {  
+    //     if(other.gameObject.CompareTag("FishSchool"))
+    //     {
+    //         fishSchool.EnteredFishSchool();
+    //     }
+    // }
 
 
-    private void OnTriggerExit(Collider other) 
-    {
-        if(other.gameObject.CompareTag("FishSchool"))
-        {
-            fishSchool.ExitedFishSchool();
-        }    
-    }
+    // private void OnTriggerExit(Collider other) 
+    // {
+    //     if(other.gameObject.CompareTag("FishSchool"))
+    //     {
+    //         fishSchool.ExitedFishSchool();
+    //     }    
+    // }
 
 
     public void ThrowLine()
