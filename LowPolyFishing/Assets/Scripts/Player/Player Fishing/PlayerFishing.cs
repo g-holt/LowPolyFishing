@@ -32,7 +32,7 @@ public class PlayerFishing : MonoBehaviour
         casting = GetComponentInChildren<Casting>();
 
         fishingRod.SetActive(false);
-        reeling.gameObject.SetActive(false);
+        //reeling.gameObject.SetActive(false);
     }
 
 
@@ -58,7 +58,7 @@ public class PlayerFishing : MonoBehaviour
     //Casting Animation Event
     void HandleBobber()
     {
-        reeling.gameObject.SetActive(true);
+        //reeling.gameObject.SetActive(true);
         casting.ThrowLine();
     }
 

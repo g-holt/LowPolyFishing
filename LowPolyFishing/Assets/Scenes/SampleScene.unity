@@ -5331,12 +5331,16 @@ PrefabInstance:
       value: Fish School
       objectReference: {fileID: 0}
     - target: {fileID: 2444446424649053946, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: fish
+      value: 
+      objectReference: {fileID: 1068455009}
+    - target: {fileID: 2444446424649053946, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: timerMax
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2444446424649053946, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: timerMin
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2590601767047167657, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: fishSpeed
@@ -5412,7 +5416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8412479656161125630, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_MassScale
-      value: 0.00001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8412479656161125630, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_ConnectedBody
@@ -5424,15 +5428,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8412479656161125630, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_ConnectedMassScale
-      value: 0.00001
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412479656161125630, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_EnablePreprocessing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8443429416236323997, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_Mass
-      value: 0.0000001
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8443429416236323997, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8443429416236323997, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1378381083352702434, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+    - {fileID: 6777285991085078413, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+    - {fileID: 8412479656161125630, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}

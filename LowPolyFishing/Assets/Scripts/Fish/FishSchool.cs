@@ -109,6 +109,9 @@ public class FishSchool : MonoBehaviour
     void CatchFish()
     {
         fishOn = true;
+        //GameObject childFish = Instantiate(fish) as GameObject;
+        //childFish.transform.parent = rig.transform;
+        fish.transform.parent = rig.transform;
         fish.SetActive(true);
         FindObjectOfType<FishMovement>().onHook = true;
         Debug.Log("Catching Fish");

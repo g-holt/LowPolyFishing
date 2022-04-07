@@ -20,8 +20,8 @@ public class Bait : MonoBehaviour
         {
             if(other.gameObject.GetComponent<Rigidbody>() == null) { Debug.Log("Null"); }
             Debug.Log("here");
-            //other.gameObject.GetComponent<Rigidbody>().freezeRotation = true;
-            //other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            other.gameObject.GetComponent<Rigidbody>().freezeRotation = true;
+            other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
     }
 

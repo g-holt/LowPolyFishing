@@ -6,9 +6,10 @@ public class Casting : MonoBehaviour
 {
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
+    [SerializeField] GameObject bobber;
+    [SerializeField] GameObject bait;
 
     Rigidbody rb;
-    //FishSchool fishSchool;
     BobberFloat bobberFloat;
     PlayerFishing playerFishing;
 
@@ -18,8 +19,9 @@ public class Casting : MonoBehaviour
         rb = GetComponent<Rigidbody>();    
         bobberFloat = GetComponent<BobberFloat>();
 
-        //fishSchool = FindObjectOfType<FishSchool>();
         playerFishing = FindObjectOfType<PlayerFishing>();
+        bobber.gameObject.SetActive(false);
+        bait.gameObject.SetActive(false);
     }
 
 
@@ -32,26 +34,11 @@ public class Casting : MonoBehaviour
     }
 
 
-    // private void OnTriggerEnter(Collider other) 
-    // {  
-    //     if(other.gameObject.CompareTag("FishSchool"))
-    //     {
-    //         fishSchool.EnteredFishSchool();
-    //     }
-    // }
-
-
-    // private void OnTriggerExit(Collider other) 
-    // {
-    //     if(other.gameObject.CompareTag("FishSchool"))
-    //     {
-    //         fishSchool.ExitedFishSchool();
-    //     }    
-    // }
-
-
     public void ThrowLine()
     {
+        bobber.gameObject.SetActive(true);
+        bait.gameObject.SetActive(true);
+
         rb.useGravity = true;
 
         float throwX = transform.forward.x * horizontalCastStrength * 100;
@@ -69,6 +56,8 @@ public class Casting : MonoBehaviour
 
         playerFishing.StopFishing();
         playerFishing.fishingRod.SetActive(false);
-        gameObject.SetActive(false);
+        bobber.SetActive(false);
+        bait.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }

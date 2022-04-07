@@ -8,13 +8,15 @@ public class FishMovement : MonoBehaviour
 
     GameObject bait;
     Vector3 fishDistance;
+    FixedJoint fixedJoint;
 
 
     public bool onHook;
+    bool stopMovement;
     float newZPos;
 
 
-    void Start()
+    void Awake()
     {
         onHook = false;
         
@@ -27,13 +29,28 @@ public class FishMovement : MonoBehaviour
         FollowBait();    
     }
 
+
+    void OnCollisionEnter(Collision other) 
+    {
+        // if(other.gameObject.CompareTag("Bait"))
+        // {
+        //     Debug.Log("Collided with bait");
+        //     gameObject.AddComponent<FixedJoint>();
+        //     GetComponent<FixedJoint>().connectedBody = bait.GetComponent<Rigidbody>();
+        //     stopMovement = true;
+        // }    
+    }
+
     
     public void FollowBait()
     {
+        Debug.Log(onHook);
         if(!onHook) { return; }
 
         Debug.Log("FollowBait");
         transform.LookAt(bait.transform, transform.up);
-        transform.position = Vector3.MoveTowards(transform.position, bait.transform.position, fishSpeed * Time.deltaTime);
+
+        // if(stopMovement) { return; }
+        // transform.position = Vector3.MoveTowards(transform.position, bait.transform.position, fishSpeed * Time.deltaTime);
     }
 }
