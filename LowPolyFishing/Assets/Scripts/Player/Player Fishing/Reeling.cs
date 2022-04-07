@@ -81,8 +81,7 @@ public class Reeling : MonoBehaviour
         {
             casting.ResetCast();
         }
-
-        if(surfaceCheck)
+        else if(surfaceCheck)
         {
             reelTowards.y = gearContainer.position.y - 2.5f;
         }

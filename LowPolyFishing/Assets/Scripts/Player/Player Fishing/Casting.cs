@@ -6,22 +6,26 @@ public class Casting : MonoBehaviour
 {
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
+    [SerializeField] GameObject gear;
     [SerializeField] GameObject bobber;
     [SerializeField] GameObject bait;
 
     Rigidbody rb;
     BobberFloat bobberFloat;
     PlayerFishing playerFishing;
+    LineRenderer lineRenderer;
 
 
     void OnEnable() 
     {
         rb = GetComponent<Rigidbody>();    
         bobberFloat = GetComponent<BobberFloat>();
-
+        lineRenderer = GetComponent<LineRenderer>();
         playerFishing = FindObjectOfType<PlayerFishing>();
+
         bobber.gameObject.SetActive(false);
         bait.gameObject.SetActive(false);
+        lineRenderer.enabled = false;
     }
 
 
@@ -38,6 +42,7 @@ public class Casting : MonoBehaviour
     {
         bobber.gameObject.SetActive(true);
         bait.gameObject.SetActive(true);
+        lineRenderer.enabled = true;
 
         rb.useGravity = true;
 
@@ -52,12 +57,16 @@ public class Casting : MonoBehaviour
 
     public void ResetCast()
     {
+        rb.useGravity = false;
+        rb.velocity = Vector3.zero;
         bobberFloat.isFloating = false;
 
         playerFishing.StopFishing();
         playerFishing.fishingRod.SetActive(false);
         bobber.SetActive(false);
         bait.SetActive(false);
+        lineRenderer.enabled = false;
+        transform.position = gear.transform.position;
         //gameObject.SetActive(false);
     }
 }
