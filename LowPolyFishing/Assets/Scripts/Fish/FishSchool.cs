@@ -11,6 +11,7 @@ public class FishSchool : MonoBehaviour
     [SerializeField] GameObject fish;
 
     GameObject rig;
+    FishMovement fishMovement;
 
     bool fishOn;
     bool isFishing;
@@ -27,6 +28,7 @@ public class FishSchool : MonoBehaviour
         fish.SetActive(false);
 
         rig = GameObject.FindGameObjectWithTag("Rig");
+        fishMovement = GameObject.FindObjectOfType<FishMovement>();
     }
 
 
@@ -109,11 +111,15 @@ public class FishSchool : MonoBehaviour
     void CatchFish()
     {
         fishOn = true;
-        //GameObject childFish = Instantiate(fish) as GameObject;
-        //childFish.transform.parent = rig.transform;
-        fish.transform.parent = rig.transform;
         fish.SetActive(true);
-        FindObjectOfType<FishMovement>().onHook = true;
+        fish.GetComponent<FishMovement>().onHook = true;
         Debug.Log("Catching Fish");
     }
 }
+
+        //CatchFish()
+        // GameObject childFish = Instantiate(fish) as GameObject;
+        // childFish.transform.parent = rig.transform;
+        // fish.transform.parent = rig.transform;
+        // bait = GameObject.FindGameObjectWithTag("Bait");
+        // fish.transform.localPosition = bait.transform.localPosition;

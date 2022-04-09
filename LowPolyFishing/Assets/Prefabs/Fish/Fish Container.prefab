@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8909261514263383412}
   - component: {fileID: 8611217747975352620}
   - component: {fileID: 2404794862082579224}
-  - component: {fileID: 2363751895046777723}
-  m_Layer: 0
+  - component: {fileID: 2570147634559490725}
+  m_Layer: 8
   m_Name: Fish Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,8 +65,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!138 &2363751895046777723
-FixedJoint:
+--- !u!59 &2570147634559490725
+HingeJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -74,6 +74,27 @@ FixedJoint:
   m_GameObject: {fileID: 7766715514182495625}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -92,8 +113,40 @@ PrefabInstance:
       value: Fish_Bass00
       objectReference: {fileID: 0}
     - target: {fileID: 1007394829051868, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007394829051868, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
       propertyPath: m_TagString
       value: Fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350753213875030, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434706385046060, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1631224760957924, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661862859813186, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742404543553040, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969372045584010, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984838796072408, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4813915844032200, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
       propertyPath: m_RootOrder

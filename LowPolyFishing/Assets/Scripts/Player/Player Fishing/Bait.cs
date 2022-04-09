@@ -19,9 +19,8 @@ public class Bait : MonoBehaviour
         if(other.gameObject.CompareTag("FishContainer"))
         {
             if(other.gameObject.GetComponent<Rigidbody>() == null) { Debug.Log("Null"); }
-            Debug.Log("here");
-            other.gameObject.GetComponent<Rigidbody>().freezeRotation = true;
-            other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            gameObject.AddComponent<HingeJoint>();
+            GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
         }
     }
 

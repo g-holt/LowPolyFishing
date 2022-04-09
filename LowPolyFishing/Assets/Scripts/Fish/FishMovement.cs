@@ -32,13 +32,13 @@ public class FishMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision other) 
     {
-        // if(other.gameObject.CompareTag("Bait"))
-        // {
-        //     Debug.Log("Collided with bait");
-        //     gameObject.AddComponent<FixedJoint>();
-        //     GetComponent<FixedJoint>().connectedBody = bait.GetComponent<Rigidbody>();
-        //     stopMovement = true;
-        // }    
+        if(other.gameObject.CompareTag("Bait"))
+        {
+            // Debug.Log("Collided with bait");
+            // gameObject.AddComponent<HingeJoint>();
+            // GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("Bait").GetComponent<Rigidbody>();
+            stopMovement = true;
+        }    
     }
 
     
@@ -48,9 +48,9 @@ public class FishMovement : MonoBehaviour
         if(!onHook) { return; }
 
         Debug.Log("FollowBait");
-        transform.LookAt(bait.transform, transform.up);
 
-        // if(stopMovement) { return; }
-        // transform.position = Vector3.MoveTowards(transform.position, bait.transform.position, fishSpeed * Time.deltaTime);
+        transform.LookAt(bait.transform, transform.up);
+        if(stopMovement) {Debug.Log("StopMovement return"); return; }
+        transform.position = Vector3.MoveTowards(transform.position, bait.transform.position, fishSpeed * Time.deltaTime);
     }
 }

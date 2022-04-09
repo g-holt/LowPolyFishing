@@ -51,6 +51,13 @@ public class Reeling : MonoBehaviour
         {
             surfaceCheck = true;
         }   
+
+        if(other.gameObject.CompareTag("FishContainer"))
+        {
+            //Debug.Log("Collided with fish");
+            // gameObject.AddComponent<HingeJoint>();
+            // GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("Bait").GetComponent<Rigidbody>();
+        }
     }
 
 
