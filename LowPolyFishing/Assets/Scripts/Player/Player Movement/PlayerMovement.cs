@@ -8,12 +8,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float turnSpeed = 100f;    //Angle of Turn
 
+    GameObject door;
+    Casting casting;
     Vector2 moveInput;
     Animator animator;
     PlayerInput playerInput;
     PlayerFishing playerFishing;
-    GameObject door;
-    Casting casting;
   
     float moveXPos;
     float moveZPos;
@@ -75,9 +75,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveXPos *= Mathf.Sign(moveZPos);
             }
-
-            //TODO: When fish catching added return if Reel and FishCaught are true so 
-            //Reel animation can't be stopped by player movement if a fish is being caught
+            
             IsFishingCheck();
             
             animator.SetBool(isWalkingAnim, true);
@@ -102,8 +100,6 @@ public class PlayerMovement : MonoBehaviour
 
             casting.ResetCast();
             playerFishing.fishingRod.SetActive(false);
-            //casting.gameObject.SetActive(false);
-            //casting.ResetCast();
         }
     }
 

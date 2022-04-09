@@ -40,11 +40,10 @@ public class Casting : MonoBehaviour
 
     public void ThrowLine()
     {
-        bobber.gameObject.SetActive(true);
-        bait.gameObject.SetActive(true);
-        lineRenderer.enabled = true;
-
         rb.useGravity = true;
+        lineRenderer.enabled = true;
+        bait.gameObject.SetActive(true);
+        bobber.gameObject.SetActive(true);
 
         float throwX = transform.forward.x * horizontalCastStrength * 100;
         float throwY = verticalCastStrength * 100;
@@ -59,14 +58,13 @@ public class Casting : MonoBehaviour
     {
         rb.useGravity = false;
         rb.velocity = Vector3.zero;
+        lineRenderer.enabled = false;
         bobberFloat.isFloating = false;
+        transform.position = gear.transform.position;
 
         playerFishing.StopFishing();
-        playerFishing.fishingRod.SetActive(false);
-        bobber.SetActive(false);
         bait.SetActive(false);
-        lineRenderer.enabled = false;
-        transform.position = gear.transform.position;
-        //gameObject.SetActive(false);
+        bobber.SetActive(false);
+        playerFishing.fishingRod.SetActive(false);
     }
 }

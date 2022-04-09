@@ -51,13 +51,6 @@ public class Reeling : MonoBehaviour
         {
             surfaceCheck = true;
         }   
-
-        if(other.gameObject.CompareTag("FishContainer"))
-        {
-            //Debug.Log("Collided with fish");
-            // gameObject.AddComponent<HingeJoint>();
-            // GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("Bait").GetComponent<Rigidbody>();
-        }
     }
 
 
@@ -75,9 +68,7 @@ public class Reeling : MonoBehaviour
         if(!reelIn) { return; }
 
         reelTowards = gearContainer.position;
-        
         ReelingChecks();
-
         transform.position = Vector3.MoveTowards(transform.position, reelTowards, reelSpeed * Time.deltaTime);
     }
 

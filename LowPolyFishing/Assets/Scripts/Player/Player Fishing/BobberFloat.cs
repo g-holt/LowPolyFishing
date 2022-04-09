@@ -6,15 +6,14 @@ public class BobberFloat : MonoBehaviour
 {
     [SerializeField] float frequency = 1f;
     [SerializeField] float amplitude = .5f;
-    [SerializeField] float adjustBobberHeight = .08f;
+    [SerializeField] float adjustBobberHeight = .08f;   //offset to make bobber float halfway in water
 
     Rigidbody rb;
     Reeling reeling;
     Vector3 tempPos;
 
-    float bobberHeightFix;
+    float bobberHeightFix;  
     public bool isFloating;
-    public bool surfaceCheck;
 
 
     void Start()
@@ -42,7 +41,6 @@ public class BobberFloat : MonoBehaviour
     void FloatBobberOnSurface()
     {
         isFloating = true;
-        surfaceCheck = true;
         rb.useGravity = false;
         rb.velocity = Vector3.zero;
         bobberHeightFix = transform.position.y + adjustBobberHeight;

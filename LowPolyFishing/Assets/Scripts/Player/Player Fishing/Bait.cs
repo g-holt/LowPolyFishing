@@ -15,10 +15,8 @@ public class Bait : MonoBehaviour
 
     void OnCollisionEnter(Collision other) 
     {
-        Debug.Log(other.gameObject.name.ToString());
         if(other.gameObject.CompareTag("FishContainer"))
         {
-            if(other.gameObject.GetComponent<Rigidbody>() == null) { Debug.Log("Null"); }
             gameObject.AddComponent<HingeJoint>();
             GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
         }
@@ -26,7 +24,7 @@ public class Bait : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other) 
-    {  Debug.Log(other.gameObject.name.ToString());
+    {  
         if(other.gameObject.CompareTag("FishSchool"))
         {
             fishSchool.EnteredFishSchool();

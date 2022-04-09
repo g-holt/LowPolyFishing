@@ -11,9 +11,9 @@ public class FishMovement : MonoBehaviour
     FixedJoint fixedJoint;
 
 
-    public bool onHook;
-    bool stopMovement;
     float newZPos;
+    bool stopMovement;
+    public bool onHook;
 
 
     void Awake()
@@ -34,9 +34,6 @@ public class FishMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Bait"))
         {
-            // Debug.Log("Collided with bait");
-            // gameObject.AddComponent<HingeJoint>();
-            // GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("Bait").GetComponent<Rigidbody>();
             stopMovement = true;
         }    
     }
@@ -44,13 +41,11 @@ public class FishMovement : MonoBehaviour
     
     public void FollowBait()
     {
-        Debug.Log(onHook);
         if(!onHook) { return; }
 
-        Debug.Log("FollowBait");
-
         transform.LookAt(bait.transform, transform.up);
-        if(stopMovement) {Debug.Log("StopMovement return"); return; }
+        
+        if(stopMovement) { return; }
         transform.position = Vector3.MoveTowards(transform.position, bait.transform.position, fishSpeed * Time.deltaTime);
     }
 }

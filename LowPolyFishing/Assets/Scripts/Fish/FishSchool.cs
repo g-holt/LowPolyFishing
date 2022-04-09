@@ -91,7 +91,6 @@ public class FishSchool : MonoBehaviour
 
         if(Mouse.current.rightButton.isPressed)
         {
-            Debug.Log("Fish On!");
             canSetHook = false;
             timerToHookset = 0f;
             CatchFish();
@@ -113,13 +112,5 @@ public class FishSchool : MonoBehaviour
         fishOn = true;
         fish.SetActive(true);
         fish.GetComponent<FishMovement>().onHook = true;
-        Debug.Log("Catching Fish");
     }
 }
-
-        //CatchFish()
-        // GameObject childFish = Instantiate(fish) as GameObject;
-        // childFish.transform.parent = rig.transform;
-        // fish.transform.parent = rig.transform;
-        // bait = GameObject.FindGameObjectWithTag("Bait");
-        // fish.transform.localPosition = bait.transform.localPosition;
