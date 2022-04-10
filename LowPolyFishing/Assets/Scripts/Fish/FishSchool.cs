@@ -13,12 +13,13 @@ public class FishSchool : MonoBehaviour
     GameObject rig;
     FishMovement fishMovement;
 
-    bool fishOn;
     bool isFishing;
     bool canSetHook;
     float timerToBite;
     float timeBeforBite;
     float timerToHookset;
+
+    public bool fishOn;
 
 
     void Start()

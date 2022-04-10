@@ -6,7 +6,9 @@ public class Bait : MonoBehaviour
 {
     FishSchool fishSchool;
 
-    
+    bool hasHingeJoint;
+
+
     void Start()
     {
         fishSchool = FindObjectOfType<FishSchool>();
@@ -17,8 +19,13 @@ public class Bait : MonoBehaviour
     {
         if(other.gameObject.CompareTag("FishContainer"))
         {
-            gameObject.AddComponent<HingeJoint>();
+            if(hasHingeJoint) { return; }
+
+            HingeJoint hingeJoint = gameObject.AddComponent<HingeJoint>() as HingeJoint;
+
             GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
+            GetComponent<HingeJoint>().enableCollision = true;
+            hasHingeJoint = true;
         }
     }
 
@@ -38,5 +45,12 @@ public class Bait : MonoBehaviour
         {
             fishSchool.ExitedFishSchool();
         }    
+    }
+
+
+    public void ResetBait()
+    {
+        hasHingeJoint = false;
+        Destroy(GetComponent<HingeJoint>());
     }
 }

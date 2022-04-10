@@ -14,6 +14,7 @@ TagManager:
   - Fish
   - Rig
   - FishContainer
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Fish
   - FishingArea
   - Bobber
-  - 
+  - Player
   - 
   - 
   - 

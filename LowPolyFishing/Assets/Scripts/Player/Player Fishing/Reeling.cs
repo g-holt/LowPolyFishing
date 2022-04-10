@@ -54,6 +54,15 @@ public class Reeling : MonoBehaviour
     }
 
 
+    void OnTriggerEnter(Collider other) 
+    {
+        if(other.gameObject.CompareTag("Shoreline"))
+        {
+            ShoreLineCollision();
+        }   
+    }
+
+
    void ShoreLineCollision()
     {
         shorelineCheck = true;
@@ -89,6 +98,13 @@ public class Reeling : MonoBehaviour
     float GearToContainerDist()
     {
         return Vector3.Distance(transform.position, gearContainer.position);
+    }
+
+
+    public void ResetReeling()
+    {
+        surfaceCheck = false;
+        shorelineCheck = false;
     }
 
 

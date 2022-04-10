@@ -6,32 +6,46 @@ public class Casting : MonoBehaviour
 {
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float horizontalCastStrength = 10f;
-    [SerializeField] GameObject gear;
-    [SerializeField] GameObject bobber;
-    [SerializeField] GameObject bait;
+    [SerializeField] GameObject gear_GO;
+    [SerializeField] GameObject bobber_GO;
+    [SerializeField] GameObject bait_GO;
 
+    Bait bait;
     Rigidbody rb;
+    Reeling reeling;
+    FishSchool fishSchool;
     BobberFloat bobberFloat;
-    PlayerFishing playerFishing;
     LineRenderer lineRenderer;
+    FishMovement fishMovement;
+    PlayerFishing playerFishing;
 
 
     void OnEnable() 
     {
         rb = GetComponent<Rigidbody>();    
+        reeling = GetComponent<Reeling>();
+        bait = GetComponentInChildren<Bait>();
         bobberFloat = GetComponent<BobberFloat>();
         lineRenderer = GetComponent<LineRenderer>();
-        playerFishing = FindObjectOfType<PlayerFishing>();
 
-        bobber.gameObject.SetActive(false);
-        bait.gameObject.SetActive(false);
+        playerFishing = FindObjectOfType<PlayerFishing>();
+        fishSchool = FindObjectOfType<FishSchool>();
+        fishMovement = FindObjectOfType<FishMovement>();
+
+        bobber_GO.gameObject.SetActive(false);
+        bait_GO.gameObject.SetActive(false);
         lineRenderer.enabled = false;
     }
 
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("FishContainer") && !other.gameObject.CompareTag("WaterSurface") && !other.gameObject.CompareTag("Fish"))
+        // if(!other.gameObject.CompareTag("Shoreline") && !other.gameObject.CompareTag("Underwater") && !other.gameObject.CompareTag("FishContainer") && !other.gameObject.CompareTag("WaterSurface") && !other.gameObject.CompareTag("Fish"))
+        // {
+        //     ResetCast();
+        // }
+
+        if(other.gameObject.CompareTag("Ground"))
         {
             ResetCast();
         }
@@ -39,11 +53,11 @@ public class Casting : MonoBehaviour
 
 
     public void ThrowLine()
-    {
+    {Debug.Log("Gravity: " + rb.useGravity);
         rb.useGravity = true;
         lineRenderer.enabled = true;
-        bait.gameObject.SetActive(true);
-        bobber.gameObject.SetActive(true);
+        bait_GO.gameObject.SetActive(true);
+        bobber_GO.gameObject.SetActive(true);
 
         float throwX = transform.forward.x * horizontalCastStrength * 100;
         float throwY = verticalCastStrength * 100;
@@ -56,15 +70,29 @@ public class Casting : MonoBehaviour
 
     public void ResetCast()
     {
+        if(fishSchool.fishOn)
+        {
+            bait.ResetBait();
+            fishMovement.ResetFish();
+        }
+
+        playerFishing.StopFishing();
+        HandleReset();
+        reeling.ResetReeling();
+    }
+
+
+    void HandleReset()
+    {
         rb.useGravity = false;
         rb.velocity = Vector3.zero;
         lineRenderer.enabled = false;
         bobberFloat.isFloating = false;
-        transform.position = gear.transform.position;
+        transform.position = gear_GO.transform.position;
 
-        playerFishing.StopFishing();
-        bait.SetActive(false);
-        bobber.SetActive(false);
+        bait_GO.SetActive(false);
+        bobber_GO.SetActive(false);
         playerFishing.fishingRod.SetActive(false);
     }
+
 }
