@@ -15,6 +15,8 @@ TagManager:
   - Rig
   - FishContainer
   - Ground
+  - Walk Collider
+  - Reeling Collider
   layers:
   - Default
   - TransparentFX
