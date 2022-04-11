@@ -53,7 +53,7 @@ public class Casting : MonoBehaviour
 
 
     public void ThrowLine()
-    {Debug.Log("Gravity: " + rb.useGravity);
+    {
         rb.useGravity = true;
         lineRenderer.enabled = true;
         bait_GO.gameObject.SetActive(true);

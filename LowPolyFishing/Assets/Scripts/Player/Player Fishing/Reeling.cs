@@ -42,11 +42,11 @@ public class Reeling : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.CompareTag("Shoreline"))
-        {
-            ShoreLineCollision();
-        }        
-
+        // if(other.gameObject.CompareTag("Shoreline"))
+        // {
+        //     ShoreLineCollision();
+        // }        
+        Debug.Log(other.gameObject.name);
         if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
         {
             surfaceCheck = true;
@@ -55,15 +55,16 @@ public class Reeling : MonoBehaviour
 
 
     void OnTriggerEnter(Collider other) 
-    {
+    {Debug.Log("Before Shoreline");
+        Debug.Log(other.gameObject.name);
         if(other.gameObject.CompareTag("Shoreline"))
-        {
+        {Debug.Log("Shoreline");
             ShoreLineCollision();
         }   
     }
 
 
-   void ShoreLineCollision()
+    public void ShoreLineCollision()
     {
         shorelineCheck = true;
         surfaceCheck = false;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bait : MonoBehaviour
 {
+    Reeling reeling;
     FishSchool fishSchool;
 
     bool hasHingeJoint;
@@ -11,6 +12,7 @@ public class Bait : MonoBehaviour
 
     void Start()
     {
+        reeling = GetComponentInParent<Reeling>();
         fishSchool = FindObjectOfType<FishSchool>();
     }
 
@@ -35,6 +37,11 @@ public class Bait : MonoBehaviour
         if(other.gameObject.CompareTag("FishSchool"))
         {
             fishSchool.EnteredFishSchool();
+        }
+
+        if(other.gameObject.CompareTag("Shoreline"))
+        {
+            reeling.ShoreLineCollision();
         }
     }
 
