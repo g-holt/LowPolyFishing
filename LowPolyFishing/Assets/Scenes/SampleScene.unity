@@ -7291,6 +7291,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1195680743}
     m_Modifications:
+    - target: {fileID: 2404794862082579224, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 7766715514182495625, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
       propertyPath: m_Name
       value: Fish Container

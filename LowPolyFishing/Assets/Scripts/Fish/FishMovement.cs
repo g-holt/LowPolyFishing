@@ -38,6 +38,7 @@ public class FishMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Bait"))
         {
             stopMovement = true;
+            //GetComponent<Rigidbody>().useGravity = true;
         }    
     }
 
