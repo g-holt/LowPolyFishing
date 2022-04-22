@@ -8045,7 +8045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5367055899900641845, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_TagString
-      value: Shoreline
+      value: FishCaught
       objectReference: {fileID: 0}
     - target: {fileID: 7216905626375107252, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_RootOrder
@@ -8057,7 +8057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7216905626375107252, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.03
+      value: -27.35
       objectReference: {fileID: 0}
     - target: {fileID: 7216905626375107252, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalPosition.y

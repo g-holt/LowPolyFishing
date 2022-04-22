@@ -41,12 +41,7 @@ public class Reeling : MonoBehaviour
 
 
     private void OnCollisionEnter(Collision other) 
-    {
-        // if(other.gameObject.CompareTag("Shoreline"))
-        // {
-        //     ShoreLineCollision();
-        // }        
-        Debug.Log(other.gameObject.name);
+    {    
         if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
         {
             surfaceCheck = true;
@@ -54,21 +49,22 @@ public class Reeling : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other) 
-    {Debug.Log("Before Shoreline");
-        Debug.Log(other.gameObject.name);
-        if(other.gameObject.CompareTag("Shoreline"))
-        {Debug.Log("Shoreline");
-            ShoreLineCollision();
-        }   
-    }
+    // void OnTriggerEnter(Collider other) 
+    // {
+    //     if(other.gameObject.CompareTag("FishCaught"))
+    //     {Debug.Log("FishCaught");
+    //         casting.ResetCast();
+    //         //FishCaught();
+    //     }   
+    // }
 
 
-    public void ShoreLineCollision()
+    public void FishCaught()
     {
-        shorelineCheck = true;
-        surfaceCheck = false;
-        rb.useGravity = false;
+        casting.ResetCast();
+        // shorelineCheck = true;
+        // surfaceCheck = false;
+        // rb.useGravity = false;
     }
 
 
@@ -85,11 +81,11 @@ public class Reeling : MonoBehaviour
 
     void ReelingChecks()
     {
-        if(GearToContainerDist() <= .5)
-        {
-            casting.ResetCast();
-        }
-        else if(surfaceCheck)
+        // if(GearToContainerDist() <= .5)
+        // {
+        //     casting.ResetCast();
+        // }
+        if(surfaceCheck)
         {
             reelTowards.y = gearContainer.position.y - 2.5f;
         }

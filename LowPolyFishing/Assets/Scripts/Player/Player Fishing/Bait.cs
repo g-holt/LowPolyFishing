@@ -39,9 +39,9 @@ public class Bait : MonoBehaviour
             fishSchool.EnteredFishSchool();
         }
 
-        if(other.gameObject.CompareTag("Shoreline"))
+        if(other.gameObject.CompareTag("FishCaught"))   //Was "Shoreline"
         {
-            reeling.ShoreLineCollision();
+            reeling.FishCaught();   //Was ShorelineCollision()
         }
     }
 
