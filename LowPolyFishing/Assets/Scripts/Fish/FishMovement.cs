@@ -27,7 +27,7 @@ public class FishMovement : MonoBehaviour
     }
 
 
-    void Update() 
+    void FixedUpdate() 
     {
         FollowBait();    
     }

@@ -25,8 +25,11 @@ public class Bait : MonoBehaviour
 
             HingeJoint hingeJoint = gameObject.AddComponent<HingeJoint>() as HingeJoint;
 
-            GetComponent<HingeJoint>().connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
-            GetComponent<HingeJoint>().enableCollision = true;
+            hingeJoint.connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
+            hingeJoint.enableCollision = true;
+            hingeJoint.axis = new Vector3(0f, 1f, 0f);
+            hingeJoint.anchor = new Vector3(0f, 0f, 0f);
+
             hasHingeJoint = true;
         }
     }

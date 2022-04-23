@@ -79,7 +79,7 @@ public class FishSchool : MonoBehaviour
         Debug.Log(timeBeforBite);
         if(timerToBite >= timeBeforBite)
         {
-            Debug.Log("Set The Hook");
+            //Debug.Log("Set The Hook");
             biteIndicator.SetActive(true);
 
             isFishing = false;
@@ -97,7 +97,7 @@ public class FishSchool : MonoBehaviour
         if(Mouse.current.rightButton.isPressed)
         {
             biteIndicator.SetActive(false);
-            
+
             canSetHook = false;
             timerToHookset = 0f;
             CatchFish();
@@ -106,10 +106,7 @@ public class FishSchool : MonoBehaviour
         if(timerToHookset >= timeToSetHook)
         {
             Debug.Log("Missed Hookset - Fish Escaped");
-            biteIndicator.SetActive(false);
-
-            canSetHook = false;
-            timerToHookset = 0f;
+            ResetFishingTimer();
         }
 
         timerToHookset += Time.deltaTime;
@@ -121,5 +118,19 @@ public class FishSchool : MonoBehaviour
         fishOn = true;
         fish.SetActive(true);
         fish.GetComponent<FishMovement>().onHook = true;
+    }
+
+
+    void ResetFishingTimer()
+    {
+        Debug.Log("ResetFishingTimer()");
+        biteIndicator.SetActive(false);
+
+        isFishing = true;
+        canSetHook = false;
+        timerToHookset = 0f;
+
+        StopCoroutine("FishingTimer");
+        StartCoroutine("FishingTimer");
     }
 }
