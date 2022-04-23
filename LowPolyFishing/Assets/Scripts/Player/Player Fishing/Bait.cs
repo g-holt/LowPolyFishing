@@ -51,7 +51,7 @@ public class Bait : MonoBehaviour
 
     private void OnTriggerExit(Collider other) 
     {
-        if(other.gameObject.CompareTag("FishSchool"))
+        if(other.gameObject.CompareTag("FishSchool"))   
         {
             fishSchool.ExitedFishSchool();
         }    

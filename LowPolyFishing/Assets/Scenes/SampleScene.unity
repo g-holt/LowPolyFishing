@@ -7770,6 +7770,22 @@ PrefabInstance:
       propertyPath: biteIndicator
       value: 
       objectReference: {fileID: 763193704}
+    - target: {fileID: 2476193919965077398, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476193919965077398, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476193919965077398, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476193919965077398, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
 --- !u!1001 &295612727980445457
