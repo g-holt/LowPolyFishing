@@ -8,6 +8,7 @@ public class FishSchool : MonoBehaviour
     [SerializeField] float timerMin = 25f;
     [SerializeField] float timerMax = 60f;
     [SerializeField] float timeToSetHook = 5f;
+    [SerializeField] GameObject biteIndicator;
     [SerializeField] GameObject fish;
 
     GameObject rig;
@@ -27,6 +28,7 @@ public class FishSchool : MonoBehaviour
         isFishing = false;
         canSetHook = false;
         fish.SetActive(false);
+        biteIndicator.SetActive(false);
 
         rig = GameObject.FindGameObjectWithTag("Rig");
         fishMovement = GameObject.FindObjectOfType<FishMovement>();
@@ -78,6 +80,8 @@ public class FishSchool : MonoBehaviour
         if(timerToBite >= timeBeforBite)
         {
             Debug.Log("Set The Hook");
+            biteIndicator.SetActive(true);
+
             isFishing = false;
             canSetHook = true;
             timerToBite = 0f;
@@ -92,6 +96,8 @@ public class FishSchool : MonoBehaviour
 
         if(Mouse.current.rightButton.isPressed)
         {
+            biteIndicator.SetActive(false);
+            
             canSetHook = false;
             timerToHookset = 0f;
             CatchFish();
@@ -100,6 +106,8 @@ public class FishSchool : MonoBehaviour
         if(timerToHookset >= timeToSetHook)
         {
             Debug.Log("Missed Hookset - Fish Escaped");
+            biteIndicator.SetActive(false);
+
             canSetHook = false;
             timerToHookset = 0f;
         }
