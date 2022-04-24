@@ -5846,6 +5846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Angler
       objectReference: {fileID: 0}
+    - target: {fileID: 2807496283445357649, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: fishCaughtCanvas
+      value: 
+      objectReference: {fileID: 2138318927}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
 --- !u!4 &1429130357 stripped
@@ -8787,21 +8791,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reeling Collider
       objectReference: {fileID: 0}
-    - target: {fileID: 5367055899900641845, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5367055899900641845, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
-      propertyPath: m_TagString
-      value: FishCaught
-      objectReference: {fileID: 0}
     - target: {fileID: 7216905626375107252, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7216905626375107252, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 18.430231
       objectReference: {fileID: 0}
     - target: {fileID: 7216905626375107252, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8843,19 +8835,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7452122453573044466, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
-      propertyPath: m_Size.x
-      value: 6.9533386
-      objectReference: {fileID: 0}
-    - target: {fileID: 7452122453573044466, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
-      propertyPath: m_Center.x
-      value: -2.9766693
-      objectReference: {fileID: 0}
-    - target: {fileID: 7452122453573044466, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2326539328457740062, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
-    - {fileID: 4256199909595516345, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}

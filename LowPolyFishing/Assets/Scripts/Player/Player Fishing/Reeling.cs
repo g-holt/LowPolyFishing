@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Reeling : MonoBehaviour
 {
     [SerializeField] float reelSpeed = 2f;
     [SerializeField] Transform gearContainer;
+    [SerializeField] GameObject fishCaughtCanvas;
 
     Rigidbody rb;
     Casting casting;
@@ -13,13 +15,15 @@ public class Reeling : MonoBehaviour
 
     public bool reelIn;
     public bool surfaceCheck;
-    public bool shorelineCheck;
+    //public bool shorelineCheck;
+    float gearContainerToWaterSurface = 2.5f;
 
 
     void OnEnable()
     {
         rb = GetComponent<Rigidbody>();
         casting = GetComponent<Casting>();
+        fishCaughtCanvas.SetActive(false);
     }
 
 
@@ -28,7 +32,7 @@ public class Reeling : MonoBehaviour
         reelIn = false;
         surfaceCheck = false;
         rb.useGravity = false; 
-        shorelineCheck = false;
+        //shorelineCheck = false;
         rb.velocity = Vector3.zero;
         transform.position = gearContainer.position;
     }
@@ -42,29 +46,16 @@ public class Reeling : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {    
-        if(!shorelineCheck && other.gameObject.CompareTag("WaterSurface"))
+        if(/*!shorelineCheck &&*/ other.gameObject.CompareTag("WaterSurface"))
         {
             surfaceCheck = true;
         }   
     }
 
 
-    // void OnTriggerEnter(Collider other) 
-    // {
-    //     if(other.gameObject.CompareTag("FishCaught"))
-    //     {Debug.Log("FishCaught");
-    //         casting.ResetCast();
-    //         //FishCaught();
-    //     }   
-    // }
-
-
     public void FishCaught()
     {
-        casting.ResetCast();
-        // shorelineCheck = true;
-        // surfaceCheck = false;
-        // rb.useGravity = false;
+        fishCaughtCanvas.SetActive(true);       
     }
 
 
@@ -81,13 +72,9 @@ public class Reeling : MonoBehaviour
 
     void ReelingChecks()
     {
-        // if(GearToContainerDist() <= .5)
-        // {
-        //     casting.ResetCast();
-        // }
         if(surfaceCheck)
         {
-            reelTowards.y = gearContainer.position.y - 2.5f;
+            reelTowards.y = gearContainer.position.y - gearContainerToWaterSurface;
         }
     }
 
@@ -101,12 +88,19 @@ public class Reeling : MonoBehaviour
     public void ResetReeling()
     {
         surfaceCheck = false;
-        shorelineCheck = false;
+        //shorelineCheck = false;
     }
 
 
     public void SetGravity(bool state)
     {
         rb.useGravity = state;
+    }
+
+
+    void OnExitFishCatchUI()
+    {
+        fishCaughtCanvas.SetActive(false);
+        casting.ResetCast();
     }
 }

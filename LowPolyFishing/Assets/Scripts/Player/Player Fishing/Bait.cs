@@ -5,14 +5,17 @@ using UnityEngine;
 public class Bait : MonoBehaviour
 {
     Reeling reeling;
+    Casting casting;
     FishSchool fishSchool;
 
+    bool fishOn;
     bool hasHingeJoint;
 
 
     void Start()
     {
         reeling = GetComponentInParent<Reeling>();
+        casting = GetComponentInParent<Casting>();
         fishSchool = FindObjectOfType<FishSchool>();
     }
 
@@ -30,6 +33,7 @@ public class Bait : MonoBehaviour
             hingeJoint.axis = new Vector3(0f, 1f, 0f);
             hingeJoint.anchor = new Vector3(0f, 0f, 0f);
 
+            fishOn = true;
             hasHingeJoint = true;
         }
     }
@@ -42,9 +46,18 @@ public class Bait : MonoBehaviour
             fishSchool.EnteredFishSchool();
         }
 
-        if(other.gameObject.CompareTag("FishCaught"))   //Was "Shoreline"
+        if(other.gameObject.CompareTag("ReelingCollider"))   //Was "Shoreline"
         {
-            reeling.FishCaught();   //Was ShorelineCollision()
+            if(fishOn)
+            {
+                reeling.FishCaught();   //Was ShorelineCollision()
+            }
+            else
+            {
+                casting.ResetCast();
+            }
+
+            fishOn = false;
         }
     }
 
