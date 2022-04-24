@@ -55,7 +55,7 @@ public class Reeling : MonoBehaviour
 
     public void FishCaught()
     {
-        fishCaughtCanvas.SetActive(true);       
+        fishCaughtCanvas.SetActive(true);   
     }
 
 

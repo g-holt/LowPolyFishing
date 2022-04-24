@@ -52,6 +52,7 @@ public class FishSchool : MonoBehaviour
         timerToBite = 0f;
         timerToHookset = 0f;
 
+        biteIndicator.SetActive(false);
         StopCoroutine("FishingTimer");
     }
 

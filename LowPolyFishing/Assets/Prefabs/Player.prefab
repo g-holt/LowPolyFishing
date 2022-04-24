@@ -854,6 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishingRod: {fileID: 2048465575512798047}
+  canFish: 0
 --- !u!54 &1443075386
 Rigidbody:
   m_ObjectHideFlags: 0
