@@ -18,6 +18,7 @@ TagManager:
   - Walk Collider
   - FishCaught
   - ReelingCollider
+  - FishingPole
   layers:
   - Default
   - TransparentFX
@@ -34,8 +35,8 @@ TagManager:
   - Dock
   - Shoreline
   - FishCaught
-  - 
-  - 
+  - FishingPole
+  - WalkCollider
   - 
   - 
   - 
