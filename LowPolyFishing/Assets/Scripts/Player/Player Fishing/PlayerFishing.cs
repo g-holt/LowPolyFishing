@@ -5,15 +5,19 @@ using UnityEngine.InputSystem;
 
 public class PlayerFishing : MonoBehaviour
 {
+    [SerializeField] float castStrength = .1f;
+
     Casting casting;
     Reeling reeling;
     Animator animator;
     PlayerInput playerInput;
     PlayerMovement playerMovement;
 
+    bool isCasting;
     string reelAnim;
     string isFishingAnim;
     string isWalkingAnim;
+    float initCastStrength;
 
     public GameObject fishingRod;
     public bool canFish;
@@ -24,6 +28,7 @@ public class PlayerFishing : MonoBehaviour
         reelAnim = "Reel";
         isFishingAnim = "IsFishing";
         isWalkingAnim = "IsWalking";
+        initCastStrength = castStrength;
 
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
@@ -35,7 +40,14 @@ public class PlayerFishing : MonoBehaviour
     }
 
 
-    void OnCast()
+    void Update() 
+    {
+        if(!isCasting) { return; }
+        CastDistance();    
+    }
+
+
+    void OnCast(InputValue value)
     {
         if(!canFish)
         {
@@ -43,6 +55,33 @@ public class PlayerFishing : MonoBehaviour
             return;
         }
 
+        if(value.isPressed)
+        {
+            isCasting = true;
+        }
+        else if(!value.isPressed)
+        {
+            Debug.Log("Value Up");
+            isCasting = false;
+            CastLine();
+        }
+    }
+
+
+    void CastDistance()
+    {
+        castStrength += castStrength * Time.deltaTime;
+        if(castStrength >= 5)
+        {
+            castStrength = 5f;
+        }
+        Debug.Log(castStrength);
+    }
+
+
+    void CastLine()
+    {
+        casting.horizontalCastStrength = castStrength;
         playerMovement.isFishing = true;
 
         fishingRod.SetActive(true);
@@ -51,6 +90,7 @@ public class PlayerFishing : MonoBehaviour
         animator.SetBool(isFishingAnim, true);
 
         playerInput.SwitchCurrentActionMap("Fishing");
+        castStrength = initCastStrength;
     }
 
 

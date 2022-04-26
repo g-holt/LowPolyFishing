@@ -25,12 +25,12 @@
                 },
                 {
                     "name": "Cast",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "d4ff689e-c458-490a-a0a2-35cc192f7a9b",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "MousePosition",

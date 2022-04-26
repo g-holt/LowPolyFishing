@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Casting : MonoBehaviour
 {
     [SerializeField] float verticalCastStrength = 5f;
-    [SerializeField] float horizontalCastStrength = 10f;
+    [SerializeField] public float horizontalCastStrength = 10f;
     [SerializeField] GameObject gear_GO;
     [SerializeField] GameObject bobber_GO;
     [SerializeField] GameObject bait_GO;
@@ -35,6 +36,15 @@ public class Casting : MonoBehaviour
         bobber_GO.gameObject.SetActive(false);
         bait_GO.gameObject.SetActive(false);
         lineRenderer.enabled = false;
+    }
+
+
+    void Update()
+    {
+        if(Keyboard.current.rKey.isPressed)
+        {
+            ResetCast();
+        }
     }
 
 
