@@ -8,8 +8,7 @@ public class Casting : MonoBehaviour
 {
     [Header("Cast Strength")]
     [SerializeField] float verticalCastStrength = 5f;
-    //[SerializeField] public float horizontalCastStrength = 10f;
-    [SerializeField] float castStrength = .1f;
+    [SerializeField] float castStrength = .5f;
     [SerializeField] Canvas castStrengthCanvas;
     [Header("Gear")]
     [SerializeField] GameObject gear_GO;
@@ -35,6 +34,7 @@ public class Casting : MonoBehaviour
     string isFishingAnim;
     string isWalkingAnim;
     float initCastStrength;
+    float horizontalCastStrength;
     
     public bool canFish;
 
@@ -47,6 +47,7 @@ public class Casting : MonoBehaviour
         bobberFloat = GetComponent<BobberFloat>();
         animator = GetComponentInParent<Animator>();
         lineRenderer = GetComponent<LineRenderer>();
+        playerInput = GetComponentInParent<PlayerInput>();
         playerMovement = GetComponentInParent<PlayerMovement>();
         slider = castStrengthCanvas.GetComponentInChildren<Slider>();
 
@@ -62,6 +63,8 @@ public class Casting : MonoBehaviour
         isFishingAnim = "IsFishing";
         isWalkingAnim = "IsWalking";
         initCastStrength = castStrength;
+        fishingRod.SetActive(false);
+        castStrengthCanvas.enabled = false;
     }
 
 
@@ -101,10 +104,10 @@ public class Casting : MonoBehaviour
         }
         else if(!value.isPressed)
         {
+            CastLine();
             slider.value = 0f;
             isCasting = false;
             castStrengthCanvas.enabled = false;
-            CastLine();
         }
     }
 
@@ -124,7 +127,7 @@ public class Casting : MonoBehaviour
 
     void CastLine()
     {
-        //casting.horizontalCastStrength = castStrength;
+        horizontalCastStrength = castStrength;
         playerMovement.isFishing = true;
 
         fishingRod.SetActive(true);
@@ -144,19 +147,12 @@ public class Casting : MonoBehaviour
         bait_GO.gameObject.SetActive(true);
         bobber_GO.gameObject.SetActive(true);
 
-        float throwX = transform.forward.x * castStrength * 100;  //float throwX = transform.forward.x * horizontalCastStrength * 100;
+        float throwX = transform.forward.x * horizontalCastStrength * 100;
         float throwY = verticalCastStrength * 100;
-        float throwZ = transform.forward.z * castStrength * 100;  //float throwZ = transform.forward.z * horizontalCastStrength * 100;
+        float throwZ = transform.forward.z * horizontalCastStrength * 100;
 
         Vector3 castForce = new Vector3(throwX, throwY, throwZ);
         rb.AddForce(castForce);
-    }
-
-
-    //Casting Animation Event
-    public void HandleBobber()
-    {
-        ThrowLine();
     }
 
 

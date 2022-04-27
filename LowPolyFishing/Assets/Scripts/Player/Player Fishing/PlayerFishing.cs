@@ -10,7 +10,7 @@ public class PlayerFishing : MonoBehaviour
     // [SerializeField] Canvas castStrengthCanvas;
 
     //Slider slider;
-    //Casting casting;
+    Casting casting;
     //Reeling reeling;
     Animator animator;
     PlayerInput playerInput;
@@ -37,7 +37,7 @@ public class PlayerFishing : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         //playerMovement = GetComponent<PlayerMovement>();
         //reeling = GetComponentInChildren<Reeling>();
-        //casting = GetComponentInChildren<Casting>();
+        casting = GetComponentInChildren<Casting>();
         //slider = castStrengthCanvas.GetComponentInChildren<Slider>();
 
         //fishingRod.SetActive(false);
@@ -104,11 +104,11 @@ public class PlayerFishing : MonoBehaviour
     // }
 
 
-    // //Casting Animation Event
-    // void HandleBobber()
-    // {
-    //     casting.ThrowLine();
-    // }
+    //Casting Animation Event
+    void HandleBobber()
+    {
+        casting.ThrowLine();
+    }
 
 
     // void OnReelIn(InputValue value)

@@ -6279,6 +6279,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1366924322}
     - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: castStrength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: castStrengthCanvas
       value: 
       objectReference: {fileID: 2066780763}
