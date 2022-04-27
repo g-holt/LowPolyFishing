@@ -63,6 +63,8 @@ public class Reeling : MonoBehaviour
 
     void OnReelIn(InputValue value)
     {   
+        if(!surfaceCheck) { return; }
+
         if(value.isPressed)
         {
             reelIn = true;

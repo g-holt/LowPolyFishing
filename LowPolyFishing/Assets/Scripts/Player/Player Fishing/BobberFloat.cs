@@ -31,7 +31,7 @@ public class BobberFloat : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(/*!reeling.shorelineCheck &&*/ other.gameObject.CompareTag("WaterSurface"))
+        if(other.gameObject.CompareTag("WaterSurface"))
         {
             FloatBobberOnSurface();
         } 
