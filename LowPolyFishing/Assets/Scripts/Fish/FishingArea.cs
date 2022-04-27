@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class FishingArea : MonoBehaviour
 {
-    PlayerFishing playerFishing;
+    Casting casting;
 
     void Start()
     {
-        playerFishing = FindObjectOfType<PlayerFishing>();
+        casting = FindObjectOfType<Casting>();
     }
 
 
@@ -16,7 +16,7 @@ public class FishingArea : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            playerFishing.canFish = true;
+            casting.canFish = true;
         }    
     }
 
@@ -25,7 +25,7 @@ public class FishingArea : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            playerFishing.canFish = false;
+            casting.canFish = false;
         }
     }
 

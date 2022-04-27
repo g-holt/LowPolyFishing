@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool(reelAnim, false);
 
             casting.ResetCast();
-            playerFishing.fishingRod.SetActive(false);
+            casting.fishingRod.SetActive(false);
         }
     }
 

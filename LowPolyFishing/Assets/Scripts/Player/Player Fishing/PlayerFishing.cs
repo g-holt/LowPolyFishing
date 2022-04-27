@@ -6,126 +6,126 @@ using UnityEngine.UI;
 
 public class PlayerFishing : MonoBehaviour
 {
-    [SerializeField] float castStrength = .1f;
-    [SerializeField] Canvas castStrengthCanvas;
+    // [SerializeField] float castStrength = .1f;
+    // [SerializeField] Canvas castStrengthCanvas;
 
-    Slider slider;
-    Casting casting;
-    Reeling reeling;
+    //Slider slider;
+    //Casting casting;
+    //Reeling reeling;
     Animator animator;
     PlayerInput playerInput;
-    PlayerMovement playerMovement;
+    //PlayerMovement playerMovement;
 
-    bool isCasting;
+    //bool isCasting;
     string reelAnim;
     string isFishingAnim;
-    string isWalkingAnim;
-    float initCastStrength;
+    //string isWalkingAnim;
+    //float initCastStrength;
 
-    public GameObject fishingRod;
-    public bool canFish;
+    //public GameObject fishingRod;
+    //public bool canFish;
 
 
     void Start()
     {
         reelAnim = "Reel";
         isFishingAnim = "IsFishing";
-        isWalkingAnim = "IsWalking";
-        initCastStrength = castStrength;
+        //isWalkingAnim = "IsWalking";
+        //initCastStrength = castStrength;
 
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
-        playerMovement = GetComponent<PlayerMovement>();
-        reeling = GetComponentInChildren<Reeling>();
-        casting = GetComponentInChildren<Casting>();
-        slider = castStrengthCanvas.GetComponentInChildren<Slider>();
+        //playerMovement = GetComponent<PlayerMovement>();
+        //reeling = GetComponentInChildren<Reeling>();
+        //casting = GetComponentInChildren<Casting>();
+        //slider = castStrengthCanvas.GetComponentInChildren<Slider>();
 
-        fishingRod.SetActive(false);
-        castStrengthCanvas.enabled = false;
-        slider.value = 0f;
+        //fishingRod.SetActive(false);
+        //castStrengthCanvas.enabled = false;
+        //slider.value = 0f;
     }
 
 
-    void Update() 
-    {
-        if(!isCasting) { return; }
-        CastDistance();    
-    }
+    // void Update() 
+    // {
+    //     if(!isCasting) { return; }
+    //     CastDistance();    
+    // }
 
 
-    void OnCast(InputValue value)
-    {
-        if(!canFish)
-        {
-            Debug.Log("You are not in a fish Zone");
-            return;
-        }
+    // void OnCast(InputValue value)
+    // {
+    //     if(!canFish)
+    //     {
+    //         Debug.Log("You are not in a fish Zone");
+    //         return;
+    //     }
 
-        if(value.isPressed)
-        {
-            castStrengthCanvas.enabled = true;
-            isCasting = true;
-        }
-        else if(!value.isPressed)
-        {
-            castStrengthCanvas.enabled = false;
-            slider.value = 0f;
-            Debug.Log("Value Up");
-            isCasting = false;
-            CastLine();
-        }
-    }
-
-
-    void CastDistance()
-    {
-        castStrength += castStrength * Time.deltaTime;
-        if(castStrength >= 5)
-        {
-            castStrength = 5f;
-        }
-        slider.value = castStrength;
-        Debug.Log(castStrength);
-    }
+    //     if(value.isPressed)
+    //     {
+    //         castStrengthCanvas.enabled = true;
+    //         isCasting = true;
+    //     }
+    //     else if(!value.isPressed)
+    //     {
+    //         slider.value = 0f;
+    //         isCasting = false;
+    //         castStrengthCanvas.enabled = false;
+    //         CastLine();
+    //     }
+    // }
 
 
-    void CastLine()
-    {
-        casting.horizontalCastStrength = castStrength;
-        playerMovement.isFishing = true;
+    // void CastDistance()
+    // {
+    //     castStrength += castStrength * Time.deltaTime;
+        
+    //     if(castStrength >= 5)
+    //     {
+    //         castStrength = 5f;
+    //     }
 
-        fishingRod.SetActive(true);
-
-        animator.SetBool(isWalkingAnim, false);
-        animator.SetBool(isFishingAnim, true);
-
-        playerInput.SwitchCurrentActionMap("Fishing");
-        castStrength = initCastStrength;
-    }
+    //     slider.value = castStrength;
+    // }
 
 
-    //Casting Animation Event
-    void HandleBobber()
-    {
-        casting.ThrowLine();
-    }
+    // void CastLine()
+    // {
+    //     casting.horizontalCastStrength = castStrength;
+    //     playerMovement.isFishing = true;
+
+    //     fishingRod.SetActive(true);
+
+    //     animator.SetBool(isWalkingAnim, false);
+    //     animator.SetBool(isFishingAnim, true);
+
+    //     playerInput.SwitchCurrentActionMap("Fishing");
+    //     castStrength = initCastStrength;
+    // }
 
 
-    void OnReelIn(InputValue value)
-    {   
-        if(value.isPressed)
-        {
-            reeling.reelIn = true;
-            reeling.SetGravity(false);
-            animator.SetBool(reelAnim, true);    
-        }
-        else if(!value.isPressed)
-        {
-            reeling.reelIn = false;
-            reeling.SetGravity(true);
-            animator.SetBool(reelAnim, false);    
-        }
-    }
+    // //Casting Animation Event
+    // void HandleBobber()
+    // {
+    //     casting.ThrowLine();
+    // }
+
+
+    // void OnReelIn(InputValue value)
+    // {   
+    //     if(value.isPressed)
+    //     {
+    //         reeling.reelIn = true;
+    //         reeling.SetGravity(false);
+    //         animator.SetBool(reelAnim, true);    
+    //     }
+    //     else if(!value.isPressed)
+    //     {
+    //         reeling.reelIn = false;
+    //         reeling.SetGravity(true);
+    //         animator.SetBool(reelAnim, false);    
+    //     }
+    // }
 
 
     public void StopFishing()

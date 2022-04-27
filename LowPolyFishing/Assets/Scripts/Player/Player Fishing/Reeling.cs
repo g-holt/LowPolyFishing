@@ -11,18 +11,27 @@ public class Reeling : MonoBehaviour
 
     Rigidbody rb;
     Casting casting;
+    Animator animator;
     Vector3 reelTowards;
+
+    string reelAnim;
+    string isFishingAnim;
+    string isWalkingAnim;
+    float gearContainerToWaterSurface = 2.5f;
 
     public bool reelIn;
     public bool surfaceCheck;
-    //public bool shorelineCheck;
-    float gearContainerToWaterSurface = 2.5f;
 
 
     void OnEnable()
     {
+        reelAnim = "Reel";
+        isFishingAnim = "IsFishing";
+        isWalkingAnim = "IsWalking";
+
         rb = GetComponent<Rigidbody>();
         casting = GetComponent<Casting>();
+        animator = GetComponentInParent<Animator>();
         fishCaughtCanvas.SetActive(false);
     }
 
@@ -32,7 +41,6 @@ public class Reeling : MonoBehaviour
         reelIn = false;
         surfaceCheck = false;
         rb.useGravity = false; 
-        //shorelineCheck = false;
         rb.velocity = Vector3.zero;
         transform.position = gearContainer.position;
     }
@@ -46,10 +54,27 @@ public class Reeling : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {    
-        if(/*!shorelineCheck &&*/ other.gameObject.CompareTag("WaterSurface"))
+        if(other.gameObject.CompareTag("WaterSurface"))
         {
             surfaceCheck = true;
         }   
+    }
+
+
+    void OnReelIn(InputValue value)
+    {   
+        if(value.isPressed)
+        {
+            reelIn = true;
+            SetGravity(false);
+            animator.SetBool(reelAnim, true);    
+        }
+        else if(!value.isPressed)
+        {
+            reelIn = false;
+            SetGravity(true);
+            animator.SetBool(reelAnim, false);    
+        }
     }
 
 
@@ -61,7 +86,6 @@ public class Reeling : MonoBehaviour
 
     void ReelInGear()
     {
-        //Set In PlayerFishing.cs
         if(!reelIn) { return; }
 
         reelTowards = gearContainer.position;
@@ -88,7 +112,6 @@ public class Reeling : MonoBehaviour
     public void ResetReeling()
     {
         surfaceCheck = false;
-        //shorelineCheck = false;
     }
 
 
