@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerFishing : MonoBehaviour
 {
     [SerializeField] float castStrength = .1f;
+    [SerializeField] Canvas castStrengthCanvas;
 
+    Slider slider;
     Casting casting;
     Reeling reeling;
     Animator animator;
@@ -35,8 +38,11 @@ public class PlayerFishing : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         reeling = GetComponentInChildren<Reeling>();
         casting = GetComponentInChildren<Casting>();
+        slider = castStrengthCanvas.GetComponentInChildren<Slider>();
 
         fishingRod.SetActive(false);
+        castStrengthCanvas.enabled = false;
+        slider.value = 0f;
     }
 
 
@@ -57,10 +63,13 @@ public class PlayerFishing : MonoBehaviour
 
         if(value.isPressed)
         {
+            castStrengthCanvas.enabled = true;
             isCasting = true;
         }
         else if(!value.isPressed)
         {
+            castStrengthCanvas.enabled = false;
+            slider.value = 0f;
             Debug.Log("Value Up");
             isCasting = false;
             CastLine();
@@ -75,6 +84,7 @@ public class PlayerFishing : MonoBehaviour
         {
             castStrength = 5f;
         }
+        slider.value = castStrength;
         Debug.Log(castStrength);
     }
 
