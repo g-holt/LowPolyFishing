@@ -5438,6 +5438,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 47480554090092703, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
   m_PrefabInstance: {fileID: 216939622003569132}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1218423870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1799149137510297956, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+  m_PrefabInstance: {fileID: 216939622003569132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1218423871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218423870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae30c1dd83d3c64eb0fff4932a0034e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishSchool: []
 --- !u!1001 &1221630569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5920,6 +5938,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1317979489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7550940030877903111, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+  m_PrefabInstance: {fileID: 216939622003569132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1335513891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9485,7 +9508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 47480554090092703, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.56
+      value: -33.8
       objectReference: {fileID: 0}
     - target: {fileID: 47480554090092703, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9528,6 +9551,10 @@ PrefabInstance:
       value: Fish School
       objectReference: {fileID: 0}
     - target: {fileID: 2444446424649053946, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: fish
+      value: 
+      objectReference: {fileID: 1317979489}
+    - target: {fileID: 2444446424649053946, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: biteIndicator
       value: 
       objectReference: {fileID: 763193704}
@@ -9545,6 +9572,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476193919965077398, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550940030877903111, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202631795405076626, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

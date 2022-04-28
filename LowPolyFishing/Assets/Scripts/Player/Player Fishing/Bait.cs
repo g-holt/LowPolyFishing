@@ -7,7 +7,6 @@ public class Bait : MonoBehaviour
     Reeling reeling;
     Casting casting;
     FishSchool fishSchool;
-    //FishSchool[] allSchools;
 
     bool fishOn;
     bool hasHingeJoint;
@@ -15,8 +14,6 @@ public class Bait : MonoBehaviour
 
     void Start()
     {
-        //allSchools = FindObjectsOfType<FishSchool>();
-
         reeling = GetComponentInParent<Reeling>();
         casting = GetComponentInParent<Casting>();
         fishSchool = FindObjectOfType<FishSchool>();
@@ -80,16 +77,4 @@ public class Bait : MonoBehaviour
         Destroy(GetComponent<HingeJoint>());
     }
 
-
-    // void SetSchool(FishSchool school)
-    // {
-    //     foreach(FishSchool thisSchool in allSchools)
-    //     {
-    //         if(thisSchool == school)
-    //         {
-    //             fishSchool.thisFish = true;
-    //             Debug.Log("School : " + school.name);
-    //         }
-    //     }
-    // }
 }
