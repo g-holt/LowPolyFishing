@@ -21,7 +21,7 @@ public class FishSchool : MonoBehaviour
     float timerToHookset;
 
     public bool fishOn;
-
+public bool thisFish;
 
     void Start()
     {
@@ -31,7 +31,7 @@ public class FishSchool : MonoBehaviour
         biteIndicator.SetActive(false);
 
         rig = GameObject.FindGameObjectWithTag("Rig");
-        fishMovement = GameObject.FindObjectOfType<FishMovement>();
+        //fishMovement = GameObject.FindObjectOfType<FishMovement>();
     }
 
 
@@ -116,6 +116,9 @@ public class FishSchool : MonoBehaviour
 
     void CatchFish()
     {
+        Debug.Log("thisFish: Before" + thisFish + name);
+        if(!thisFish) { return; }
+Debug.Log("thisFish: After");
         fishOn = true;
         fish.SetActive(true);
         fish.GetComponent<FishMovement>().onHook = true;
