@@ -55,7 +55,7 @@ public class FishMovement : MonoBehaviour
 
 
     public void ResetFish()
-    {
+    {Debug.Log("FishMovementResetFish()");
         onHook = false;
         stopMovement = false;
         transform.position = startPos;

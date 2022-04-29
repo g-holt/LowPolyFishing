@@ -15,8 +15,6 @@ public class Reeling : MonoBehaviour
     Vector3 reelTowards;
 
     string reelAnim;
-    //string isFishingAnim;
-    //string isWalkingAnim;
     float gearContainerToWaterSurface = 2.5f;
 
     public bool reelIn;
@@ -26,8 +24,6 @@ public class Reeling : MonoBehaviour
     void OnEnable()
     {
         reelAnim = "Reel";
-        //isFishingAnim = "IsFishing";
-        //isWalkingAnim = "IsWalking";
 
         rb = GetComponent<Rigidbody>();
         casting = GetComponent<Casting>();

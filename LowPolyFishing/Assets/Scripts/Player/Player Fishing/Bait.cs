@@ -7,6 +7,7 @@ public class Bait : MonoBehaviour
     Reeling reeling;
     Casting casting;
     FishSchool fishSchool;
+    FishSchoolHandler fishSchoolHandler;
 
     bool fishOn;
     bool hasHingeJoint;
@@ -16,6 +17,7 @@ public class Bait : MonoBehaviour
     {
         reeling = GetComponentInParent<Reeling>();
         casting = GetComponentInParent<Casting>();
+        fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
         //fishSchool = FindObjectOfType<FishSchool>();
     }
 
@@ -43,6 +45,8 @@ public class Bait : MonoBehaviour
     {  
         if(other.gameObject.CompareTag("FishSchool"))
         {
+            fishSchool = other.gameObject.GetComponent<FishSchool>();
+            fishSchoolHandler.SetSchool(other.gameObject.transform);
             fishSchool.EnteredFishSchool();
         }
 

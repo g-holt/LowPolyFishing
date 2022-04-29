@@ -368,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 47480554090092703, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.8
+      value: -39.12
       objectReference: {fileID: 0}
     - target: {fileID: 47480554090092703, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -376,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 47480554090092703, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.92
+      value: -13.07
       objectReference: {fileID: 0}
     - target: {fileID: 47480554090092703, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6835,6 +6835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1479166144}
+  - component: {fileID: 1479166145}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -6859,6 +6860,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1479166145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479166143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611bd5dc5a73981408b6dbf56bb33782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1494928873
 PrefabInstance:
   m_ObjectHideFlags: 0

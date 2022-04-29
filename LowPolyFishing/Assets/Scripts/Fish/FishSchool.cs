@@ -77,7 +77,7 @@ public bool thisFish;
 
     void BiteTimer()
     {
-        Debug.Log(timeBeforBite);
+        //Debug.Log(timeBeforBite);
         if(timerToBite >= timeBeforBite)
         {
             //Debug.Log("Set The Hook");
@@ -106,7 +106,7 @@ public bool thisFish;
 
         if(timerToHookset >= timeToSetHook)
         {
-            Debug.Log("Missed Hookset - Fish Escaped");
+            //Debug.Log("Missed Hookset - Fish Escaped");
             ResetFishingTimer();
         }
 
@@ -117,7 +117,7 @@ public bool thisFish;
     void CatchFish()
     {
         if(!thisFish) { return; }
-
+Debug.Log(gameObject.name);
         fishOn = true;
         fish.SetActive(true);
         fish.GetComponent<FishMovement>().onHook = true;
@@ -126,7 +126,7 @@ public bool thisFish;
 
     void ResetFishingTimer()
     {
-        Debug.Log("ResetFishingTimer()");
+        //Debug.Log("ResetFishingTimer()");
         biteIndicator.SetActive(false);
 
         isFishing = true;
