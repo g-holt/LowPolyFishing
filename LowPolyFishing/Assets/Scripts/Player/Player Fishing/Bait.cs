@@ -16,7 +16,7 @@ public class Bait : MonoBehaviour
     {
         reeling = GetComponentInParent<Reeling>();
         casting = GetComponentInParent<Casting>();
-        fishSchool = FindObjectOfType<FishSchool>();
+        //fishSchool = FindObjectOfType<FishSchool>();
     }
 
 

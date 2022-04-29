@@ -21,7 +21,7 @@ public class FishSchool : MonoBehaviour
     float timerToHookset;
 
     public bool fishOn;
-//public bool thisFish;
+public bool thisFish;
 
     void Start()
     {
@@ -116,7 +116,7 @@ public class FishSchool : MonoBehaviour
 
     void CatchFish()
     {
-        //if(!thisFish) { return; }
+        if(!thisFish) { return; }
 
         fishOn = true;
         fish.SetActive(true);

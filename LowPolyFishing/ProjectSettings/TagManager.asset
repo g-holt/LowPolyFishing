@@ -19,6 +19,7 @@ TagManager:
   - FishCaught
   - ReelingCollider
   - FishingPole
+  - FishSchoolContainer
   layers:
   - Default
   - TransparentFX
