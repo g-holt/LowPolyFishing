@@ -20,7 +20,7 @@ public class Casting : MonoBehaviour
     Bait bait;
     Rigidbody rb;
     Slider slider;
-    Transform fish;
+    //Transform fish;
     Reeling reeling;
     Animator animator;
     FishSchool fishSchool;
@@ -31,6 +31,7 @@ public class Casting : MonoBehaviour
     PlayerFishing playerFishing;
     PlayerMovement playerMovement;
     FishSchoolHandler fishSchoolHandler;
+    //GameObject fish;
 
     bool isCasting;
     string isFishingAnim;
@@ -161,9 +162,9 @@ public class Casting : MonoBehaviour
 
 
     public void ResetCast()
-    {Debug.Log("resetCast");
+    {Debug.Log(fishSchool.fishOn);
         // if(fishSchool.fishOn)
-        // {Debug.Log("FishOn");
+        // {
         //     bait.ResetBait();
         //     //fishMovement.ResetFish();
         //     fishSchoolHandler.ResetFish();

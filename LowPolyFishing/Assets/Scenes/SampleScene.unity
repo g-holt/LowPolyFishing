@@ -454,6 +454,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8395705335964366242, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: bait
+      value: 
+      objectReference: {fileID: 148058279}
     - target: {fileID: 8693837665350945274, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -844,6 +848,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135637779}
   m_CullTransparentMesh: 1
+--- !u!1 &148058279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4940233850546445584, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+  m_PrefabInstance: {fileID: 1423606768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &184811241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
@@ -9706,6 +9715,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8395705335964366242, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: bait
+      value: 
+      objectReference: {fileID: 148058279}
     - target: {fileID: 8693837665350945274, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

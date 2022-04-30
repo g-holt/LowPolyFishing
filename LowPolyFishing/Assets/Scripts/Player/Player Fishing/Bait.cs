@@ -44,7 +44,7 @@ public class Bait : MonoBehaviour
     private void OnTriggerEnter(Collider other) 
     {  
         if(other.gameObject.CompareTag("FishSchool"))
-        {
+        {Debug.Log(other.gameObject.name);
             fishSchool = other.gameObject.GetComponent<FishSchool>();
             fishSchoolHandler.SetSchool(other.gameObject.transform);
             fishSchool.EnteredFishSchool();

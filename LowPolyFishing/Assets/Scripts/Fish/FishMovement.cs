@@ -5,8 +5,9 @@ using UnityEngine;
 public class FishMovement : MonoBehaviour
 {
     [SerializeField] float fishSpeed = 5f;
+    [SerializeField] GameObject bait;
 
-    GameObject bait;
+    //GameObject bait;
     Vector3 fishDistance;
     FixedJoint fixedJoint;
     Vector3 startPos;
@@ -23,7 +24,7 @@ public class FishMovement : MonoBehaviour
         startPos = transform.position;
         startRot = transform.rotation;
 
-        bait = GameObject.FindGameObjectWithTag("Bait");
+        //bait = GameObject.FindGameObjectWithTag("Bait");
     }
 
 
@@ -46,7 +47,7 @@ public class FishMovement : MonoBehaviour
     public void FollowBait()
     {
         if(!onHook) { return; }
-
+        if(bait == null) { Debug.Log("Bait is null"); }
         transform.LookAt(bait.transform, transform.up);
         
         if(stopMovement) { return; }

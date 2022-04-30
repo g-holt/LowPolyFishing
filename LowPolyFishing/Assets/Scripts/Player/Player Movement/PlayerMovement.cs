@@ -100,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
 
             casting.ResetCast();
             casting.fishingRod.SetActive(false);
+            isFishing = false;
         }
     }
 

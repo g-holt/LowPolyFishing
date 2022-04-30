@@ -21,7 +21,7 @@ public class FishSchool : MonoBehaviour
     float timerToHookset;
 
     public bool fishOn;
-public bool thisFish;
+    public bool thisFish;
 
     void Start()
     {
@@ -31,7 +31,6 @@ public bool thisFish;
         biteIndicator.SetActive(false);
 
         rig = GameObject.FindGameObjectWithTag("Rig");
-        //fishMovement = GameObject.FindObjectOfType<FishMovement>();
     }
 
 
@@ -77,10 +76,8 @@ public bool thisFish;
 
     void BiteTimer()
     {
-        //Debug.Log(timeBeforBite);
         if(timerToBite >= timeBeforBite)
         {
-            //Debug.Log("Set The Hook");
             biteIndicator.SetActive(true);
 
             isFishing = false;
@@ -106,7 +103,6 @@ public bool thisFish;
 
         if(timerToHookset >= timeToSetHook)
         {
-            //Debug.Log("Missed Hookset - Fish Escaped");
             ResetFishingTimer();
         }
 
@@ -117,7 +113,7 @@ public bool thisFish;
     void CatchFish()
     {
         if(!thisFish) { return; }
-Debug.Log(gameObject.name);
+
         fishOn = true;
         fish.SetActive(true);
         fish.GetComponent<FishMovement>().onHook = true;
@@ -126,7 +122,6 @@ Debug.Log(gameObject.name);
 
     void ResetFishingTimer()
     {
-        //Debug.Log("ResetFishingTimer()");
         biteIndicator.SetActive(false);
 
         isFishing = true;
