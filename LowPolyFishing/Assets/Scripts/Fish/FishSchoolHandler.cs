@@ -37,7 +37,6 @@ public class FishSchoolHandler : MonoBehaviour
                 fishSchool = child.GetComponentInChildren<FishSchool>();
                 fishSchool.thisFish = true;
                 currentFish = child.Find("Fish Container").GetComponent<FishMovement>();
-                
             }
         }
     }
