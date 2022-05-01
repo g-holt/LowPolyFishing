@@ -12,6 +12,7 @@ public class Reeling : MonoBehaviour
     Rigidbody rb;
     Casting casting;
     Animator animator;
+    FishSize fishSize;
     Vector3 reelTowards;
 
     string reelAnim;
@@ -28,6 +29,8 @@ public class Reeling : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         casting = GetComponent<Casting>();
         animator = GetComponentInParent<Animator>();
+        fishSize = FindObjectOfType<FishSize>();
+
         fishCaughtCanvas.SetActive(false);
     }
 
@@ -79,6 +82,7 @@ public class Reeling : MonoBehaviour
     public void FishCaught()
     {
         fishCaughtCanvas.SetActive(true);   
+        fishSize.SetFishSize();
     }
 
 

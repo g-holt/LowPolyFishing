@@ -22,7 +22,6 @@ public class FishMovement : MonoBehaviour
         onHook = false;
         startPos = transform.position;
         startRot = transform.rotation;
-        Debug.Log(startRot.ToString());
     }
 
 

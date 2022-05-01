@@ -5,8 +5,8 @@ using TMPro;
 
 public class FishSize : MonoBehaviour
 {
-    [SerializeField] TextMeshPro weightText;
-    [SerializeField] TextMeshPro inchesText;
+    [SerializeField] TextMeshProUGUI weightText;
+    [SerializeField] TextMeshProUGUI inchesText;
 
     float minWeight;
     float maxWeight;
@@ -15,18 +15,11 @@ public class FishSize : MonoBehaviour
     float finalWeight;
     float finalInches;
 
-
-
-    void Start()
-    {
-        
-    }
-
     
-    void SetFishSize()
+    public void SetFishSize()
     {
         float randomNumber = Random.Range(0, 1000);
-
+        Debug.Log("RandomNumber: " + randomNumber);
         switch(randomNumber)
         {
             case <= 800:
@@ -63,13 +56,15 @@ public class FishSize : MonoBehaviour
 
         finalWeight = Random.Range(minWeight, maxWeight);
         finalInches = Random.Range(minInches, maxInches);
+        finalWeight = Mathf.Round(finalWeight * 100f) * .01f;   //Setting weight to 2 decimal places
+        finalInches = Mathf.Round(finalInches * 100f) * .01f;
         SetFishText(finalWeight, finalInches);
-    }
+    } 
 
 
     void SetFishText(float weight, float inches)
     {
-        weightText.text = weight.ToString();
-        inchesText.text = inches.ToString();
+        weightText.text = "Weight: " + weight.ToString();
+        inchesText.text = "Inches: " + inches.ToString();
     }
 }

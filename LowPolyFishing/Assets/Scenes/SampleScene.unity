@@ -446,6 +446,14 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6382761676498483397, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: inchesText
+      value: 
+      objectReference: {fileID: 1305521491}
+    - target: {fileID: 6382761676498483397, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: weightText
+      value: 
+      objectReference: {fileID: 495202978}
     - target: {fileID: 7550940030877903111, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -9707,6 +9715,14 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6382761676498483397, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: inchesText
+      value: 
+      objectReference: {fileID: 1305521491}
+    - target: {fileID: 6382761676498483397, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: weightText
+      value: 
+      objectReference: {fileID: 495202978}
     - target: {fileID: 7550940030877903111, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_IsActive
       value: 1

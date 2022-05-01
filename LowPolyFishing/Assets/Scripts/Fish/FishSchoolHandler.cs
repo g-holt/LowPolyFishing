@@ -44,6 +44,8 @@ public class FishSchoolHandler : MonoBehaviour
 
     public void ResetFish()
     {
+        if(fishSchool == null) {Debug.Log("Not Fish On"); return; }
+        
         currentFish.ResetFish();
         fishSchool.fishOn = false;
     }
