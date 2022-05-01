@@ -20,7 +20,6 @@ public class Casting : MonoBehaviour
     Bait bait;
     Rigidbody rb;
     Slider slider;
-    //Transform fish;
     Reeling reeling;
     Animator animator;
     FishSchool fishSchool;
@@ -31,7 +30,6 @@ public class Casting : MonoBehaviour
     PlayerFishing playerFishing;
     PlayerMovement playerMovement;
     FishSchoolHandler fishSchoolHandler;
-    //GameObject fish;
 
     bool isCasting;
     string isFishingAnim;
@@ -57,8 +55,6 @@ public class Casting : MonoBehaviour
         playerFishing = FindObjectOfType<PlayerFishing>();
         fishSchool = FindObjectOfType<FishSchool>();
         fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
-        //fishMovement = FindObjectOfType<FishMovement>();
-
 
         bobber_GO.gameObject.SetActive(false);
         bait_GO.gameObject.SetActive(false);
@@ -75,11 +71,6 @@ public class Casting : MonoBehaviour
 
     void Update()
     {
-        if(Keyboard.current.rKey.isPressed)
-        {
-            ResetCast();
-        }
-
         if(!isCasting) { return; }
         CastDistance();   
     }
@@ -162,18 +153,12 @@ public class Casting : MonoBehaviour
 
 
     public void ResetCast()
-    {Debug.Log(fishSchool.fishOn);
-        // if(fishSchool.fishOn)
-        // {
-        //     bait.ResetBait();
-        //     //fishMovement.ResetFish();
-        //     fishSchoolHandler.ResetFish();
-        // }
+    {
         bait.ResetBait();
-        fishSchoolHandler.ResetFish();
-        playerFishing.StopFishing();
-        HandleReset();
         reeling.ResetReeling();
+        playerFishing.StopFishing();
+        fishSchoolHandler.ResetFish();
+        HandleReset();
     }
 
 

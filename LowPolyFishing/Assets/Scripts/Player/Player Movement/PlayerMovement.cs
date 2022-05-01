@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Casting casting;
     Vector2 moveInput;
     Animator animator;
+    FishSchool fishSchool;
     PlayerInput playerInput;
     PlayerFishing playerFishing;
   
@@ -34,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();     
         playerFishing = GetComponent<PlayerFishing>();
-        
         casting = GetComponentInChildren<Casting>();
+        fishSchool = FindObjectOfType<FishSchool>();
     }
     
     
@@ -66,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
+        if(fishSchool.fishOn) { return; }
+
         if(moveInput.x != 0f || moveInput.y != 0f)
         {
             moveXPos = moveInput.x * turnSpeed * Time.deltaTime;

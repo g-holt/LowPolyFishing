@@ -9,6 +9,7 @@ public class PlayerFishing : MonoBehaviour
     Casting casting;
     Animator animator;
     PlayerInput playerInput;
+    PlayerMovement playerMovement;
 
     string reelAnim;
     string isFishingAnim;
@@ -22,6 +23,7 @@ public class PlayerFishing : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         casting = GetComponentInChildren<Casting>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
 
@@ -38,5 +40,6 @@ public class PlayerFishing : MonoBehaviour
         animator.SetBool(reelAnim, false);
             
         playerInput.SwitchCurrentActionMap("Player");
+        playerMovement.isFishing = false;
     }
 }

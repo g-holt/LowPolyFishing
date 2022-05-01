@@ -18,7 +18,6 @@ public class Bait : MonoBehaviour
         reeling = GetComponentInParent<Reeling>();
         casting = GetComponentInParent<Casting>();
         fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
-        //fishSchool = FindObjectOfType<FishSchool>();
     }
 
 
@@ -44,17 +43,17 @@ public class Bait : MonoBehaviour
     private void OnTriggerEnter(Collider other) 
     {  
         if(other.gameObject.CompareTag("FishSchool"))
-        {Debug.Log(other.gameObject.name);
+        {
             fishSchool = other.gameObject.GetComponent<FishSchool>();
             fishSchoolHandler.SetSchool(other.gameObject.transform);
             fishSchool.EnteredFishSchool();
         }
 
-        if(other.gameObject.CompareTag("ReelingCollider"))   //Was "Shoreline"
+        if(other.gameObject.CompareTag("ReelingCollider"))
         {
             if(fishOn)
             {
-                reeling.FishCaught();   //Was ShorelineCollision()
+                reeling.FishCaught();
             }
             else
             {

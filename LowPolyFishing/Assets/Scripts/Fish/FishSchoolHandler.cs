@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class FishSchoolHandler : MonoBehaviour
 {
-    List<Transform> fishSchool = new List<Transform>();
-    List<FishMovement> fishMovement = new List<FishMovement>();
+    List<Transform> fishSchoolList = new List<Transform>();
+    
     Casting casting;
+    FishSchool fishSchool;
     FishMovement currentFish;
-    //GameObject currentFish;
+
 
     void Start()
     {
@@ -22,22 +23,20 @@ public class FishSchoolHandler : MonoBehaviour
     {
         foreach(Transform child in transform)
         {
-            fishSchool.Add(child);
-            fishMovement.Add(child.GetComponentInChildren<FishMovement>());
+            fishSchoolList.Add(child);
         }
-        //Debug.Log(fishSchool.Count + " " + fishMovement.Count);
     }
 
 
     public void SetSchool(Transform school)
     {
-        foreach(Transform child in transform)
+        foreach(Transform child in fishSchoolList)
         {
             if(school.position == child.position)
             {
-                //Debug.Log("SchoolSet");
-                child.GetComponentInChildren<FishSchool>().thisFish = true;
-                currentFish = child.Find("Fish Container").gameObject.GetComponent<FishMovement>();
+                fishSchool = child.GetComponentInChildren<FishSchool>();
+                fishSchool.thisFish = true;
+                currentFish = child.Find("Fish Container").GetComponent<FishMovement>();
                 
             }
         }
@@ -46,20 +45,7 @@ public class FishSchoolHandler : MonoBehaviour
 
     public void ResetFish()
     {
-        Debug.Log("Name: " + currentFish.GetComponentInParent<Transform>().name);
         currentFish.ResetFish();
-        // foreach(Transform child in transform)
-        // {
-        //     if(child.gameObject.activeInHierarchy)
-        //     {
-        //         child.GetComponentInChildren<FishMovement>().ResetFish();
-        //     }
-        // }
-        // foreach(FishMovement thisFish in fishMovement)
-        // {Debug.Log("FishReset: before");
-        //     thisFish.ResetFish();
-        //     Debug.Log("FishReset: after");
-            
-        // }
+        fishSchool.fishOn = false;
     }
 }

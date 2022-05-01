@@ -36,6 +36,8 @@ public class FishSchool : MonoBehaviour
 
     public void EnteredFishSchool()
     {
+        if(fishOn) { return; }
+        
         isFishing = true;
         StartCoroutine("FishingTimer");
     }

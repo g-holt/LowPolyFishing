@@ -7,11 +7,10 @@ public class FishMovement : MonoBehaviour
     [SerializeField] float fishSpeed = 5f;
     [SerializeField] GameObject bait;
 
-    //GameObject bait;
-    Vector3 fishDistance;
-    FixedJoint fixedJoint;
     Vector3 startPos;
     Quaternion startRot;
+    Vector3 fishDistance;
+    FixedJoint fixedJoint;
 
     float newZPos;
     bool stopMovement;
@@ -23,8 +22,7 @@ public class FishMovement : MonoBehaviour
         onHook = false;
         startPos = transform.position;
         startRot = transform.rotation;
-
-        //bait = GameObject.FindGameObjectWithTag("Bait");
+        Debug.Log(startRot.ToString());
     }
 
 
@@ -39,7 +37,6 @@ public class FishMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Bait"))
         {
             stopMovement = true;
-            //GetComponent<Rigidbody>().useGravity = true;
         }    
     }
 
@@ -47,7 +44,8 @@ public class FishMovement : MonoBehaviour
     public void FollowBait()
     {
         if(!onHook) { return; }
-        if(bait == null) { Debug.Log("Bait is null"); }
+
+        transform.localRotation = Quaternion.identity;
         transform.LookAt(bait.transform, transform.up);
         
         if(stopMovement) { return; }
@@ -56,7 +54,7 @@ public class FishMovement : MonoBehaviour
 
 
     public void ResetFish()
-    {Debug.Log("FishMovementResetFish()");
+    {
         onHook = false;
         stopMovement = false;
         transform.position = startPos;
