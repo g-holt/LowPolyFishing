@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     bool doorCollision;
 
     public bool isFishing;
+    public bool fishOn;
 
 
     void Start()
@@ -67,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        if(fishSchool.fishOn) { return; }
+        if(fishOn) { return; }
 
         if(moveInput.x != 0f || moveInput.y != 0f)
         {

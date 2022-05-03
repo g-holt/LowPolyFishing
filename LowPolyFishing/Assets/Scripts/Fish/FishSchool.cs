@@ -8,11 +8,14 @@ public class FishSchool : MonoBehaviour
     [SerializeField] float timerMin = 25f;
     [SerializeField] float timerMax = 60f;
     [SerializeField] float timeToSetHook = 5f;
-    [SerializeField] GameObject biteIndicator;
+    [SerializeField] public GameObject biteIndicator;
     [SerializeField] GameObject fish;
 
     GameObject rig;
     FishMovement fishMovement;
+    PlayerMovement playerMovement;
+    //Coroutine fishingTimer = null;
+    IEnumerator fishingTimer;
 
     bool isFishing;
     bool canSetHook;
@@ -29,8 +32,10 @@ public class FishSchool : MonoBehaviour
         canSetHook = false;
         fish.SetActive(false);
         biteIndicator.SetActive(false);
+        fishingTimer = FishingTimer();
 
         rig = GameObject.FindGameObjectWithTag("Rig");
+        playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
 
@@ -39,7 +44,9 @@ public class FishSchool : MonoBehaviour
         if(fishOn) { return; }
         
         isFishing = true;
-        StartCoroutine("FishingTimer");
+        //StartCoroutine("FishingTimer");
+        //fishingTimer = StartCoroutine("FishingTimer");
+        StartCoroutine(fishingTimer);
     }
 
 
@@ -54,7 +61,8 @@ public class FishSchool : MonoBehaviour
         timerToHookset = 0f;
 
         biteIndicator.SetActive(false);
-        StopCoroutine("FishingTimer");
+        //StopCoroutine("FishingTimer");
+        StopCoroutine(fishingTimer);
     }
 
 
@@ -95,7 +103,7 @@ public class FishSchool : MonoBehaviour
     {
 
         if(Mouse.current.rightButton.isPressed)
-        {
+        {Debug.Log("Catch Fish");
             biteIndicator.SetActive(false);
 
             canSetHook = false;
@@ -118,6 +126,7 @@ public class FishSchool : MonoBehaviour
 
         fishOn = true;
         fish.SetActive(true);
+        playerMovement.fishOn = true;
         fish.GetComponent<FishMovement>().onHook = true;
     }
 
@@ -130,7 +139,20 @@ public class FishSchool : MonoBehaviour
         canSetHook = false;
         timerToHookset = 0f;
 
-        StopCoroutine("FishingTimer");
-        StartCoroutine("FishingTimer");
+        //StopCoroutine("FishingTimer");
+        //StartCoroutine("FishingTimer");
+        StopCoroutine(fishingTimer);
+        StartCoroutine(fishingTimer);
+    }
+
+
+    public void ResetFishSchool()
+    {
+        isFishing = false;
+        canSetHook = false;
+        biteIndicator.SetActive(false);
+        //StopCoroutine("FishingTimer");
+        StopCoroutine(fishingTimer);
+        Debug.Log ("Stop FishingTimer");
     }
 }

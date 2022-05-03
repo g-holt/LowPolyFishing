@@ -19,7 +19,7 @@ public class FishSize : MonoBehaviour
     public void SetFishSize()
     {
         float randomNumber = Random.Range(0, 1000);
-        Debug.Log("RandomNumber: " + randomNumber);
+        
         switch(randomNumber)
         {
             case <= 800:

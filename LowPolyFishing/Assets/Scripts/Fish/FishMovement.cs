@@ -46,14 +46,14 @@ public class FishMovement : MonoBehaviour
 
         transform.localRotation = Quaternion.identity;
         transform.LookAt(bait.transform, transform.up);
-        
+
         if(stopMovement) { return; }
         transform.position = Vector3.MoveTowards(transform.position, bait.transform.position, fishSpeed * Time.deltaTime);
     }
 
 
     public void ResetFish()
-    {
+    {//Debug.Log("ResetFish: " + GetComponentInParent<Transform>().name);
         onHook = false;
         stopMovement = false;
         transform.position = startPos;

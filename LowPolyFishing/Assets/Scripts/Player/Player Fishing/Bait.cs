@@ -14,7 +14,9 @@ public class Bait : MonoBehaviour
 
 
     void Start()
-    {
+    {   
+        hasHingeJoint = false;
+
         reeling = GetComponentInParent<Reeling>();
         casting = GetComponentInParent<Casting>();
         fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
@@ -59,8 +61,6 @@ public class Bait : MonoBehaviour
             {
                 casting.ResetCast();
             }
-
-            fishOn = false;
         }
     }
 
@@ -76,6 +76,9 @@ public class Bait : MonoBehaviour
 
     public void ResetBait()
     {
+        if(!fishOn) { return; }
+
+        fishOn = false;
         hasHingeJoint = false;
         Destroy(GetComponent<HingeJoint>());
     }

@@ -113,6 +113,7 @@ public class Reeling : MonoBehaviour
 
     public void ResetReeling()
     {
+        reelIn = false;
         surfaceCheck = false;
     }
 
