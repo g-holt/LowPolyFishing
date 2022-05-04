@@ -36,6 +36,7 @@ public class FishSchoolHandler : MonoBehaviour
             {
                 fishSchool = child.GetComponentInChildren<FishSchool>();
                 fishSchool.thisFish = true;
+                fishSchool.isFishing = true;
                 currentFish = child.Find("Fish Container").GetComponent<FishMovement>();
             }
         }
@@ -44,9 +45,21 @@ public class FishSchoolHandler : MonoBehaviour
 
     public void ResetFish()
     {
-        if(fishSchool == null) {Debug.Log("Not Fish On"); return; }
+        if(fishSchool == null) { Debug.Log("fischool is null");}
+        if(fishSchool != null) { Debug.Log("fischool is not null");}
         
-        currentFish.ResetFish();
-        fishSchool.fishOn = false;
+        foreach(Transform child in fishSchoolList)
+        {Debug.Log("reset school");
+            currentFish.ResetFish();
+            fishSchool.ResetFishSchool();
+            fishSchool.fishOn = false;
+            fishSchool.isFishing = false;
+        }
+    }
+
+
+    public List<Transform> GetFishSchoolList()
+    {
+        return fishSchoolList;
     }
 }

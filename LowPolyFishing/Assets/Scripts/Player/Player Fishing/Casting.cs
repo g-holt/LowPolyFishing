@@ -160,7 +160,7 @@ public class Casting : MonoBehaviour
         reeling.ResetReeling();
         playerFishing.StopFishing();
         fishSchoolHandler.ResetFish();
-        fishSchool.ResetFishSchool();
+        //fishSchool.ResetFishSchool();
         
         HandleReset();
     }
