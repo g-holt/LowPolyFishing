@@ -33,7 +33,7 @@ public class FishSchoolHandler : MonoBehaviour
         foreach(Transform child in fishSchoolList)
         {
             if(school.position == child.position)
-            {
+            {Debug.Log("Set School: " + child.name);
                 fishSchool = child.GetComponentInChildren<FishSchool>();
                 fishSchool.thisFish = true;
                 fishSchool.isFishing = true;

@@ -16,7 +16,6 @@ public class FishSchool : MonoBehaviour
     PlayerMovement playerMovement;
     IEnumerator fishingTimer;
 
-    //bool isFishing;
     bool canSetHook;
     float timerToBite;
     float timeBeforBite;
@@ -40,7 +39,7 @@ public class FishSchool : MonoBehaviour
 
 
     public void EnteredFishSchool()
-    {
+    {Debug.Log("Here");
         if(fishOn) { return; }
         
         isFishing = true;
@@ -64,8 +63,10 @@ public class FishSchool : MonoBehaviour
         //StopCoroutine("FishingTimer");
         //StopCoroutine(fishingTimer);
     }
+
+
 void Update() {
-    Debug.Log(isFishing);
+    //Debug.Log(isFishing);
 }
 
     IEnumerator FishingTimer()
