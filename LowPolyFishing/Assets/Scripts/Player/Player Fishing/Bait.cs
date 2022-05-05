@@ -48,7 +48,8 @@ public class Bait : MonoBehaviour
         {
             fishSchool = other.gameObject.GetComponent<FishSchool>();
             fishSchoolHandler.SetSchool(other.gameObject.transform);
-            fishSchool.EnteredFishSchool();
+            //fishSchool.EnteredFishSchool();
+            fishSchoolHandler.EnteredFishSchool();
         }
 
         if(other.gameObject.CompareTag("ReelingCollider"))
@@ -69,7 +70,8 @@ public class Bait : MonoBehaviour
     {
         if(other.gameObject.CompareTag("FishSchool"))   
         {
-            fishSchool.ExitedFishSchool();
+            //fishSchool.ExitedFishSchool();
+            fishSchoolHandler.ExitedFishSchool();
         }    
     }
 

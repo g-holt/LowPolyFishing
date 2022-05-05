@@ -6889,6 +6889,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 611bd5dc5a73981408b6dbf56bb33782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerMin: 1
+  timerMax: 3
+  timeToSetHook: 5
+  biteIndicator: {fileID: 763193704}
+  fishOn: 0
+  thisFish: 0
+  isFishing: 0
 --- !u!1001 &1494928873
 PrefabInstance:
   m_ObjectHideFlags: 0
