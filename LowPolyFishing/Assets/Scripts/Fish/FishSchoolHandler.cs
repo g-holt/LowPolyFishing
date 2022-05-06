@@ -5,23 +5,19 @@ using UnityEngine.InputSystem;
 
 public class FishSchoolHandler : MonoBehaviour
 {
-    List<Transform> fishSchoolList = new List<Transform>();
-    
-    Casting casting;
-    FishSchool fishSchool;
-    FishMovement currentFish;
-
-//FishingTimer
     [SerializeField] float timerMin = 25f;
     [SerializeField] float timerMax = 60f;
     [SerializeField] float timeToSetHook = 5f;
     [SerializeField] public GameObject biteIndicator;
 
-
+    FishMovement[] allFish;
+    List<Transform> fishSchoolList = new List<Transform>();
+    
     GameObject rig;
-    FishMovement fishMovement;
-    PlayerMovement playerMovement;
+    Casting casting;
+    FishMovement currentFish;
     IEnumerator fishingTimer;
+    PlayerMovement playerMovement;
 
     bool canSetHook;
     float timerToBite;
@@ -33,25 +29,19 @@ public class FishSchoolHandler : MonoBehaviour
     public bool isFishing;
 
 
-
-
     void Start()
     {
-        casting = FindObjectOfType<Casting>();
-
-        PopulateLists();
-
-
-
-
-                isFishing = false;
+        isFishing = false;
         canSetHook = false;
-        //fish.SetActive(false);
         biteIndicator.SetActive(false);
-        //fishingTimer = FishingTimer();
 
+        casting = FindObjectOfType<Casting>();
+        allFish = FindObjectsOfType<FishMovement>();
         rig = GameObject.FindGameObjectWithTag("Rig");
         playerMovement = FindObjectOfType<PlayerMovement>();
+
+        PopulateLists();
+        SetFishInactive();
     }
 
 
@@ -64,34 +54,25 @@ public class FishSchoolHandler : MonoBehaviour
     }
 
 
+    void SetFishInactive()
+    {
+        for(int i = 0; i < allFish.Length; i++)
+        {
+            allFish[i].gameObject.SetActive(false);
+        }
+    }
+
+
     public void SetSchool(Transform school)
     {
         foreach(Transform child in fishSchoolList)
         {
             if(school.position == child.position)
-            {Debug.Log("Set School: " + child.name);
-                fishSchool = child.GetComponentInChildren<FishSchool>();
-                //fishSchool.thisFish = true;
-                //fishSchool.isFishing = true;  
+            {
                 thisFish = true;
                 isFishing = true;
                 currentFish = child.Find("Fish Container").GetComponent<FishMovement>();
             }
-        }
-    }
-
-
-    public void ResetFish()
-    {
-        if(fishSchool == null) { Debug.Log("fischool is null");}
-        if(fishSchool != null) { Debug.Log("fischool is not null");}
-        
-        foreach(Transform child in fishSchoolList)
-        {
-            currentFish.ResetFish();
-            ResetFishSchool();
-            fishOn = false;
-            isFishing = false;
         }
     }
 
@@ -122,7 +103,7 @@ public class FishSchoolHandler : MonoBehaviour
 
 
     IEnumerator FishingTimer()
-    {Debug.Log("FishingTimer()");
+    {Debug.Log("Fishing Timer");
         timeBeforBite = Random.Range(timerMin, timerMax);
 
         while(!canSetHook)
@@ -189,25 +170,38 @@ public class FishSchoolHandler : MonoBehaviour
 
 
     void ResetFishingTimer()
-    {
+    { Debug.Log("ResetTimer");
         biteIndicator.SetActive(false);
 
         isFishing = true;
         canSetHook = false;
         timerToHookset = 0f;
 
-        StopCoroutine(fishingTimer);
-        StartCoroutine(fishingTimer);
+        StopCoroutine("FishingTimer");
+        StartCoroutine("FishingTimer");
     }
 
 
-    public void ResetFishSchool()
-    {
-        fishingTimer = FishingTimer();
-
+    public void ResetFishSchoolHandler()
+    { Debug.Log("ResetSchool");
+        //fishingTimer = FishingTimer();
+        currentFish.ResetFish();
         isFishing = false;
         canSetHook = false;
+        fishOn = false;
         biteIndicator.SetActive(false);
-        StopCoroutine(fishingTimer);
+        StopCoroutine("FishingTimer");
     }
+
+
+    // public void ResetFish()
+    // {
+    //     foreach(Transform child in fishSchoolList)
+    //     {
+            
+    //         //ResetFishSchool();
+    //         fishOn = false;
+    //         isFishing = false;
+    //     }
+    // }
 }

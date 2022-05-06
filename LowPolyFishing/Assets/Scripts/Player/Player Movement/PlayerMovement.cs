@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     FishSchool fishSchool;
     PlayerInput playerInput;
     PlayerFishing playerFishing;
+    FishSchoolHandler fishSchoolHandler;
   
     float moveXPos;
     float moveZPos;
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         playerFishing = GetComponent<PlayerFishing>();
         casting = GetComponentInChildren<Casting>();
         fishSchool = FindObjectOfType<FishSchool>();
+        fishSchoolHandler = FindObjectOfType<FishSchoolHandler>(); 
     }
     
     
