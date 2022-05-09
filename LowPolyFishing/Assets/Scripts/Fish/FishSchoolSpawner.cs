@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class FishSchoolSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    List<Transform> fishSchools = new List<Transform>();
+
+    Transform randomSchool;
+
+    int randomNum;
+
+
+    void Start() 
     {
-        
+        PopulateList(); 
+        StartCoroutine("RandomizeSpawns");   
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void PopulateList()
     {
-        
+        foreach(Transform child in transform)
+        {
+            fishSchools.Add(child);
+            child.gameObject.SetActive(false);
+        }
+    }
+
+
+    IEnumerator RandomizeSpawns()
+    {
+        while(true) //Continues until game stops or object it's on is disabled
+        {
+            randomNum = Random.Range(0, fishSchools.Count);
+
+            randomSchool = fishSchools[randomNum];
+            randomSchool.gameObject.SetActive(true);
+            Debug.Log(randomSchool.ToString());
+
+            yield return new WaitForSeconds(30);
+
+            randomSchool.gameObject.SetActive(false);
+        }
+
     }
 }

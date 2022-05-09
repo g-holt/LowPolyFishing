@@ -170,7 +170,7 @@ public class FishSchoolHandler : MonoBehaviour
 
 
     void ResetFishingTimer()
-    { Debug.Log("ResetTimer");
+    { 
         biteIndicator.SetActive(false);
 
         isFishing = true;
@@ -183,7 +183,7 @@ public class FishSchoolHandler : MonoBehaviour
 
 
     public void ResetFishSchoolHandler()
-    { Debug.Log("ResetSchool");
+    { 
         //fishingTimer = FishingTimer();
         currentFish.ResetFish();
         isFishing = false;
