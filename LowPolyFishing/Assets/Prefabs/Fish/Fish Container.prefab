@@ -63,8 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6677d08cba226eb4d9da916203f078dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishSpeed: 5
-  bait: {fileID: 0}
+  fishSpeed: 10
+  bait: {fileID: 740310361440395462, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
   onHook: 0
 --- !u!114 &6599645384576269387
 MonoBehaviour:

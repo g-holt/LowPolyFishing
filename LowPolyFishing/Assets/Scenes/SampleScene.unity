@@ -9690,6 +9690,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 799095299345127510, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 799160446803090136, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340099495100154064, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340165748512457310, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1799149137510297956, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_Name
       value: Fish School
@@ -9697,6 +9713,14 @@ PrefabInstance:
     - target: {fileID: 1799149137510297956, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_TagString
       value: FishSchoolContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308224050065133418, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308571217860120036, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2444446424649053946, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: fish
@@ -9753,6 +9777,14 @@ PrefabInstance:
     - target: {fileID: 8693837665350945274, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751322773526998981, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751397273172700491, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae33d3f53103e748900b24fbdaa67a5, type: 3}
