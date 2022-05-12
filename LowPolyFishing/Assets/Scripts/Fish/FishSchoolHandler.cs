@@ -185,7 +185,12 @@ public class FishSchoolHandler : MonoBehaviour
     public void ResetFishSchoolHandler()
     { 
         //fishingTimer = FishingTimer();
-        currentFish.ResetFish();
+        if(fishOn)
+        {
+            currentFish.ResetFish();
+            fishOn = false;
+        }   
+        
         isFishing = false;
         canSetHook = false;
         fishOn = false;

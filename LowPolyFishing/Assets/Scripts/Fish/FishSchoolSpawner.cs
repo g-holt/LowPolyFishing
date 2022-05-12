@@ -7,12 +7,18 @@ public class FishSchoolSpawner : MonoBehaviour
     List<Transform> fishSchools = new List<Transform>();
 
     Transform randomSchool;
+    FishSchoolHandler fishSchoolHandler;
 
     int randomNum;
 
+    public bool fishOn;
 
     void Start() 
     {
+        fishOn = false;
+
+        fishSchoolHandler = GetComponent<FishSchoolHandler>();
+
         PopulateList(); 
         StartCoroutine("RandomizeSpawns");   
     }
@@ -32,15 +38,22 @@ public class FishSchoolSpawner : MonoBehaviour
     {
         while(true) //Continues until game stops or object it's on is disabled
         {
-            randomNum = Random.Range(0, fishSchools.Count);
+            if(fishSchoolHandler.fishOn == false)
+            {
+                randomNum = Random.Range(0, fishSchools.Count);
 
-            randomSchool = fishSchools[randomNum];
-            randomSchool.gameObject.SetActive(true);
-            Debug.Log(randomSchool.ToString());
+                randomSchool = fishSchools[randomNum];
+                randomSchool.gameObject.SetActive(true);
+                Debug.Log(randomSchool.ToString());
 
-            yield return new WaitForSeconds(30);
+                yield return new WaitForSeconds(30);
 
-            randomSchool.gameObject.SetActive(false);
+                randomSchool.gameObject.SetActive(false);
+            }
+            else
+            {
+                yield return null;
+            }
         }
 
     }

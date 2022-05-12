@@ -409,6 +409,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -764,6 +765,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 8427726552352332729}
     m_Modifications:
     - target: {fileID: 1007394829051868, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
@@ -871,6 +873,7 @@ PrefabInstance:
     - {fileID: 4492962497977863454, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
     - {fileID: 6056093069402486151, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
     - {fileID: 65681537132779482, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 939dbc155a7d8bc49930f8370363dc7b, type: 3}
 --- !u!4 &8422952442463154939 stripped
 Transform:
