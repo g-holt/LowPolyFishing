@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FishSchoolSpawner : MonoBehaviour
 {
+    [SerializeField] int schoolChangeTime = 30;
+
     List<Transform> fishSchools = new List<Transform>();
 
     Transform randomSchool;
@@ -46,9 +48,10 @@ public class FishSchoolSpawner : MonoBehaviour
                 randomSchool.gameObject.SetActive(true);
                 Debug.Log(randomSchool.ToString());
 
-                yield return new WaitForSeconds(30);
+                yield return new WaitForSeconds(schoolChangeTime);
 
                 randomSchool.gameObject.SetActive(false);
+                fishSchoolHandler.ResetFishSchoolHandler();
             }
             else
             {

@@ -29,7 +29,7 @@ public class FishSchoolHandler : MonoBehaviour
     public bool isFishing;
 
 
-    void Start()
+    void Awake()
     {
         isFishing = false;
         canSetHook = false;
@@ -57,7 +57,7 @@ public class FishSchoolHandler : MonoBehaviour
     void SetFishInactive()
     {
         for(int i = 0; i < allFish.Length; i++)
-        {
+        {Debug.Log("fishInactive");
             allFish[i].gameObject.SetActive(false);
         }
     }

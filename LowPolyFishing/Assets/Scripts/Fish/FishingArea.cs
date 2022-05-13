@@ -21,7 +21,7 @@ public class FishingArea : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collision other) 
+    void OnTriggerExit(Collider other) 
     {
         if(other.gameObject.CompareTag("Player"))
         {
