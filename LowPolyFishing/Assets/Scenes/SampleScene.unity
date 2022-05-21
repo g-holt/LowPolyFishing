@@ -922,7 +922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 64409635290032682, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -2210,7 +2210,7 @@ GameObject:
   - component: {fileID: 335121520}
   m_Layer: 0
   m_Name: Dock Fishing Area (2)
-  m_TagString: Untagged
+  m_TagString: Dock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2857,7 +2857,7 @@ GameObject:
   - component: {fileID: 415151168}
   m_Layer: 0
   m_Name: Dock Fishing Area
-  m_TagString: Untagged
+  m_TagString: Dock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3343,7 +3343,7 @@ GameObject:
   - component: {fileID: 454846549}
   m_Layer: 0
   m_Name: Dock Fishing Area (3)
-  m_TagString: Untagged
+  m_TagString: Dock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8859,7 +8859,7 @@ GameObject:
   - component: {fileID: 1195447116}
   m_Layer: 0
   m_Name: Dock Fishing Area (1)
-  m_TagString: Untagged
+  m_TagString: Dock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

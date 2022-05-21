@@ -9,7 +9,6 @@ public class FishFreeSwim : MonoBehaviour
     float swimDirectionX = 0f;
     float swimDirectionZ = 0f;
     float timeToChangeDir = 5f;
-    float rotY;
 
     Vector3 newRotation;
 
@@ -32,7 +31,7 @@ public class FishFreeSwim : MonoBehaviour
     void OnCollisionEnter(Collision other) 
     {
         
-        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater"))
+        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater") || other.gameObject.CompareTag("Dock"))
         {Debug.Log("Collision");
             swimX *= -1f;
             swimZ *= -1f;
@@ -57,12 +56,9 @@ public class FishFreeSwim : MonoBehaviour
 
             swimX = swimDirectionX * swimSpeed * Time.deltaTime;
             swimZ = swimDirectionZ * swimSpeed * Time.deltaTime;
+            newRotation = new Vector3(swimX, 0f, swimZ);
             Debug.Log(swimDirectionX + " " + swimDirectionZ);   
             
-            rotY = ((swimDirectionX + swimDirectionZ) / 2) * 360;
-            //newRotation = new Vector3(0f, rotY * Time.deltaTime, 0f);
-            newRotation = new Vector3(swimX, 0f, swimZ);
-
             yield return new WaitForSeconds(timeToChangeDir);
         }
     }
