@@ -9,8 +9,12 @@ public class FishFreeSwim : MonoBehaviour
     float swimDirectionX = 0f;
     float swimDirectionZ = 0f;
     float timeToChangeDir = 5f;
+    float rotY;
+
+    Vector3 newRotation;
 
     public float swimSpeed = 5f;
+    public float fishTurnSpeed = 1f;
 
 
     void Start()
@@ -28,27 +32,11 @@ public class FishFreeSwim : MonoBehaviour
     void OnCollisionEnter(Collision other) 
     {
         
-        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground"))
+        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater"))
         {Debug.Log("Collision");
-            // if(swimDirectionX == 0)
-            // {
-            //     swimDirectionX = 1;
-            // }
-            // else
-            // {
-            //     swimDirectionX = 0;
-            // }
-
-            // if(swimDirectionZ == 0)
-            // {
-            //     swimDirectionZ = 1;
-            // }
-            // else
-            // {
-            //     swimDirectionZ = 0;
-            // }
             swimX *= -1f;
             swimZ *= -1f;
+            newRotation = new Vector3(swimX, 0f, swimZ);
         }    
     }
 
@@ -62,21 +50,47 @@ public class FishFreeSwim : MonoBehaviour
     IEnumerator ChangeDirection()
     {
         while(true)
-        {//Debug.Log("ChangeDirection: " + timeToChangeDir);
-            swimDirectionX = Random.Range(-1, 2);
-            swimDirectionZ = Random.Range(-1, 2);
-            timeToChangeDir = Random.Range(1, 5);
+        {
+            swimDirectionX = Random.Range(-1f, 2f);
+            swimDirectionZ = Random.Range(-1f, 2f);
+            timeToChangeDir = Random.Range(5, 10);
 
             swimX = swimDirectionX * swimSpeed * Time.deltaTime;
             swimZ = swimDirectionZ * swimSpeed * Time.deltaTime;
+            Debug.Log(swimDirectionX + " " + swimDirectionZ);   
             
+            rotY = ((swimDirectionX + swimDirectionZ) / 2) * 360;
+            //newRotation = new Vector3(0f, rotY * Time.deltaTime, 0f);
+            newRotation = new Vector3(swimX, 0f, swimZ);
+
             yield return new WaitForSeconds(timeToChangeDir);
         }
     }
 
 
     void Swim()
-    {//Debug.Log("Swim: " + swimX + " " + swimZ);
-        transform.Translate(swimX, 0f, swimZ);
+    {
+        RotateFish();
+
+        transform.Translate(swimX, 0f, swimZ, Space.World);
+
+        if(newRotation != Vector3.zero)
+        {
+            transform.localRotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newRotation), Time.deltaTime * fishTurnSpeed);
+            //transform.forward = newRotation;
+        }
+
+        //transform.Translate(swimX, 0f, swimZ, Space.World);
+    }
+
+
+    void RotateFish()
+    {
+        
+
+        Debug.Log(newRotation.ToString());
+        //transform.LookAt(newRotation, transform.up);
+        //transform.Rotate(transform.up - newRotation, Space.Self);
+        //transform.localRotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newRotation), Time.deltaTime * 1f);
     }
 }

@@ -2075,15 +2075,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8909261514263383412, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8909261514263383412, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8909261514263383412, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8909261514263383412, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3438,7 +3438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ffabff5183f264b8f377972b990eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swimSpeed: 3
+  swimSpeed: 1
+  fishTurnSpeed: 4
 --- !u!65 &455429038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15334,6 +15335,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5037011235469388462, guid: c298d03ab92c85c48b9befc1c4a82bbb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.199951
+      objectReference: {fileID: 0}
     - target: {fileID: 5037011236074710286, guid: c298d03ab92c85c48b9befc1c4a82bbb, type: 3}
       propertyPath: m_RootOrder
       value: 6
