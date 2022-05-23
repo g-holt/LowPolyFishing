@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5376323610144516605}
   m_Layer: 0
   m_Name: Dock Plank Pillars Single
-  m_TagString: Untagged
+  m_TagString: Dock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,11 +130,16 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 5376323610144516605}
     m_Modifications:
     - target: {fileID: 1634914752320400, guid: 84e515fca9f8a514d83a180df98131e6, type: 3}
       propertyPath: m_Name
       value: Plank
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634914752320400, guid: 84e515fca9f8a514d83a180df98131e6, type: 3}
+      propertyPath: m_TagString
+      value: Dock
       objectReference: {fileID: 0}
     - target: {fileID: 4435236821043006, guid: 84e515fca9f8a514d83a180df98131e6, type: 3}
       propertyPath: m_RootOrder
@@ -185,6 +190,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 84e515fca9f8a514d83a180df98131e6, type: 3}
 --- !u!4 &430146079627323988 stripped
 Transform:
@@ -196,6 +202,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 5376323610144516605}
     m_Modifications:
     - target: {fileID: 1717165156266886, guid: 09c91f3ab99c8be44ae697e04a9fe449, type: 3}
@@ -264,6 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65109749073591508, guid: 09c91f3ab99c8be44ae697e04a9fe449, type: 3}
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 09c91f3ab99c8be44ae697e04a9fe449, type: 3}
 --- !u!4 &8054812664490061784 stripped
 Transform:

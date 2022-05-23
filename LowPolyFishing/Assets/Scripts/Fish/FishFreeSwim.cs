@@ -4,26 +4,38 @@ using UnityEngine;
 
 public class FishFreeSwim : MonoBehaviour
 {
+    [SerializeField] float biteRange = 5f;
+
+    bool isBiting;
     float swimX = 0f;
     float swimZ = 0f;
+    float distanceToTarget;
     float swimDirectionX = 0f;
     float swimDirectionZ = 0f;
     float timeToChangeDir = 5f;
 
     Vector3 newRotation;
 
+    public bool freeSwim;
     public float swimSpeed = 5f;
     public float fishTurnSpeed = 1f;
 
 
     void Start()
     {
+        freeSwim = true;
+        isBiting = false;   
+
+        //DrawGizmo();
         FreeSwim();
     }
 
     
     void Update()
     {
+        if(isBiting) { return; }
+        if(!freeSwim) { return; }
+
         Swim();
     }
 
@@ -32,7 +44,7 @@ public class FishFreeSwim : MonoBehaviour
     {
         
         if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater") || other.gameObject.CompareTag("Dock"))
-        {Debug.Log("Collision");
+        {
             swimX *= -1f;
             swimZ *= -1f;
             newRotation = new Vector3(swimX, 0f, swimZ);
@@ -56,8 +68,9 @@ public class FishFreeSwim : MonoBehaviour
 
             swimX = swimDirectionX * swimSpeed * Time.deltaTime;
             swimZ = swimDirectionZ * swimSpeed * Time.deltaTime;
+           
             newRotation = new Vector3(swimX, 0f, swimZ);
-            Debug.Log(swimDirectionX + " " + swimDirectionZ);   
+            newRotation = newRotation.normalized * Time.deltaTime; 
             
             yield return new WaitForSeconds(timeToChangeDir);
         }
@@ -66,27 +79,20 @@ public class FishFreeSwim : MonoBehaviour
 
     void Swim()
     {
-        RotateFish();
-
-        transform.Translate(swimX, 0f, swimZ, Space.World);
+        transform.Translate(newRotation, Space.World);
 
         if(newRotation != Vector3.zero)
         {
             transform.localRotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newRotation), Time.deltaTime * fishTurnSpeed);
-            //transform.forward = newRotation;
         }
-
-        //transform.Translate(swimX, 0f, swimZ, Space.World);
     }
 
 
-    void RotateFish()
+    void OnDrawGizmos()
     {
-        
-
-        Debug.Log(newRotation.ToString());
-        //transform.LookAt(newRotation, transform.up);
-        //transform.Rotate(transform.up - newRotation, Space.Self);
-        //transform.localRotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newRotation), Time.deltaTime * 1f);
+        Debug.Log("Drawing");
+        Gizmos.color = new Color(102, 161, 255);
+        Gizmos.DrawWireSphere(transform.position, biteRange);
     }
+
 }

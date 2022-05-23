@@ -3438,6 +3438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ffabff5183f264b8f377972b990eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freeSwim: 0
   swimSpeed: 1
   fishTurnSpeed: 4
 --- !u!65 &455429038
@@ -9639,7 +9640,7 @@ GameObject:
   - component: {fileID: 1316344981}
   m_Layer: 0
   m_Name: Dock
-  m_TagString: Untagged
+  m_TagString: Dock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10298,7 +10299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 941463796996225276, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 65503
+      value: 196575
       objectReference: {fileID: 0}
     - target: {fileID: 941463797200001254, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: m_NotificationBehavior

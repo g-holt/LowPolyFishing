@@ -14,6 +14,7 @@ public class FishMovement : MonoBehaviour
 
     float newZPos;
     bool stopMovement;
+
     public bool onHook;
 
 
@@ -53,7 +54,7 @@ public class FishMovement : MonoBehaviour
 
 
     public void ResetFish()
-    {//Debug.Log("ResetFish: " + GetComponentInParent<Transform>().name);
+    {
         onHook = false;
         stopMovement = false;
         transform.position = startPos;
