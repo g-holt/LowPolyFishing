@@ -14,7 +14,9 @@ public class FishFreeSwim : MonoBehaviour
     float swimDirectionZ = 0f;
     float timeToChangeDir = 5f;
 
+    Transform bait;
     Vector3 newRotation;
+    FishMovement fishMovement;
 
     public bool freeSwim;
     public float swimSpeed = 5f;
@@ -23,11 +25,15 @@ public class FishFreeSwim : MonoBehaviour
 
     void Start()
     {
-        freeSwim = true;
-        isBiting = false;   
 
-        //DrawGizmo();
+        fishMovement = GetComponent<FishMovement>();
+        bait = GameObject.FindGameObjectWithTag("Rig").transform;
+
         FreeSwim();
+
+        isBiting = false;   
+        freeSwim = true;
+        fishMovement.enabled = false;
     }
 
     
@@ -37,6 +43,7 @@ public class FishFreeSwim : MonoBehaviour
         if(!freeSwim) { return; }
 
         Swim();
+        BaitCheck();
     }
 
 
@@ -88,9 +95,20 @@ public class FishFreeSwim : MonoBehaviour
     }
 
 
+    void BaitCheck()
+    {
+        distanceToTarget = Vector3.Distance(bait.position, transform.position);
+
+        if(distanceToTarget <= biteRange)
+        {
+            fishMovement.enabled = true;
+            enabled = false;
+        }
+    }
+
+
     void OnDrawGizmos()
     {
-        Debug.Log("Drawing");
         Gizmos.color = new Color(102, 161, 255);
         Gizmos.DrawWireSphere(transform.position, biteRange);
     }

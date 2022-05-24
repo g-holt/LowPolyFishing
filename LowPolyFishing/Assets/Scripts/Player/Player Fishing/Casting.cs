@@ -14,6 +14,7 @@ public class Casting : MonoBehaviour
     [SerializeField] GameObject gear_GO;
     [SerializeField] GameObject bait_GO;
     [SerializeField] GameObject bobber_GO;
+    [SerializeField] GameObject biteIndicator;
     public GameObject fishingRod;
 
 
@@ -31,6 +32,7 @@ public class Casting : MonoBehaviour
     PlayerMovement playerMovement;
     FishSchoolHandler fishSchoolHandler;
 
+    bool canThrow;
     bool isCasting;
     string isFishingAnim;
     string isWalkingAnim;
@@ -66,6 +68,7 @@ public class Casting : MonoBehaviour
         initCastStrength = castStrength;
         fishingRod.SetActive(false);
         castStrengthCanvas.enabled = false;
+        biteIndicator.SetActive(false);
     }
 
 
@@ -87,6 +90,8 @@ public class Casting : MonoBehaviour
 
     void OnCast(InputValue value)
     {
+        canThrow = true;
+
         if(!canFish)
         {
             Debug.Log("You are not in a fish Zone");
@@ -138,6 +143,8 @@ public class Casting : MonoBehaviour
 
     public void ThrowLine()
     {
+        if(!canThrow) { return; }
+    Debug.Log("ThrowLine");
         rb.useGravity = true;
         lineRenderer.enabled = true;
         bait_GO.gameObject.SetActive(true);
@@ -153,21 +160,22 @@ public class Casting : MonoBehaviour
 
 
     public void ResetCast()
-    {
+    {Debug.Log("ResetCast");
         playerMovement.fishOn = false;
 
         bait.ResetBait();
         reeling.ResetReeling();
         playerFishing.StopFishing();
-        fishSchoolHandler.ResetFishSchoolHandler();
-        //fishSchool.ResetFishSchool();
+        biteIndicator.SetActive(false);
+        //fishSchoolHandler.ResetFishSchoolHandler();
         
         HandleReset();
     }
 
 
     void HandleReset()
-    {
+    { Debug.Log("HandleReset");
+        canThrow = false;
         rb.useGravity = false;
         rb.velocity = Vector3.zero;
         lineRenderer.enabled = false;

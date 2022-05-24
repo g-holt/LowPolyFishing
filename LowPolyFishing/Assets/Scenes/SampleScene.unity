@@ -2043,7 +2043,7 @@ PrefabInstance:
       objectReference: {fileID: 148058279}
     - target: {fileID: 8611217747975352620, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8909261514263383412, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
       propertyPath: m_RootOrder
@@ -2097,8 +2097,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8611217747975352620, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
+    m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 93af67b8ee510554e863898aa9b659c9, type: 3}
 --- !u!4 &316804996 stripped
@@ -3438,6 +3437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ffabff5183f264b8f377972b990eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biteRange: 5
   freeSwim: 0
   swimSpeed: 1
   fishTurnSpeed: 4
@@ -10245,6 +10245,10 @@ PrefabInstance:
       propertyPath: castStrength
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: biteIndicator
+      value: 
+      objectReference: {fileID: 763193704}
     - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: castStrengthCanvas
       value: 
