@@ -144,7 +144,7 @@ public class Casting : MonoBehaviour
     public void ThrowLine()
     {
         if(!canThrow) { return; }
-    Debug.Log("ThrowLine");
+    
         rb.useGravity = true;
         lineRenderer.enabled = true;
         bait_GO.gameObject.SetActive(true);
@@ -160,7 +160,7 @@ public class Casting : MonoBehaviour
 
 
     public void ResetCast()
-    {Debug.Log("ResetCast");
+    {
         playerMovement.fishOn = false;
 
         bait.ResetBait();
@@ -174,7 +174,7 @@ public class Casting : MonoBehaviour
 
 
     void HandleReset()
-    { Debug.Log("HandleReset");
+    {
         canThrow = false;
         rb.useGravity = false;
         rb.velocity = Vector3.zero;

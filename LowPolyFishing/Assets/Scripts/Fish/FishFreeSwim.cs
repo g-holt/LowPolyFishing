@@ -13,8 +13,9 @@ public class FishFreeSwim : MonoBehaviour
     float swimDirectionX = 0f;
     float swimDirectionZ = 0f;
     float timeToChangeDir = 5f;
+    float distanceYToBait;
 
-    Transform bait;
+    Transform rig;
     Vector3 newRotation;
     FishMovement fishMovement;
 
@@ -25,9 +26,8 @@ public class FishFreeSwim : MonoBehaviour
 
     void Start()
     {
-
         fishMovement = GetComponent<FishMovement>();
-        bait = GameObject.FindGameObjectWithTag("Rig").transform;
+        rig = GameObject.FindGameObjectWithTag("Rig").transform;
 
         FreeSwim();
 
@@ -100,7 +100,7 @@ public class FishFreeSwim : MonoBehaviour
         distanceToTarget = Vector3.Distance(bait.position, transform.position);
 
         if(distanceToTarget <= biteRange)
-        {
+        {Debug.Log("Bite");
             fishMovement.enabled = true;
             enabled = false;
         }
