@@ -11,6 +11,7 @@ public class BobberFloat : MonoBehaviour
     Rigidbody rb;
     Reeling reeling;
     Vector3 tempPos;
+    FishFreeSwim fishFreeSwim;
 
     float bobberHeightFix;  
     public bool isFloating;

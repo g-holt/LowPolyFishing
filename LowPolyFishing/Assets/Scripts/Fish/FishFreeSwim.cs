@@ -18,6 +18,7 @@ public class FishFreeSwim : MonoBehaviour
     Transform rig;
     Vector3 newRotation;
     FishMovement fishMovement;
+    BobberFloat bobberFloat;
 
     public bool freeSwim;
     public float swimSpeed = 5f;
@@ -28,18 +29,20 @@ public class FishFreeSwim : MonoBehaviour
     {
         fishMovement = GetComponent<FishMovement>();
         rig = GameObject.FindGameObjectWithTag("Rig").transform;
+        bobberFloat = FindObjectOfType<BobberFloat>();
 
         FreeSwim();
 
-        isBiting = false;   
         freeSwim = true;
-        fishMovement.enabled = false;
+        isBiting = false;   
+        //fishMovement.enabled = false;
+        
     }
 
     
     void Update()
     {
-        if(isBiting) { return; }
+        //if(isBiting) { return; }
         if(!freeSwim) { return; }
 
         Swim();
@@ -49,7 +52,6 @@ public class FishFreeSwim : MonoBehaviour
 
     void OnCollisionEnter(Collision other) 
     {
-        
         if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater") || other.gameObject.CompareTag("Dock"))
         {
             swimX *= -1f;
@@ -66,7 +68,7 @@ public class FishFreeSwim : MonoBehaviour
 
 
     IEnumerator ChangeDirection()
-    {
+    {   
         while(true)
         {
             swimDirectionX = Random.Range(-1f, 2f);
@@ -97,13 +99,27 @@ public class FishFreeSwim : MonoBehaviour
 
     void BaitCheck()
     {
-        distanceToTarget = Vector3.Distance(bait.position, transform.position);
+
+        distanceToTarget = Vector3.Distance(rig.position, transform.position);
 
         if(distanceToTarget <= biteRange)
-        {Debug.Log("Bite");
-            fishMovement.enabled = true;
-            enabled = false;
+        {
+            if(!bobberFloat.isFloating) { return; }
+
+            freeSwim = false;
+            fishMovement.chaseBait = true;
+
+            StopCoroutine("ChangeDirection");
         }
+    }
+
+
+    public void ResetFishFreeSwim()
+    {
+        if(freeSwim) { return; }
+
+        freeSwim = true;        
+        FreeSwim();
     }
 
 

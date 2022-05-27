@@ -9,14 +9,12 @@ public class FishMovement : MonoBehaviour
 
     Vector3 startPos;
     Quaternion startRot;
-    Vector3 fishDistance;
-    FixedJoint fixedJoint;
 
     float newZPos;
     bool stopMovement;
 
     public bool onHook;
-
+    public bool chaseBait;
 
     void Awake()
     {
@@ -28,6 +26,8 @@ public class FishMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
+        if(!chaseBait) { return; }
+
         FollowBait();    
     }
 
@@ -43,8 +43,6 @@ public class FishMovement : MonoBehaviour
     
     public void FollowBait()
     {
-        if(!onHook) { return; }
-
         transform.localRotation = Quaternion.identity;
         transform.LookAt(bait.transform, transform.up);
 
@@ -55,10 +53,12 @@ public class FishMovement : MonoBehaviour
 
     public void ResetFish()
     {
-        onHook = false;
+        if(!chaseBait) { return; }
+        
+        chaseBait = false;
         stopMovement = false;
         transform.position = startPos;
         transform.rotation = startRot;
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }
