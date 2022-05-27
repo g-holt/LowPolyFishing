@@ -7,7 +7,8 @@ public class Bait : MonoBehaviour
     Reeling reeling;
     Casting casting;
     FishSchool fishSchool;
-    FishSchoolHandler fishSchoolHandler;
+    //FishSchoolHandler fishSchoolHandler;
+    FreeFishHandler freeFishHandler;
     PlayerMovement playerMovement;
 
     bool fishOn;
@@ -21,7 +22,8 @@ public class Bait : MonoBehaviour
         reeling = GetComponentInParent<Reeling>();
         casting = GetComponentInParent<Casting>();
         playerMovement = GetComponentInParent<PlayerMovement>();
-        fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
+        freeFishHandler = FindObjectOfType<FreeFishHandler>();
+        //fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
     }
 
 
@@ -33,7 +35,8 @@ public class Bait : MonoBehaviour
 
             HingeJoint hingeJoint = gameObject.AddComponent<HingeJoint>() as HingeJoint;
 
-            hingeJoint.connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
+            //hingeJoint.connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
+            hingeJoint.connectedBody = other.gameObject.GetComponent<Rigidbody>();
             hingeJoint.enableCollision = true;
             hingeJoint.axis = new Vector3(0f, 1f, 0f);
             hingeJoint.anchor = new Vector3(0f, 0f, 0f);
@@ -41,19 +44,20 @@ public class Bait : MonoBehaviour
             fishOn = true;
             hasHingeJoint = true;
             playerMovement.fishOn = true;
+            //freeFishHandler.SetCurrentFish(other.gameObject);
         }
     }
 
 
     private void OnTriggerEnter(Collider other) 
     {  
-        if(other.gameObject.CompareTag("FishSchool"))
-        {
-            //fishSchool = other.gameObject.GetComponent<FishSchool>();
-            fishSchoolHandler.SetSchool(other.gameObject.transform);
-            //fishSchool.EnteredFishSchool();
-            fishSchoolHandler.EnteredFishSchool();
-        }
+        // if(other.gameObject.CompareTag("FishSchool"))
+        // {
+        //     //fishSchool = other.gameObject.GetComponent<FishSchool>();
+        //     fishSchoolHandler.SetSchool(other.gameObject.transform);
+        //     //fishSchool.EnteredFishSchool();
+        //     fishSchoolHandler.EnteredFishSchool();
+        // }
 
         if(other.gameObject.CompareTag("ReelingCollider"))
         {
@@ -73,8 +77,7 @@ public class Bait : MonoBehaviour
     {
         if(other.gameObject.CompareTag("FishSchool"))   
         {
-            //fishSchool.ExitedFishSchool();
-            fishSchoolHandler.ExitedFishSchool();
+            //fishSchoolHandler.ExitedFishSchool();
         }    
     }
 

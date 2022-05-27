@@ -32,6 +32,7 @@ public class Casting : MonoBehaviour
     PlayerMovement playerMovement;
     FishSchoolHandler fishSchoolHandler;
     FishFreeSwim fishFreeSwim;
+    FreeFishHandler freeFishHandler;
 
     bool canThrow;
     bool isCasting;
@@ -60,6 +61,7 @@ public class Casting : MonoBehaviour
         fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
         fishMovement = FindObjectOfType<FishMovement>();
         fishFreeSwim = FindObjectOfType<FishFreeSwim>();
+        freeFishHandler = FindObjectOfType<FreeFishHandler>();
 
         bobber_GO.gameObject.SetActive(false);
         bait_GO.gameObject.SetActive(false);
@@ -170,8 +172,9 @@ public class Casting : MonoBehaviour
         reeling.ResetReeling();
         playerFishing.StopFishing();
         biteIndicator.SetActive(false);
-        fishMovement.ResetFish();
-        fishFreeSwim.ResetFishFreeSwim();
+        freeFishHandler.ResetFish();
+        //fishMovement.ResetFish();
+        //fishFreeSwim.ResetFishFreeSwim();
         //fishSchoolHandler.ResetFishSchoolHandler();
         
         HandleReset();

@@ -19,10 +19,12 @@ public class FishFreeSwim : MonoBehaviour
     Vector3 newRotation;
     FishMovement fishMovement;
     BobberFloat bobberFloat;
+    FreeFishHandler freeFishHandler;
 
     public bool freeSwim;
     public float swimSpeed = 5f;
     public float fishTurnSpeed = 1f;
+    public bool thisFish;
 
 
     void Start()
@@ -30,6 +32,7 @@ public class FishFreeSwim : MonoBehaviour
         fishMovement = GetComponent<FishMovement>();
         rig = GameObject.FindGameObjectWithTag("Rig").transform;
         bobberFloat = FindObjectOfType<BobberFloat>();
+        freeFishHandler = GetComponentInParent<FreeFishHandler>();
 
         FreeSwim();
 
@@ -105,9 +108,14 @@ public class FishFreeSwim : MonoBehaviour
         if(distanceToTarget <= biteRange)
         {
             if(!bobberFloat.isFloating) { return; }
+            if(freeFishHandler.hasFish) { return; }
 
+            freeFishHandler.SetCurrentFish(gameObject);
+
+            if(!thisFish) { return; }
+  
             freeSwim = false;
-            fishMovement.chaseBait = true;
+            //fishMovement.chaseBait = true;
 
             StopCoroutine("ChangeDirection");
         }

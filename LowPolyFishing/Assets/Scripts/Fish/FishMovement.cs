@@ -14,7 +14,7 @@ public class FishMovement : MonoBehaviour
     bool stopMovement;
 
     public bool onHook;
-    public bool chaseBait;
+    public bool thisFish;
 
     void Awake()
     {
@@ -26,7 +26,7 @@ public class FishMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
-        if(!chaseBait) { return; }
+        if(!thisFish) { return; }
 
         FollowBait();    
     }
@@ -36,6 +36,8 @@ public class FishMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Bait"))
         {
+            if(!thisFish) { return; }
+            
             stopMovement = true;
         }    
     }
@@ -53,9 +55,9 @@ public class FishMovement : MonoBehaviour
 
     public void ResetFish()
     {
-        if(!chaseBait) { return; }
-        
-        chaseBait = false;
+        if(!thisFish) { return; }
+
+        thisFish = false;
         stopMovement = false;
         transform.position = startPos;
         transform.rotation = startRot;
