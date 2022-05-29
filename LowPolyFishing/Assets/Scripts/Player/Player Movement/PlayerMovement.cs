@@ -51,6 +51,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
+        if(other.gameObject.CompareTag("Dock"))
+        {
+            casting.canFish = true;
+        }
+
+        if(other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Shoreline"))
+        {
+            casting.canFish = false;
+        }
+
         if(other.gameObject.CompareTag("Door"))
         {
           doorCollision = true;

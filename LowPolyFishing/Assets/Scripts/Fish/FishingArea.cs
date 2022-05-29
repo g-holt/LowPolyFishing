@@ -4,29 +4,39 @@ using UnityEngine;
 
 public class FishingArea : MonoBehaviour
 {
-    Casting casting;
-
-    void Start()
-    {
-        casting = FindObjectOfType<Casting>();
-    }
+    // Casting casting;
 
 
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Player"))
-        {
-            casting.canFish = true;Debug.Log("Entered: " + casting.canFish);
-        }    
-    }
+    // void Start()
+    // {
+    //     casting = FindObjectOfType<Casting>();
+    // }
 
 
-    void OnTriggerExit(Collider other) 
-    {
-        if(other.gameObject.CompareTag("Player"))
-        {
-            casting.canFish = false;Debug.Log("Exit: " + casting.canFish);
-        }
-    }
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     if(other.gameObject.CompareTag("Player"))
+    //     {
+    //         casting.canFish = true;
+    //     }    
+    // }
+
+
+    // void OnTriggerStay(Collider other) 
+    // {
+    //     if(other.gameObject.CompareTag("Player"))
+    //     {
+    //         casting.canFish = true;Debug.Log("Stay: " + casting.canFish);
+    //     }    
+    // }
+
+
+    // void OnTriggerExit(Collider other) 
+    // {
+    //     if(other.gameObject.CompareTag("Player"))
+    //     {
+    //         casting.canFish = false;
+    //     }
+    // }
 
 }
