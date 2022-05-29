@@ -5,10 +5,13 @@ using UnityEngine;
 public class FreeFishHandler : MonoBehaviour
 {
     List<Transform> allFish = new List<Transform>();
+    List<Vector3> startPositions = new List<Vector3>();
 
     GameObject currentFish;
+    Vector3 spawnLocation;
     FishFreeSwim fishFreeSwim;
 
+    int numSpawns;
     public bool hasFish;
 
 
@@ -25,7 +28,10 @@ public class FreeFishHandler : MonoBehaviour
         foreach(Transform child in transform)
         {
             allFish.Add(child);
+            startPositions.Add(child.position);
         }
+
+        numSpawns = startPositions.Count;
     }
 
 
@@ -34,8 +40,10 @@ public class FreeFishHandler : MonoBehaviour
         if(currentFish == null) { return; }
         
         hasFish = false;
+
+        spawnLocation = startPositions[Random.Range(0, startPositions.Count)];
         currentFish.GetComponent<FishFreeSwim>().ResetFishFreeSwim();
-        currentFish.GetComponent<FishMovement>().ResetFish();
+        currentFish.GetComponent<FishMovement>().ResetFish(spawnLocation);
     }
 
 

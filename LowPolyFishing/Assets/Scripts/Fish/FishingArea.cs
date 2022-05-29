@@ -16,7 +16,7 @@ public class FishingArea : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            casting.canFish = true;
+            casting.canFish = true;Debug.Log("Entered: " + casting.canFish);
         }    
     }
 
@@ -25,7 +25,7 @@ public class FishingArea : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            casting.canFish = false;
+            casting.canFish = false;Debug.Log("Exit: " + casting.canFish);
         }
     }
 

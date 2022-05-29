@@ -6,7 +6,7 @@ public class FishFreeSwim : MonoBehaviour
 {
     [SerializeField] float biteRange = 5f;
 
-    bool isBiting;
+    //bool isBiting;
     float swimX = 0f;
     float swimZ = 0f;
     float distanceToTarget;
@@ -37,7 +37,7 @@ public class FishFreeSwim : MonoBehaviour
         FreeSwim();
 
         freeSwim = true;
-        isBiting = false;   
+        //isBiting = false;   
         //fishMovement.enabled = false;
         
     }
@@ -55,7 +55,7 @@ public class FishFreeSwim : MonoBehaviour
 
     void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater") || other.gameObject.CompareTag("Dock"))
+        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater") /*|| other.gameObject.CompareTag("Dock")*/)
         {
             swimX *= -1f;
             swimZ *= -1f;

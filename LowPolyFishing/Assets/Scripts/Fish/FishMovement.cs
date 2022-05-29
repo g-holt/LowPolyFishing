@@ -53,13 +53,14 @@ public class FishMovement : MonoBehaviour
     }
 
 
-    public void ResetFish()
+    public void ResetFish(Vector3 spawnPosition)
     {
         if(!thisFish) { return; }
 
         thisFish = false;
         stopMovement = false;
-        transform.position = startPos;
+        //transform.position = startPos;
+        transform.position = spawnPosition;
         transform.rotation = startRot;
         //gameObject.SetActive(false);
     }
