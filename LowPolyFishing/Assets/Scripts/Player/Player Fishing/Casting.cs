@@ -86,7 +86,9 @@ public class Casting : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.CompareTag("Ground"))
+        if(playerMovement.fishOn) { return; }
+        
+        if(!other.gameObject.CompareTag("WaterSurface") && !other.gameObject.CompareTag("FishContainer") && !other.gameObject.CompareTag("Shoreline"))
         {
             ResetCast();
         }
@@ -170,6 +172,7 @@ public class Casting : MonoBehaviour
     public void ResetCast()
     {
         playerMovement.fishOn = false;
+        playerMovement.isCasting = false;
 
         bait.ResetBait();
         reeling.ResetReeling();

@@ -57,6 +57,7 @@ public class FishFreeSwim : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater") /*|| other.gameObject.CompareTag("Dock")*/)
         {
+            //Debug.Log(other.gameObject.name);
             swimX *= -1f;
             swimZ *= -1f;
             newRotation = new Vector3(swimX, 0f, swimZ);
@@ -74,9 +75,9 @@ public class FishFreeSwim : MonoBehaviour
     {   
         while(true)
         {
-            swimDirectionX = Random.Range(-1f, 2f);
-            swimDirectionZ = Random.Range(-1f, 2f);
-            timeToChangeDir = Random.Range(5, 10);
+            swimDirectionX = Random.Range(-1f, 1f);
+            swimDirectionZ = Random.Range(-1f, 1f);
+            timeToChangeDir = Random.Range(10, 15);
 
             swimX = swimDirectionX * swimSpeed * Time.deltaTime;
             swimZ = swimDirectionZ * swimSpeed * Time.deltaTime;
@@ -132,7 +133,7 @@ public class FishFreeSwim : MonoBehaviour
 
 
     void OnDrawGizmos()
-    {Debug.Log("Draw");
+    {
         Gizmos.color = new Color(102, 161, 255);
         Gizmos.DrawWireSphere(transform.position, biteRange);
     }

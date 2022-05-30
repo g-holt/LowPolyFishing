@@ -126,6 +126,8 @@ public class Reeling : MonoBehaviour
 
     void OnExitFishCatchUI()
     {
+        if(!fishCaughtCanvas.activeInHierarchy) { return; }
+
         fishCaughtCanvas.SetActive(false);
         casting.ResetCast();
     }

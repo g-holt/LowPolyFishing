@@ -5,8 +5,10 @@ using TMPro;
 
 public class FishSize : MonoBehaviour
 {
+    [SerializeField] float goalWeight = 15f;
     [SerializeField] TextMeshProUGUI weightText;
     [SerializeField] TextMeshProUGUI inchesText;
+    [SerializeField] TextMeshProUGUI totalWeightText;
 
     float minWeight;
     float maxWeight;
@@ -14,8 +16,16 @@ public class FishSize : MonoBehaviour
     float maxInches;
     float finalWeight;
     float finalInches;
+    float totalWeight;
 
     
+    void Start() 
+    {
+        totalWeight = 0f;   
+        UpdateTotalWeight(totalWeight); 
+    }
+
+
     public void SetFishSize()
     {
         float randomNumber = Random.Range(0, 1000);
@@ -59,12 +69,26 @@ public class FishSize : MonoBehaviour
         finalWeight = Mathf.Round(finalWeight * 100f) * .01f;   //Setting weight to 2 decimal places
         finalInches = Mathf.Round(finalInches * 100f) * .01f;
         SetFishText(finalWeight, finalInches);
+        UpdateTotalWeight(finalWeight);
     } 
 
 
     void SetFishText(float weight, float inches)
     {
-        weightText.text = "Weight: " + weight.ToString();
-        inchesText.text = "Inches: " + inches.ToString();
+        weightText.text = "Weight: " + weight + " lb";
+        inchesText.text = "Length: " + inches + " in.";
+    }
+
+
+    void UpdateTotalWeight(float fishWeight)
+    {
+        totalWeight += fishWeight;
+        totalWeight = Mathf.Round(totalWeight * 100f) * .01f;
+        totalWeightText.text = "Total Weight: \n" + totalWeight + " lb" + " / " + goalWeight + " lb";
+
+        if(totalWeight >= goalWeight)
+        {
+            Debug.Log("Goal Weight Reached");
+        }
     }
 }
