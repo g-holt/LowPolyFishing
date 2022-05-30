@@ -53,7 +53,6 @@ public class FreeFishHandler : MonoBehaviour
         currentFish = fish;
         currentFish.GetComponent<FishFreeSwim>().thisFish = true;
         currentFish.GetComponent<FishMovement>().thisFish = true;
-        Debug.Log(currentFish.name);
     }
     
 }

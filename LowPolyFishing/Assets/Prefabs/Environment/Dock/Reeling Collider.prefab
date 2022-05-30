@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8308691662973666095}
   - component: {fileID: 4786113691375815510}
   - component: {fileID: 4057389108999405753}
-  m_Layer: 13
+  m_Layer: 18
   m_Name: Reeling Collider
   m_TagString: ReelingCollider
   m_Icon: {fileID: 0}
