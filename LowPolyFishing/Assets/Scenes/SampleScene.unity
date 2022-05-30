@@ -2548,7 +2548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ffabff5183f264b8f377972b990eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biteRange: 5
+  biteRange: 2
   freeSwim: 0
   swimSpeed: 1
   fishTurnSpeed: 4
@@ -3934,7 +3934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ffabff5183f264b8f377972b990eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biteRange: 5
+  biteRange: 2
   freeSwim: 0
   swimSpeed: 1
   fishTurnSpeed: 4
@@ -17174,7 +17174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ffabff5183f264b8f377972b990eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biteRange: 5
+  biteRange: 2
   freeSwim: 0
   swimSpeed: 1
   fishTurnSpeed: 4

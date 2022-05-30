@@ -132,7 +132,7 @@ public class FishFreeSwim : MonoBehaviour
 
 
     void OnDrawGizmos()
-    {
+    {Debug.Log("Draw");
         Gizmos.color = new Color(102, 161, 255);
         Gizmos.DrawWireSphere(transform.position, biteRange);
     }
