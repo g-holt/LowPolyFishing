@@ -11,7 +11,7 @@ public class BobberFloat : MonoBehaviour
     Rigidbody rb;
     Reeling reeling;
     Vector3 tempPos;
-    FishFreeSwim fishFreeSwim;
+    PlayerMovement playerMovement;
 
     float bobberHeightFix;  
     public bool isFloating;
@@ -21,6 +21,7 @@ public class BobberFloat : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         reeling = GetComponent<Reeling>();
+        playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
     
@@ -34,6 +35,9 @@ public class BobberFloat : MonoBehaviour
     {
         if(other.gameObject.CompareTag("WaterSurface"))
         {
+            playerMovement.isFishing = true;
+            playerMovement.isCasting = false;
+
             FloatBobberOnSurface();
         } 
     }

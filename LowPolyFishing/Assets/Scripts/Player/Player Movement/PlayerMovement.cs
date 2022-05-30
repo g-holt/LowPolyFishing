@@ -24,8 +24,9 @@ public class PlayerMovement : MonoBehaviour
     string isFishingAnim;
     bool doorCollision;
 
-    public bool isFishing;
     public bool fishOn;
+    public bool isFishing;
+    public bool isCasting;
 
 
     void Start()
@@ -45,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
     
     void FixedUpdate() 
     {
+        if(fishOn) { return; }
+        if(isCasting) { return; }
+        
         Move();    
     }
 
@@ -80,8 +84,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        if(fishOn) { return; }
-
         if(moveInput.x != 0f || moveInput.y != 0f)
         {
             moveXPos = moveInput.x * turnSpeed * Time.deltaTime;

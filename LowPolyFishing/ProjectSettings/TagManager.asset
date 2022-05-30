@@ -20,6 +20,9 @@ TagManager:
   - ReelingCollider
   - FishingPole
   - FishSchoolContainer
+  - Dock
+  - DockContainer
+  - DockPlank
   layers:
   - Default
   - TransparentFX

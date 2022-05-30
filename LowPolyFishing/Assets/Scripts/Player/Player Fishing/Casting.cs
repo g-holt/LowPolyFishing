@@ -105,7 +105,10 @@ public class Casting : MonoBehaviour
 
         if(value.isPressed)
         {
+            animator.SetBool(isWalkingAnim, false);
+
             castStrengthCanvas.enabled = true;
+            playerMovement.isCasting = true;
             isCasting = true;
         }
         else if(!value.isPressed)
@@ -134,11 +137,11 @@ public class Casting : MonoBehaviour
     void CastLine()
     {
         horizontalCastStrength = castStrength;
-        playerMovement.isFishing = true;
+        //playerMovement.isFishing = true;
 
         fishingRod.SetActive(true);
 
-        animator.SetBool(isWalkingAnim, false);
+        //animator.SetBool(isWalkingAnim, false);
         animator.SetBool(isFishingAnim, true);
 
         playerInput.SwitchCurrentActionMap("Fishing");
