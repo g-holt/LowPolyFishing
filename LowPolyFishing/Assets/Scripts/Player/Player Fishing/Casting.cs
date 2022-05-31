@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 public class Casting : MonoBehaviour
 {
+    [SerializeField] Canvas fishingAreaCanvas;
+    [SerializeField] TextMeshProUGUI fishingAreaText;
+    [SerializeField] float textFadeSpeed = 1f;
     [Header("Cast Strength")]
     [SerializeField] float verticalCastStrength = 5f;
     [SerializeField] float castStrength = .5f;
@@ -71,8 +75,9 @@ public class Casting : MonoBehaviour
         isFishingAnim = "IsFishing";
         isWalkingAnim = "IsWalking";
         initCastStrength = castStrength;
-        fishingRod.SetActive(false);
+        fishingAreaCanvas.enabled = false;
         castStrengthCanvas.enabled = false;
+        fishingRod.SetActive(false);
         biteIndicator.SetActive(false);
     }
 
@@ -102,11 +107,15 @@ public class Casting : MonoBehaviour
         if(!canFish)
         {
             Debug.Log("You are not in a fish Zone");
+            fishingAreaCanvas.enabled = true;
+            StartCoroutine("FadeText");
             return;
         }
 
         if(value.isPressed)
         {
+            if(fishingAreaCanvas.enabled) { fishingAreaCanvas.enabled = false; }
+
             animator.SetBool(isWalkingAnim, false);
 
             castStrengthCanvas.enabled = true;
@@ -199,6 +208,18 @@ public class Casting : MonoBehaviour
         bait_GO.SetActive(false);
         bobber_GO.SetActive(false);
         fishingRod.SetActive(false);
+    }
+
+
+    IEnumerator FadeText()
+    {
+        fishingAreaText.color = new Color(fishingAreaText.color.r, fishingAreaText.color.g, fishingAreaText.color.b, 1);
+
+        while(fishingAreaText.color.a > Mathf.Epsilon)
+        {
+            fishingAreaText.color = new Color(fishingAreaText.color.r, fishingAreaText.color.g, fishingAreaText.color.b, fishingAreaText.color.a - (Time.deltaTime * textFadeSpeed));
+            yield return null;
+        }
     }
 
 }
