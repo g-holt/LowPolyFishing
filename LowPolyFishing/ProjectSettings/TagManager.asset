@@ -43,8 +43,8 @@ TagManager:
   - WalkCollider
   - FreeFish
   - ReelingCollider
-  - 
-  - 
+  - playerWalkCollider
+  - Decoration
   - 
   - 
   - 
