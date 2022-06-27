@@ -73,7 +73,7 @@ public class Reeling : MonoBehaviour
         else if(!value.isPressed)
         {
             reelIn = false;
-            SetGravity(true);
+            //SetGravity(true);
             animator.SetBool(reelAnim, false);    
         }
     }
@@ -121,6 +121,7 @@ public class Reeling : MonoBehaviour
     public void SetGravity(bool state)
     {
         rb.useGravity = state;
+        Debug.Log("State: " + state.ToString() + " " + "RB: " + rb.useGravity.ToString());
     }
 
 

@@ -348,16 +348,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -366,6 +382,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -668,16 +688,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -686,6 +722,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1493,16 +1533,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1511,6 +1567,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2437,16 +2497,32 @@ PrefabInstance:
       value: Side Slope Rock (19)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2577,8 +2653,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2589,12 +2673,24 @@ PrefabInstance:
       value: Slope Rock (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3520,69 +3616,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
   m_PrefabInstance: {fileID: 99794428}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &101140607
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 938205921}
-    m_Modifications:
-    - target: {fileID: 1443031314641414, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_Name
-      value: Side Slope (49)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1443031314641414, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -68
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
 --- !u!1001 &105079552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3873,16 +3906,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3891,6 +3940,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4103,8 +4156,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4115,12 +4176,24 @@ PrefabInstance:
       value: Slope Rock (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5347,16 +5420,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5365,6 +5454,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5436,16 +5529,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5454,6 +5563,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6870,6 +6983,7 @@ Transform:
   - {fileID: 750831276}
   - {fileID: 1867981594}
   - {fileID: 1654636532}
+  - {fileID: 1065927899}
   m_Father: {fileID: 1316344981}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7197,16 +7311,32 @@ PrefabInstance:
       value: Side Slope Rock (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7643,16 +7773,32 @@ PrefabInstance:
       value: Side Slope Rock (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8018,16 +8164,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8036,6 +8198,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9742,16 +9908,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9760,6 +9942,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10451,8 +10637,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10463,12 +10657,24 @@ PrefabInstance:
       value: Slope Rock (14)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10540,16 +10746,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10558,6 +10780,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11097,16 +11323,32 @@ PrefabInstance:
       value: Side Slope Rock (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11495,7 +11737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2f7b6c37ebeae4ea0c90ca71c72661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalWeight: 15
+  goalWeight: 5
   weightText: {fileID: 495202978}
   inchesText: {fileID: 1305521491}
   totalWeightText: {fileID: 1629969163}
@@ -12456,16 +12698,32 @@ PrefabInstance:
       value: Side Slope Rock (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12731,16 +12989,32 @@ PrefabInstance:
       value: Side Slope Rock (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12883,16 +13157,32 @@ PrefabInstance:
       value: Side Slope Rock (11)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14538,8 +14828,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14550,12 +14848,24 @@ PrefabInstance:
       value: Slope Rock (10)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14929,8 +15239,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14941,12 +15259,24 @@ PrefabInstance:
       value: Slope Rock (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15582,16 +15912,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15600,6 +15946,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16280,8 +16630,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16292,12 +16650,24 @@ PrefabInstance:
       value: Slope Rock (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16576,16 +16946,32 @@ PrefabInstance:
       value: Side Slope Rock (15)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16720,16 +17106,32 @@ PrefabInstance:
       value: Side Slope Rock (17)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17154,16 +17556,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17172,6 +17590,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17626,6 +18048,73 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a608c2a2f112c749a011a21f0397b7e, type: 3}
+--- !u!1001 &862182106
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 985151478}
+    m_Modifications:
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.9072423
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.13345
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.9011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.6173
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662973666094, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_Name
+      value: Reeling Collider (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
 --- !u!1001 &869096732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17703,8 +18192,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17715,12 +18212,24 @@ PrefabInstance:
       value: Slope Rock (11)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17931,16 +18440,32 @@ PrefabInstance:
       value: Side Slope Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18151,16 +18676,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18169,6 +18710,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19217,7 +19762,6 @@ Transform:
   - {fileID: 1297425813}
   - {fileID: 813816328}
   - {fileID: 1567365731}
-  - {fileID: 1889528936}
   - {fileID: 66046164}
   - {fileID: 737207671}
   - {fileID: 1808931790}
@@ -19345,6 +19889,7 @@ Transform:
   - {fileID: 1946829456}
   - {fileID: 1264959778}
   - {fileID: 2056543612}
+  - {fileID: 1115244926}
   m_Father: {fileID: 175667273}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19992,6 +20537,7 @@ Transform:
   - {fileID: 1916123942}
   - {fileID: 1265269062}
   - {fileID: 1410671636}
+  - {fileID: 1602632700}
   m_Father: {fileID: 1316344981}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20582,6 +21128,7 @@ Transform:
   - {fileID: 1813184034}
   - {fileID: 595368010}
   - {fileID: 502514907}
+  - {fileID: 1425486895}
   m_Father: {fileID: 1316344981}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20988,8 +21535,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21000,12 +21555,24 @@ PrefabInstance:
       value: Slope Rock (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21356,7 +21923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4098945395914114, guid: 834b36051049f504592ff6c6e2aee4cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70
+      value: -68
       objectReference: {fileID: 0}
     - target: {fileID: 4098945395914114, guid: 834b36051049f504592ff6c6e2aee4cb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21813,16 +22380,32 @@ PrefabInstance:
       value: Side Slope Rock (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22031,16 +22614,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22049,6 +22648,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22211,7 +22814,6 @@ Transform:
   - {fileID: 807170181}
   - {fileID: 809403244}
   - {fileID: 1438020927}
-  - {fileID: 1683714125}
   - {fileID: 754621163}
   - {fileID: 2067209317}
   - {fileID: 2087593341}
@@ -22426,6 +23028,74 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4098945395914114, guid: 834b36051049f504592ff6c6e2aee4cb, type: 3}
   m_PrefabInstance: {fileID: 1065612485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1065927898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 270520362}
+    m_Modifications:
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.111887
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.4161
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662973666094, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_Name
+      value: Reeling Collider (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+--- !u!4 &1065927899 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+  m_PrefabInstance: {fileID: 1065927898}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1067778151
 PrefabInstance:
@@ -22866,16 +23536,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22884,6 +23570,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23225,6 +23915,74 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
   m_PrefabInstance: {fileID: 1113509609}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1115244925
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 938205921}
+    m_Modifications:
+    - target: {fileID: 1443031314641414, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_Name
+      value: Side Slope (166)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443031314641414, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+--- !u!4 &1115244926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
+  m_PrefabInstance: {fileID: 1115244925}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1116054548
 PrefabInstance:
@@ -23747,11 +24505,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10.518223
+      value: 11.762528
       objectReference: {fileID: 0}
     - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.878
+      value: -66.5002
       objectReference: {fileID: 0}
     - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23759,7 +24517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.59
+      value: 15.829
       objectReference: {fileID: 0}
     - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24226,16 +24984,32 @@ PrefabInstance:
       value: Side Slope Rock (10)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24424,16 +25198,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24442,6 +25232,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24453,7 +25247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4540099657689566, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70
+      value: -68
       objectReference: {fileID: 0}
     - target: {fileID: 4540099657689566, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -24712,16 +25506,32 @@ PrefabInstance:
       value: Side Slope Rock (14)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24863,8 +25673,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4960042324767076, guid: b581e32cf2c9b724897921f20fa5e760, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960042324767076, guid: b581e32cf2c9b724897921f20fa5e760, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -72
+      value: -71
       objectReference: {fileID: 0}
     - target: {fileID: 4960042324767076, guid: b581e32cf2c9b724897921f20fa5e760, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26200,16 +27014,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26218,6 +27048,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27001,16 +27835,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27019,6 +27869,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28314,16 +29168,32 @@ PrefabInstance:
       value: Side Slope Rock (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29293,16 +30163,32 @@ PrefabInstance:
       value: Side Slope Rock (18)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30208,6 +31094,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1965803501, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: bait_GO
+      value: 
+      objectReference: {fileID: 148058279}
+    - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: gear_GO
+      value: 
+      objectReference: {fileID: 1933642403}
+    - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: bobber_GO
+      value: 
+      objectReference: {fileID: 1883023445}
     - target: {fileID: 1965803502, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: textFadeSpeed
       value: 0.15
@@ -30300,6 +31202,14 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369704222340010615, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: bobber
+      value: 
+      objectReference: {fileID: 1883023445}
+    - target: {fileID: 3369704222340010615, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+      propertyPath: adjustBobberHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7517438962584192883, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -30307,6 +31217,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+--- !u!4 &1425486895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+  m_PrefabInstance: {fileID: 862182106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1426251111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
@@ -31250,16 +32165,32 @@ PrefabInstance:
       value: Side Slope Rock (13)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32499,8 +33430,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32511,12 +33450,24 @@ PrefabInstance:
       value: Slope Rock (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33150,16 +34101,32 @@ PrefabInstance:
       value: Side Slope Rock (20)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33385,8 +34352,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33397,12 +34372,24 @@ PrefabInstance:
       value: Slope Rock (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33537,16 +34524,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33555,6 +34558,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33697,16 +34704,32 @@ PrefabInstance:
       value: Side Slope Rock (16)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33981,16 +35004,32 @@ PrefabInstance:
       value: Side Slope Rock (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34142,6 +35181,74 @@ Transform:
   m_Father: {fileID: 175667273}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1602632699
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 955139436}
+    m_Modifications:
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.3499675
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.9924
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308691662973666094, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+      propertyPath: m_Name
+      value: Reeling Collider (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+--- !u!4 &1602632700 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8308691662597409823, guid: 8f864a11eca13c445bdfe373940b938f, type: 3}
+  m_PrefabInstance: {fileID: 1602632699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1603910900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35514,70 +36621,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
---- !u!1001 &1683714124
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 1057453380}
-    m_Modifications:
-    - target: {fileID: 732473689662417750, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_Name
-      value: Long Dock Pillars Single (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -70.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
---- !u!4 &1683714125 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
-  m_PrefabInstance: {fileID: 1683714124}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1685603808
 GameObject:
   m_ObjectHideFlags: 0
@@ -36753,8 +37796,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36765,12 +37816,24 @@ PrefabInstance:
       value: Slope Rock (13)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36964,16 +38027,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36982,6 +38061,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38891,16 +39974,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38909,6 +40008,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40199,16 +41302,32 @@ PrefabInstance:
       value: Side Slope Rock (12)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40535,6 +41654,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5376323610144516605, guid: 72ab549c91c197b4ea1865efb91c1037, type: 3}
   m_PrefabInstance: {fileID: 1882672860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1883023445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2312403640606067050, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+  m_PrefabInstance: {fileID: 1423606768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1883272828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40689,16 +41813,32 @@ PrefabInstance:
       value: Side Slope Rock (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001758307664144, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1477319806358342, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721849750054076, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1795818919253818, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40751,11 +41891,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 380e32e3a57f688498b6ec612cab6759, type: 3}
---- !u!4 &1889528936 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4346527800426246, guid: 6be49ce22003c0e43af17adb58334d59, type: 3}
-  m_PrefabInstance: {fileID: 101140607}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1892773486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41042,8 +42177,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -41054,12 +42197,24 @@ PrefabInstance:
       value: Slope Rock (12)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -41787,6 +42942,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 834b36051049f504592ff6c6e2aee4cb, type: 3}
+--- !u!1 &1933642403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 578307214068593538, guid: 9df5cf98bb269fa4e88276a365d05c58, type: 3}
+  m_PrefabInstance: {fileID: 1423606768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1936596435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42288,8 +43448,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42300,12 +43468,24 @@ PrefabInstance:
       value: Slope Rock (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -43991,8 +45171,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44003,12 +45191,24 @@ PrefabInstance:
       value: Slope Rock (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44408,16 +45608,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44426,6 +45642,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44833,16 +46053,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006173313825548, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1050795256316174, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169754597790576, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1301990353606984, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44851,6 +46087,10 @@ PrefabInstance:
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_Name
       value: Corner Slope Rock (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1647411664161306, guid: 7ffa16b5a662f764a8bdb892ba418ceb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -45657,8 +46897,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1609564996}
     m_Modifications:
     - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161991455004974, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1349240892454250, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -45669,12 +46917,24 @@ PrefabInstance:
       value: Slope Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471332318718598, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462875098686, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
+      propertyPath: m_TagString
+      value: Shoreline
       objectReference: {fileID: 0}
     - target: {fileID: 1632429744061522, guid: 8a8c5929307429243a978393f3089fde, type: 3}
       propertyPath: m_StaticEditorFlags
