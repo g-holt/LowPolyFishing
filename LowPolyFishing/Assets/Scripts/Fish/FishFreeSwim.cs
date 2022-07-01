@@ -6,7 +6,6 @@ public class FishFreeSwim : MonoBehaviour
 {
     [SerializeField] float biteRange = 5f;
 
-    //bool isBiting;
     float swimX = 0f;
     float swimZ = 0f;
     float distanceToTarget;
@@ -75,16 +74,16 @@ public class FishFreeSwim : MonoBehaviour
     {   
         while(true)
         {
-            swimDirectionX = Random.Range(-1f, 1f);
-            swimDirectionZ = Random.Range(-1f, 1f);
+            swimDirectionX = Random.Range(-.9f, .9f);
+            swimDirectionZ = Random.Range(-.9f, .9f);
             timeToChangeDir = Random.Range(10, 15);
 
             swimX = swimDirectionX * swimSpeed * Time.deltaTime;
             swimZ = swimDirectionZ * swimSpeed * Time.deltaTime;
            
             newRotation = new Vector3(swimX, 0f, swimZ);
-            newRotation = newRotation.normalized * Time.deltaTime; 
-            
+            newRotation = newRotation.normalized;// * Time.deltaTime; 
+            Debug.Log("\n" + gameObject.name + "\n" + "SwimDirX: " + swimDirectionX + "\n" + "SwimDirZ: " + swimDirectionZ + "\n" + "swimX: " + swimX + "\n" + "SwimY: " + swimZ + "\n" + "SwimSpeed: " + swimSpeed + "\n" + "Time: " + Time.deltaTime.ToString());
             yield return new WaitForSeconds(timeToChangeDir);
         }
     }

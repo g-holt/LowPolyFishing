@@ -10,6 +10,8 @@ public class FishSize : MonoBehaviour
     [SerializeField] TextMeshProUGUI inchesText;
     [SerializeField] TextMeshProUGUI totalWeightText;
 
+    //Scenes scenes;
+
     float minWeight;
     float maxWeight;
     float minInches;
@@ -17,12 +19,16 @@ public class FishSize : MonoBehaviour
     float finalWeight;
     float finalInches;
     float totalWeight;
+    public bool goalReached;
 
     
     void Start() 
     {
+        goalReached = false;
         totalWeight = 0f;   
         UpdateTotalWeight(totalWeight); 
+
+        //scenes = FindObjectOfType<Scenes>();
     }
 
 
@@ -88,7 +94,9 @@ public class FishSize : MonoBehaviour
 
         if(totalWeight >= goalWeight)
         {
+            //scenes.LoadNextScene();
             Debug.Log("Goal Weight Reached");
+            goalReached = true;
         }
     }
 }

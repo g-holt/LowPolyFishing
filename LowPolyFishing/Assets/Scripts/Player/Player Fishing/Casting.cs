@@ -106,7 +106,6 @@ public class Casting : MonoBehaviour
 
         if(!canFish)
         {
-            Debug.Log("You are not in a fish Zone");
             fishingAreaCanvas.enabled = true;
             StartCoroutine("FadeText");
             return;
@@ -148,11 +147,8 @@ public class Casting : MonoBehaviour
     void CastLine()
     {
         horizontalCastStrength = castStrength;
-        //playerMovement.isFishing = true;
 
         fishingRod.SetActive(true);
-
-        //animator.SetBool(isWalkingAnim, false);
         animator.SetBool(isFishingAnim, true);
 
         playerInput.SwitchCurrentActionMap("Fishing");
@@ -188,9 +184,6 @@ public class Casting : MonoBehaviour
         playerFishing.StopFishing();
         biteIndicator.SetActive(false);
         freeFishHandler.ResetFish();
-        //fishMovement.ResetFish();
-        //fishFreeSwim.ResetFishFreeSwim();
-        //fishSchoolHandler.ResetFishSchoolHandler();
         
         HandleReset();
     }
@@ -220,6 +213,8 @@ public class Casting : MonoBehaviour
             fishingAreaText.color = new Color(fishingAreaText.color.r, fishingAreaText.color.g, fishingAreaText.color.b, fishingAreaText.color.a - (Time.deltaTime * textFadeSpeed));
             yield return null;
         }
+
+        fishingAreaCanvas.enabled = false;
     }
 
 }

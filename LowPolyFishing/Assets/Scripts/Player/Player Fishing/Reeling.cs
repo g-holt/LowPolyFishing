@@ -14,6 +14,7 @@ public class Reeling : MonoBehaviour
     Animator animator;
     FishSize fishSize;
     Vector3 reelTowards;
+    Scenes scenes;
 
     string reelAnim;
     float gearContainerToWaterSurface = 2.5f;
@@ -30,6 +31,7 @@ public class Reeling : MonoBehaviour
         casting = GetComponent<Casting>();
         animator = GetComponentInParent<Animator>();
         fishSize = FindObjectOfType<FishSize>();
+        scenes = FindObjectOfType<Scenes>();
 
         fishCaughtCanvas.SetActive(false);
     }
@@ -121,7 +123,7 @@ public class Reeling : MonoBehaviour
     public void SetGravity(bool state)
     {
         rb.useGravity = state;
-        Debug.Log("State: " + state.ToString() + " " + "RB: " + rb.useGravity.ToString());
+        //Debug.Log("State: " + state.ToString() + " " + "RB: " + rb.useGravity.ToString());
     }
 
 
@@ -131,5 +133,10 @@ public class Reeling : MonoBehaviour
 
         fishCaughtCanvas.SetActive(false);
         casting.ResetCast();
+
+        if(fishSize.goalReached)
+        {
+            scenes.LoadNextScene();
+        }
     }
 }

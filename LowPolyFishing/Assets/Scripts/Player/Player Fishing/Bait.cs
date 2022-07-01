@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Bait : MonoBehaviour
 {
+    [SerializeField] GameObject biteIndicator;
+
     Reeling reeling;
     Casting casting;
     FishSchool fishSchool;
-    //FishSchoolHandler fishSchoolHandler;
     FreeFishHandler freeFishHandler;
     PlayerMovement playerMovement;
 
@@ -23,7 +24,6 @@ public class Bait : MonoBehaviour
         casting = GetComponentInParent<Casting>();
         playerMovement = GetComponentInParent<PlayerMovement>();
         freeFishHandler = FindObjectOfType<FreeFishHandler>();
-        //fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
     }
 
 
@@ -35,7 +35,6 @@ public class Bait : MonoBehaviour
 
             HingeJoint hingeJoint = gameObject.AddComponent<HingeJoint>() as HingeJoint;
 
-            //hingeJoint.connectedBody = GameObject.FindGameObjectWithTag("FishContainer").GetComponent<Rigidbody>();
             hingeJoint.connectedBody = other.gameObject.GetComponent<Rigidbody>();
             hingeJoint.enableCollision = true;
             hingeJoint.axis = new Vector3(0f, 1f, 0f);
@@ -44,21 +43,14 @@ public class Bait : MonoBehaviour
             fishOn = true;
             hasHingeJoint = true;
             playerMovement.fishOn = true;
-            //freeFishHandler.SetCurrentFish(other.gameObject);
+
+            StartCoroutine("DisplayBiteIndicator");
         }
     }
 
 
     private void OnTriggerEnter(Collider other) 
     {  
-        // if(other.gameObject.CompareTag("FishSchool"))
-        // {
-        //     //fishSchool = other.gameObject.GetComponent<FishSchool>();
-        //     fishSchoolHandler.SetSchool(other.gameObject.transform);
-        //     //fishSchool.EnteredFishSchool();
-        //     fishSchoolHandler.EnteredFishSchool();
-        // }
-
         if(other.gameObject.CompareTag("ReelingCollider"))
         {
             if(fishOn)
@@ -73,12 +65,11 @@ public class Bait : MonoBehaviour
     }
 
 
-    private void OnTriggerExit(Collider other) 
+    IEnumerator DisplayBiteIndicator()
     {
-        if(other.gameObject.CompareTag("FishSchool"))   
-        {
-            //fishSchoolHandler.ExitedFishSchool();
-        }    
+        biteIndicator.SetActive(true);
+        yield return new WaitForSeconds(3);
+        biteIndicator.SetActive(false);
     }
 
 
