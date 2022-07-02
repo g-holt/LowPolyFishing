@@ -78,11 +78,11 @@ public class FishFreeSwim : MonoBehaviour
             swimDirectionZ = Random.Range(-.9f, .9f);
             timeToChangeDir = Random.Range(10, 15);
 
-            swimX = swimDirectionX * swimSpeed * Time.deltaTime;
-            swimZ = swimDirectionZ * swimSpeed * Time.deltaTime;
+            swimX = swimDirectionX * swimSpeed * Time.fixedDeltaTime;
+            swimZ = swimDirectionZ * swimSpeed * Time.fixedDeltaTime;
            
             newRotation = new Vector3(swimX, 0f, swimZ);
-            newRotation = newRotation.normalized;// * Time.deltaTime; 
+            newRotation = newRotation.normalized * Time.fixedDeltaTime; 
             Debug.Log("\n" + gameObject.name + "\n" + "SwimDirX: " + swimDirectionX + "\n" + "SwimDirZ: " + swimDirectionZ + "\n" + "swimX: " + swimX + "\n" + "SwimY: " + swimZ + "\n" + "SwimSpeed: " + swimSpeed + "\n" + "Time: " + Time.deltaTime.ToString());
             yield return new WaitForSeconds(timeToChangeDir);
         }

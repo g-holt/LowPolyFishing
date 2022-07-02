@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     bool doorCollision;
 
     public bool fishOn;
+    public bool inMenu;
     public bool isFishing;
     public bool isCasting;
 
@@ -48,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(fishOn) { return; }
         if(isCasting) { return; }
+        if(inMenu) { return; }
         
         Move();    
     }
