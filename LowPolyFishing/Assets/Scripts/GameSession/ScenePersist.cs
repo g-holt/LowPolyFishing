@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class ScenePersist : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        int numScenePersists = FindObjectsOfType<ScenePersist>().Length;
+
+        //If this gameObject already Exists Destroy
+        if(numScenePersists > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void ResetUIPersist()
     {
-        
+        Destroy(gameObject);
     }
 }

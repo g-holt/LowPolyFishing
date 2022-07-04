@@ -22,6 +22,7 @@ public class Casting : MonoBehaviour
     public GameObject fishingRod;
     [Header("SFX")]
     [SerializeField] AudioClip castLineSFX;
+    [SerializeField] AudioClip spoolReleaseSFX;
 
     Bait bait;
     Rigidbody rb;
@@ -82,7 +83,7 @@ public class Casting : MonoBehaviour
         castStrengthCanvas.enabled = false;
         fishingRod.SetActive(false);
         biteIndicator.SetActive(false);
-        audioSource.clip = castLineSFX;
+        
     }
 
 
@@ -131,6 +132,8 @@ public class Casting : MonoBehaviour
             slider.value = 0f;
             isCasting = false;
             castStrengthCanvas.enabled = false;
+            audioSource.clip = spoolReleaseSFX;
+            audioSource.PlayOneShot(audioSource.clip);
         }
     }
 
@@ -175,7 +178,6 @@ public class Casting : MonoBehaviour
 
         Vector3 castForce = new Vector3(throwX, throwY, throwZ);
         rb.AddForce(castForce);
-        audioSource.volume = .25f;
         audioSource.clip = castLineSFX;
         audioSource.PlayOneShot(audioSource.clip);
     }

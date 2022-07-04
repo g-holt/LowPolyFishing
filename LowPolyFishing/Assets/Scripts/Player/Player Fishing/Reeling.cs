@@ -19,6 +19,7 @@ public class Reeling : MonoBehaviour
     Scenes scenes;
     AudioSource audioSource;
 
+    bool canReel;
     string reelAnim;
     float gearContainerToWaterSurface = 2.5f;
 
@@ -28,6 +29,7 @@ public class Reeling : MonoBehaviour
 
     void OnEnable()
     {
+        canReel = true;
         reelAnim = "Reel";
 
         rb = GetComponent<Rigidbody>();
@@ -68,6 +70,7 @@ public class Reeling : MonoBehaviour
 
     void OnReelIn(InputValue value)
     {   
+        if(!canReel) { return; }
         if(!surfaceCheck) { return; }
 
         if(value.isPressed)
@@ -90,6 +93,7 @@ public class Reeling : MonoBehaviour
 
     public void FishCaught()
     {
+        canReel = false;
         fishCaughtCanvas.SetActive(true);   
         fishSize.SetFishSize();
         audioSource.Stop();
@@ -126,8 +130,10 @@ public class Reeling : MonoBehaviour
     public void ResetReeling()
     {
         reelIn = false;
+        canReel = true;
         surfaceCheck = false;
         audioSource.loop = false;
+        audioSource.Stop();
     }
 
 

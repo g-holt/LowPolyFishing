@@ -1381,6 +1381,10 @@ PrefabInstance:
       propertyPath: biteIndicator
       value: 
       objectReference: {fileID: 2404476943524772630}
+    - target: {fileID: 162291220725585066, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
+      propertyPath: spoolReleaseSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: c3c4900e1a5ca724ba333ac880dfd7db, type: 3}
     - target: {fileID: 740310361440395462, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
       propertyPath: m_Name
       value: Gear
@@ -1478,7 +1482,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0

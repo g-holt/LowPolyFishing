@@ -8,13 +8,17 @@ public class HowToMenu : MonoBehaviour
     [SerializeField] GameObject MenuOverlay;
     [SerializeField] GameObject OpenMenuBtn;
     [SerializeField] GameObject startMenu;
+    [SerializeField] AudioClip MenuSFX;
 
     Casting casting;
+    AudioSource audioSource;
     PlayerMovement playerMovement;
 
 
     void Start() 
     {
+        audioSource = GetComponent<AudioSource>();
+
         if(SceneManager.GetActiveScene().buildIndex == 0)
         {
             startMenu.SetActive(true);
@@ -22,6 +26,8 @@ public class HowToMenu : MonoBehaviour
         
         MenuOverlay.SetActive(false);
         OpenMenuBtn.SetActive(true);
+
+        audioSource.clip = MenuSFX;
     }
 
 
@@ -41,7 +47,7 @@ public class HowToMenu : MonoBehaviour
         
         MenuOverlay.SetActive(true);
         OpenMenuBtn.SetActive(false);
-
+        audioSource.PlayOneShot(audioSource.clip);
     }
 
 
@@ -58,6 +64,7 @@ public class HowToMenu : MonoBehaviour
 
         MenuOverlay.SetActive(false);
         OpenMenuBtn.SetActive(true);
+        audioSource.PlayOneShot(audioSource.clip);
     }
 
 }

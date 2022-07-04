@@ -6,35 +6,26 @@ using UnityEngine.SceneManagement;
 public class Scenes : MonoBehaviour
 {
     [SerializeField] float loadDelay;
+    [SerializeField] AudioClip btnPressSFX;
+
+    AudioSource audioSource;
 
     int currentSceneIndex;
 
 
-    // void Awake()
-    // {
-    //     int numScenePersists = FindObjectsOfType<Scenes>().Length;
-
-    //     //If this gameObject already Exists Destroy
-    //     if(numScenePersists > 1)
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    //     else
-    //     {
-    //         DontDestroyOnLoad(gameObject);
-    //     }
-    // }
-
-
-    // public void ResetUIPersist()
-    // {
-    //     Destroy(gameObject);
-    // }
+    void Start() 
+    {
+        audioSource = GetComponent<AudioSource>(); 
+        audioSource.clip = btnPressSFX;   
+    }
 
 
     public void LoadNextScene()
     {
-        Debug.Log("Start Game");
+        if(currentSceneIndex == 0)
+        {
+            audioSource.PlayOneShot(audioSource.clip);
+        }
         StartCoroutine("LoadNextLevel");
     }
 
@@ -45,7 +36,7 @@ public class Scenes : MonoBehaviour
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = 1;
-Debug.Log("Current Scene Index: " + currentSceneIndex.ToString());
+
         if(currentSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             SceneManager.LoadScene(0);
@@ -58,7 +49,8 @@ Debug.Log("Current Scene Index: " + currentSceneIndex.ToString());
 
 
     public void QuitGame()
-    {Debug.Log("Quit Game");
+    {
+        audioSource.PlayOneShot(audioSource.clip);
         Application.Quit();
     }
 }
