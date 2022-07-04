@@ -83,7 +83,7 @@ public class FishFreeSwim : MonoBehaviour
            
             newRotation = new Vector3(swimX, 0f, swimZ);
             newRotation = newRotation.normalized * Time.fixedDeltaTime; 
-            Debug.Log("\n" + gameObject.name + "\n" + "SwimDirX: " + swimDirectionX + "\n" + "SwimDirZ: " + swimDirectionZ + "\n" + "swimX: " + swimX + "\n" + "SwimY: " + swimZ + "\n" + "SwimSpeed: " + swimSpeed + "\n" + "Time: " + Time.deltaTime.ToString());
+            //Debug.Log("\n" + gameObject.name + "\n" + "SwimDirX: " + swimDirectionX + "\n" + "SwimDirZ: " + swimDirectionZ + "\n" + "swimX: " + swimX + "\n" + "SwimY: " + swimZ + "\n" + "SwimSpeed: " + swimSpeed + "\n" + "Time: " + Time.deltaTime.ToString());
             yield return new WaitForSeconds(timeToChangeDir);
         }
     }

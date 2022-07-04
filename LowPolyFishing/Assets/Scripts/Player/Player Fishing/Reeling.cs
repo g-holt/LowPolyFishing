@@ -8,6 +8,8 @@ public class Reeling : MonoBehaviour
     [SerializeField] float reelSpeed = 2f;
     [SerializeField] Transform gearContainer;
     [SerializeField] GameObject fishCaughtCanvas;
+    [SerializeField] AudioClip reelingSFX;
+    [SerializeField] AudioClip fishCaught;
 
     Rigidbody rb;
     Casting casting;
@@ -15,6 +17,7 @@ public class Reeling : MonoBehaviour
     FishSize fishSize;
     Vector3 reelTowards;
     Scenes scenes;
+    AudioSource audioSource;
 
     string reelAnim;
     float gearContainerToWaterSurface = 2.5f;
@@ -32,6 +35,7 @@ public class Reeling : MonoBehaviour
         animator = GetComponentInParent<Animator>();
         fishSize = FindObjectOfType<FishSize>();
         scenes = FindObjectOfType<Scenes>();
+        audioSource = GetComponent<AudioSource>();
 
         fishCaughtCanvas.SetActive(false);
     }
@@ -71,12 +75,15 @@ public class Reeling : MonoBehaviour
             reelIn = true;
             SetGravity(false);
             animator.SetBool(reelAnim, true);    
+            audioSource.clip = reelingSFX;
+            audioSource.loop = true;
+            audioSource.PlayOneShot(audioSource.clip);
         }
         else if(!value.isPressed)
         {
             reelIn = false;
-            //SetGravity(true);
             animator.SetBool(reelAnim, false);    
+            audioSource.loop = false;
         }
     }
 
@@ -85,6 +92,9 @@ public class Reeling : MonoBehaviour
     {
         fishCaughtCanvas.SetActive(true);   
         fishSize.SetFishSize();
+        audioSource.Stop();
+        audioSource.clip = fishCaught;
+        audioSource.PlayOneShot(audioSource.clip);
     }
 
 
@@ -117,13 +127,13 @@ public class Reeling : MonoBehaviour
     {
         reelIn = false;
         surfaceCheck = false;
+        audioSource.loop = false;
     }
 
 
     public void SetGravity(bool state)
     {
         rb.useGravity = state;
-        //Debug.Log("State: " + state.ToString() + " " + "RB: " + rb.useGravity.ToString());
     }
 
 

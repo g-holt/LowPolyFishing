@@ -599,6 +599,7 @@ MonoBehaviour:
   moveSpeed: 5
   turnSpeed: 100
   fishOn: 0
+  inMenu: 0
   isFishing: 0
   isCasting: 0
 --- !u!1 &942782639703929746
@@ -1373,6 +1374,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5108235878259892698}
     - target: {fileID: 162291220725585066, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
+      propertyPath: castLineSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 482e19c9e081b6e41a4f0f0702e38e07, type: 3}
+    - target: {fileID: 162291220725585066, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
       propertyPath: biteIndicator
       value: 
       objectReference: {fileID: 2404476943524772630}
@@ -1384,6 +1389,18 @@ PrefabInstance:
       propertyPath: reelSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2645488746733371157, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
+      propertyPath: fishCaught
+      value: 
+      objectReference: {fileID: 8300000, guid: 92797e50ce7ce23449a6c136003088b4, type: 3}
+    - target: {fileID: 2645488746733371157, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
+      propertyPath: reelingSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 867e13a34ff3b4a4d819f067c85be425, type: 3}
+    - target: {fileID: 3207419600645734707, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
+      propertyPath: lureLanding
+      value: 
+      objectReference: {fileID: 8300000, guid: 36b3f5b8cb031604cb35e63afcfbc846, type: 3}
     - target: {fileID: 5102489876478479956, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
       propertyPath: m_Name
       value: Bait
@@ -1444,6 +1461,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8563461486182140227, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
   m_PrefabInstance: {fileID: 162291219436180292}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9137849495445448414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8975879334097761690, guid: f6de1ee190c9b204b82cd24367231480, type: 3}
+  m_PrefabInstance: {fileID: 162291219436180292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2219161942921603853
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9137849495445448414}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &5109300030625869686
 PrefabInstance:
   m_ObjectHideFlags: 0
