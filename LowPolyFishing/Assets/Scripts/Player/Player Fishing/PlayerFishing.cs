@@ -42,4 +42,5 @@ public class PlayerFishing : MonoBehaviour
         playerInput.SwitchCurrentActionMap("Player");
         playerMovement.isFishing = false;
     }
+    
 }

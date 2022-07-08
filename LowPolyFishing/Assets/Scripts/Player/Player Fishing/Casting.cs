@@ -19,7 +19,8 @@ public class Casting : MonoBehaviour
     [SerializeField] GameObject bait_GO;
     [SerializeField] GameObject bobber_GO;
     [SerializeField] GameObject biteIndicator;
-    public GameObject fishingRod;
+    [HideInInspector] public bool canFish;
+    [HideInInspector] public GameObject fishingRod;
     [Header("SFX")]
     [SerializeField] AudioClip castLineSFX;
     [SerializeField] AudioClip spoolReleaseSFX;
@@ -29,17 +30,13 @@ public class Casting : MonoBehaviour
     Slider slider;
     Reeling reeling;
     Animator animator;
-    FishSchool fishSchool;
+    AudioSource audioSource;
     BobberFloat bobberFloat;
     PlayerInput playerInput;
     LineRenderer lineRenderer;
-    FishMovement fishMovement;
     PlayerFishing playerFishing;
     PlayerMovement playerMovement;
-    FishSchoolHandler fishSchoolHandler;
-    FishFreeSwim fishFreeSwim;
     FreeFishHandler freeFishHandler;
-    AudioSource audioSource;
 
     bool canThrow;
     bool isCasting;
@@ -47,15 +44,17 @@ public class Casting : MonoBehaviour
     string isWalkingAnim;
     float initCastStrength;
     float horizontalCastStrength;
-    
-    public bool canFish;
 
 
     void OnEnable() 
     {
+        isFishingAnim = "IsFishing";
+        isWalkingAnim = "IsWalking";
+
         rb = GetComponent<Rigidbody>();    
         reeling = GetComponent<Reeling>();
         bait = GetComponentInChildren<Bait>();
+        audioSource = GetComponent<AudioSource>();
         bobberFloat = GetComponent<BobberFloat>();
         animator = GetComponentInParent<Animator>();
         lineRenderer = GetComponent<LineRenderer>();
@@ -64,26 +63,19 @@ public class Casting : MonoBehaviour
         slider = castStrengthCanvas.GetComponentInChildren<Slider>();
 
         playerFishing = FindObjectOfType<PlayerFishing>();
-        fishSchool = FindObjectOfType<FishSchool>();
-        fishSchoolHandler = FindObjectOfType<FishSchoolHandler>();
-        fishMovement = FindObjectOfType<FishMovement>();
-        fishFreeSwim = FindObjectOfType<FishFreeSwim>();
         freeFishHandler = FindObjectOfType<FreeFishHandler>();
-        audioSource = GetComponent<AudioSource>();
 
-        bobber_GO.gameObject.SetActive(false);
-        bait_GO.gameObject.SetActive(false);
-        lineRenderer.enabled = false;
-
-        slider.value = 0f;
-        isFishingAnim = "IsFishing";
-        isWalkingAnim = "IsWalking";
-        initCastStrength = castStrength;
-        fishingAreaCanvas.enabled = false;
-        castStrengthCanvas.enabled = false;
         fishingRod.SetActive(false);
         biteIndicator.SetActive(false);
-        
+        bait_GO.gameObject.SetActive(false);
+        bobber_GO.gameObject.SetActive(false);
+
+        slider.value = 0f;
+        initCastStrength = castStrength;
+
+        lineRenderer.enabled = false;
+        fishingAreaCanvas.enabled = false;
+        castStrengthCanvas.enabled = false;
     }
 
 
@@ -113,6 +105,7 @@ public class Casting : MonoBehaviour
         {
             fishingAreaCanvas.enabled = true;
             StartCoroutine("FadeText");
+
             return;
         }
 
@@ -120,18 +113,20 @@ public class Casting : MonoBehaviour
         {
             if(fishingAreaCanvas.enabled) { fishingAreaCanvas.enabled = false; }
 
-            animator.SetBool(isWalkingAnim, false);
-
-            castStrengthCanvas.enabled = true;
-            playerMovement.isCasting = true;
             isCasting = true;
+            playerMovement.isCasting = true;
+            castStrengthCanvas.enabled = true;
+            
+            animator.SetBool(isWalkingAnim, false);
         }
         else if(!value.isPressed)
         {
             CastLine();
+
             slider.value = 0f;
             isCasting = false;
             castStrengthCanvas.enabled = false;
+
             audioSource.clip = spoolReleaseSFX;
             audioSource.PlayOneShot(audioSource.clip);
         }
@@ -169,6 +164,7 @@ public class Casting : MonoBehaviour
     
         rb.useGravity = true;
         lineRenderer.enabled = true;
+        
         bait_GO.gameObject.SetActive(true);
         bobber_GO.gameObject.SetActive(true);
 
@@ -178,6 +174,7 @@ public class Casting : MonoBehaviour
 
         Vector3 castForce = new Vector3(throwX, throwY, throwZ);
         rb.AddForce(castForce);
+
         audioSource.clip = castLineSFX;
         audioSource.PlayOneShot(audioSource.clip);
     }
@@ -191,8 +188,8 @@ public class Casting : MonoBehaviour
         bait.ResetBait();
         reeling.ResetReeling();
         playerFishing.StopFishing();
-        biteIndicator.SetActive(false);
         freeFishHandler.ResetFish();
+        biteIndicator.SetActive(false);
         
         HandleReset();
     }

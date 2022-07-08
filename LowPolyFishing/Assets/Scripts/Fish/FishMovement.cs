@@ -4,22 +4,17 @@ using UnityEngine;
 
 public class FishMovement : MonoBehaviour
 {
-    [SerializeField] float fishSpeed = 5f;
     [SerializeField] GameObject bait;
+    [SerializeField] float fishSpeed = 5f;
+    [HideInInspector] public bool thisFish;
 
-    Vector3 startPos;
     Quaternion startRot;
 
-    float newZPos;
     bool stopMovement;
-
-    public bool onHook;
-    public bool thisFish;
+    
 
     void Awake()
     {
-        onHook = false;
-        startPos = transform.position;
         startRot = transform.rotation;
     }
 
@@ -27,7 +22,6 @@ public class FishMovement : MonoBehaviour
     void FixedUpdate() 
     {
         if(!thisFish) { return; }
-
         FollowBait();    
     }
 
@@ -37,7 +31,6 @@ public class FishMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Bait"))
         {
             if(!thisFish) { return; }
-            
             stopMovement = true;
         }    
     }
@@ -59,9 +52,8 @@ public class FishMovement : MonoBehaviour
 
         thisFish = false;
         stopMovement = false;
-        //transform.position = startPos;
+
         transform.position = spawnPosition;
         transform.rotation = startRot;
-        //gameObject.SetActive(false);
     }
 }

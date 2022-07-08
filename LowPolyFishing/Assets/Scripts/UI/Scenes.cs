@@ -26,6 +26,7 @@ public class Scenes : MonoBehaviour
         {
             audioSource.PlayOneShot(audioSource.clip);
         }
+
         StartCoroutine("LoadNextLevel");
     }
 
@@ -53,4 +54,5 @@ public class Scenes : MonoBehaviour
         audioSource.PlayOneShot(audioSource.clip);
         Application.Quit();
     }
+    
 }

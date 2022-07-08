@@ -4,47 +4,39 @@ using UnityEngine;
 
 public class FishFreeSwim : MonoBehaviour
 {
-    [SerializeField] float biteRange = 5f;
+    [SerializeField] float biteRange = 3f;
+    [SerializeField] float swimSpeed = 1f;
+    [SerializeField] float fishTurnSpeed = 4f;
+    [HideInInspector] public bool freeSwim;
+    [HideInInspector] public bool thisFish;
 
+    Transform rig;
+    Vector3 newRotation;
+    BobberFloat bobberFloat;
+    FreeFishHandler freeFishHandler;
+    
     float swimX = 0f;
     float swimZ = 0f;
     float distanceToTarget;
     float swimDirectionX = 0f;
     float swimDirectionZ = 0f;
     float timeToChangeDir = 5f;
-    float distanceYToBait;
-
-    Transform rig;
-    Vector3 newRotation;
-    FishMovement fishMovement;
-    BobberFloat bobberFloat;
-    FreeFishHandler freeFishHandler;
-
-    public bool freeSwim;
-    public float swimSpeed = 5f;
-    public float fishTurnSpeed = 1f;
-    public bool thisFish;
-
+    
 
     void Start()
     {
-        fishMovement = GetComponent<FishMovement>();
-        rig = GameObject.FindGameObjectWithTag("Rig").transform;
-        bobberFloat = FindObjectOfType<BobberFloat>();
         freeFishHandler = GetComponentInParent<FreeFishHandler>();
-
-        FreeSwim();
-
-        freeSwim = true;
-        //isBiting = false;   
-        //fishMovement.enabled = false;
         
+        bobberFloat = FindObjectOfType<BobberFloat>();
+        rig = GameObject.FindGameObjectWithTag("Rig").transform;
+        
+        freeSwim = true;
+        FreeSwim();
     }
 
     
     void Update()
     {
-        //if(isBiting) { return; }
         if(!freeSwim) { return; }
 
         Swim();
@@ -54,9 +46,8 @@ public class FishFreeSwim : MonoBehaviour
 
     void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater") /*|| other.gameObject.CompareTag("Dock")*/)
+        if(other.gameObject.CompareTag("Shoreline") || other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Underwater"))
         {
-            //Debug.Log(other.gameObject.name);
             swimX *= -1f;
             swimZ *= -1f;
             newRotation = new Vector3(swimX, 0f, swimZ);
@@ -74,9 +65,9 @@ public class FishFreeSwim : MonoBehaviour
     {   
         while(true)
         {
+            timeToChangeDir = Random.Range(10, 15);
             swimDirectionX = Random.Range(-.9f, .9f);
             swimDirectionZ = Random.Range(-.9f, .9f);
-            timeToChangeDir = Random.Range(10, 15);
 
             swimX = swimDirectionX * swimSpeed * Time.fixedDeltaTime;
             swimZ = swimDirectionZ * swimSpeed * Time.fixedDeltaTime;
@@ -102,7 +93,6 @@ public class FishFreeSwim : MonoBehaviour
 
     void BaitCheck()
     {
-
         distanceToTarget = Vector3.Distance(rig.position, transform.position);
 
         if(distanceToTarget <= biteRange)
@@ -115,8 +105,6 @@ public class FishFreeSwim : MonoBehaviour
             if(!thisFish) { return; }
   
             freeSwim = false;
-            //fishMovement.chaseBait = true;
-
             StopCoroutine("ChangeDirection");
         }
     }

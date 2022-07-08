@@ -10,21 +10,20 @@ public class Reeling : MonoBehaviour
     [SerializeField] GameObject fishCaughtCanvas;
     [SerializeField] AudioClip reelingSFX;
     [SerializeField] AudioClip fishCaught;
+    [HideInInspector] public bool reelIn;
+    [HideInInspector] public bool surfaceCheck;
 
     Rigidbody rb;
+    Scenes scenes;
     Casting casting;
     Animator animator;
     FishSize fishSize;
     Vector3 reelTowards;
-    Scenes scenes;
     AudioSource audioSource;
 
     bool canReel;
     string reelAnim;
     float gearContainerToWaterSurface = 2.5f;
-
-    public bool reelIn;
-    public bool surfaceCheck;
 
 
     void OnEnable()
@@ -34,10 +33,11 @@ public class Reeling : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         casting = GetComponent<Casting>();
-        animator = GetComponentInParent<Animator>();
-        fishSize = FindObjectOfType<FishSize>();
-        scenes = FindObjectOfType<Scenes>();
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponentInParent<Animator>();
+        
+        scenes = FindObjectOfType<Scenes>();
+        fishSize = FindObjectOfType<FishSize>();
 
         fishCaughtCanvas.SetActive(false);
     }
@@ -78,6 +78,7 @@ public class Reeling : MonoBehaviour
             reelIn = true;
             SetGravity(false);
             animator.SetBool(reelAnim, true);    
+            
             audioSource.clip = reelingSFX;
             audioSource.loop = true;
             audioSource.PlayOneShot(audioSource.clip);
@@ -96,6 +97,7 @@ public class Reeling : MonoBehaviour
         canReel = false;
         fishCaughtCanvas.SetActive(true);   
         fishSize.SetFishSize();
+        
         audioSource.Stop();
         audioSource.clip = fishCaught;
         audioSource.PlayOneShot(audioSource.clip);
@@ -132,6 +134,7 @@ public class Reeling : MonoBehaviour
         reelIn = false;
         canReel = true;
         surfaceCheck = false;
+       
         audioSource.loop = false;
         audioSource.Stop();
     }
@@ -155,4 +158,5 @@ public class Reeling : MonoBehaviour
             scenes.LoadNextScene();
         }
     }
+
 }

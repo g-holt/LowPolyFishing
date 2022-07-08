@@ -8,23 +8,21 @@ public class BobberFloat : MonoBehaviour
     [SerializeField] float amplitude = .5f;
     [SerializeField] float adjustBobberHeight = .08f;   //offset to make bobber float halfway in water
     [SerializeField] AudioClip lureLanding;
+    [HideInInspector] public bool isFloating;
 
     Rigidbody rb;
-    Reeling reeling;
     Vector3 tempPos;
-    PlayerMovement playerMovement;
     AudioSource audioSource;
+    PlayerMovement playerMovement;
 
     float bobberHeightFix;  
-    public bool isFloating;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        reeling = GetComponent<Reeling>();
-        playerMovement = FindObjectOfType<PlayerMovement>();
         audioSource = GetComponent<AudioSource>();
+        playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
     
@@ -41,11 +39,11 @@ public class BobberFloat : MonoBehaviour
             playerMovement.isFishing = true;
             playerMovement.isCasting = false;
 
-            FloatBobberOnSurface();
-            
             audioSource.Stop();
             audioSource.clip = lureLanding;
             audioSource.PlayOneShot(audioSource.clip);
+
+            FloatBobberOnSurface();
         } 
     }
 

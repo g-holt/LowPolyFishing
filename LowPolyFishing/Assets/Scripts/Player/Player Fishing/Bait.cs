@@ -8,8 +8,6 @@ public class Bait : MonoBehaviour
 
     Reeling reeling;
     Casting casting;
-    FishSchool fishSchool;
-    FreeFishHandler freeFishHandler;
     PlayerMovement playerMovement;
 
     bool fishOn;
@@ -23,7 +21,6 @@ public class Bait : MonoBehaviour
         reeling = GetComponentInParent<Reeling>();
         casting = GetComponentInParent<Casting>();
         playerMovement = GetComponentInParent<PlayerMovement>();
-        freeFishHandler = FindObjectOfType<FreeFishHandler>();
     }
 
 

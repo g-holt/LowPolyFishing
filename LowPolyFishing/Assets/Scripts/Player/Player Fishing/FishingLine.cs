@@ -30,4 +30,5 @@ public class FishingLine : MonoBehaviour
             lineRenderer.SetPosition(i, gearPoints[i].position);
         }
     }
+    
 }

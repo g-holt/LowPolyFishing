@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScenePersist : MonoBehaviour
 {
+    
     void Awake()
     {
         int numScenePersists = FindObjectsOfType<ScenePersist>().Length;
@@ -24,4 +25,5 @@ public class ScenePersist : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }

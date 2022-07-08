@@ -41,6 +41,7 @@ public class HowToMenu : MonoBehaviour
         {
             casting = FindObjectOfType<Casting>();
             playerMovement = FindObjectOfType<PlayerMovement>();
+            
             casting.ResetCast();
             playerMovement.inMenu = true;
         }

@@ -7,27 +7,21 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float turnSpeed = 100f;    //Angle of Turn
+    [HideInInspector] public bool fishOn;
+    [HideInInspector] public bool inMenu;
+    [HideInInspector] public bool isFishing;
+    [HideInInspector] public bool isCasting;
 
-    GameObject door;
     Casting casting;
     Vector2 moveInput;
     Animator animator;
-    FishSchool fishSchool;
     PlayerInput playerInput;
-    PlayerFishing playerFishing;
-    FishSchoolHandler fishSchoolHandler;
   
     float moveXPos;
     float moveZPos;
     string reelAnim;
     string isWalkingAnim;
     string isFishingAnim;
-    bool doorCollision;
-
-    public bool fishOn;
-    public bool inMenu;
-    public bool isFishing;
-    public bool isCasting;
 
 
     void Start()
@@ -38,10 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();     
-        playerFishing = GetComponent<PlayerFishing>();
         casting = GetComponentInChildren<Casting>();
-        fishSchool = FindObjectOfType<FishSchool>();
-        fishSchoolHandler = FindObjectOfType<FishSchoolHandler>(); 
     }
     
     
@@ -66,21 +57,6 @@ public class PlayerMovement : MonoBehaviour
         {
             casting.canFish = false;
         }
-
-        if(other.gameObject.CompareTag("Door"))
-        {
-          doorCollision = true;
-          door = other.gameObject;
-        }
-    }
-
-
-    private void OnCollisionExit(Collision other) 
-    {
-        if(other.gameObject.CompareTag("Door"))
-        {
-            doorCollision = false;
-        }    
     }
 
 
@@ -128,33 +104,6 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue Value)
     {
         moveInput = Value.Get<Vector2>();
-    }
-
-
-    void OnOpenDoor()
-    {
-        OpenDoor();
-    }
-
-
-    void OpenDoor()
-    {
-        if(door == null){ return; }
-        
-        if(doorCollision)
-        {
-            door.transform.Rotate(0f, -90, 0f);
-            StartCoroutine("CloseDoor");
-        }
-    }
-
-
-    IEnumerator CloseDoor()
-    {
-        yield return new WaitForSeconds(2f);
-
-        door.transform.Rotate(0f, 90, 0f);
-        door = null;
     }
 
 }
