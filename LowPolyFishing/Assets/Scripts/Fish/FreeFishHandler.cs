@@ -35,6 +35,7 @@ public class FreeFishHandler : MonoBehaviour
         
         hasFish = false;
         spawnLocation = startPositions[Random.Range(0, startPositions.Count)];
+        
         currentFish.GetComponent<FishFreeSwim>().ResetFishFreeSwim();
         currentFish.GetComponent<FishMovement>().ResetFish(spawnLocation);
     }
@@ -44,6 +45,7 @@ public class FreeFishHandler : MonoBehaviour
     {
         hasFish = true;
         currentFish = fish;
+
         currentFish.GetComponent<FishFreeSwim>().thisFish = true;
         currentFish.GetComponent<FishMovement>().thisFish = true;
     }

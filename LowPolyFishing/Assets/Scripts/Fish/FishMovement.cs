@@ -5,7 +5,7 @@ using UnityEngine;
 public class FishMovement : MonoBehaviour
 {
     [SerializeField] GameObject bait;
-    [SerializeField] float fishSpeed = 5f;
+    [SerializeField] float fishSpeed = 10f;
     [HideInInspector] public bool thisFish;
 
     Quaternion startRot;

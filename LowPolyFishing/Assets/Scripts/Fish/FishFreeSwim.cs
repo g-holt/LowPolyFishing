@@ -5,7 +5,7 @@ using UnityEngine;
 public class FishFreeSwim : MonoBehaviour
 {
     [SerializeField] float biteRange = 3f;
-    [SerializeField] float swimSpeed = 1f;
+    [SerializeField] float swimSpeed = 5f;
     [SerializeField] float fishTurnSpeed = 4f;
     [HideInInspector] public bool freeSwim;
     [HideInInspector] public bool thisFish;

@@ -403,6 +403,10 @@ PrefabInstance:
       propertyPath: biteRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3728199434664277460, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -5895,6 +5899,10 @@ PrefabInstance:
       propertyPath: biteRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7305829699924008928, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: bait
       value: 
@@ -6651,6 +6659,10 @@ PrefabInstance:
     - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: biteRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7305829699924008928, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: bait
@@ -18290,6 +18302,10 @@ PrefabInstance:
       propertyPath: biteRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3728199434664277460, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -20839,6 +20855,10 @@ PrefabInstance:
       propertyPath: biteRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3728199434664277460, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -21912,6 +21932,10 @@ PrefabInstance:
     - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: biteRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3728199434664277460, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: m_IsKinematic
@@ -27057,6 +27081,10 @@ PrefabInstance:
       propertyPath: biteRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3728199434664277460, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -28062,6 +28090,10 @@ PrefabInstance:
     - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: biteRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7305829699924008928, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: bait
@@ -32052,6 +32084,10 @@ PrefabInstance:
       propertyPath: biteRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1360849657221098805, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
+      propertyPath: swimSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7305829699924008928, guid: 469d24bcada6bea49a253d9eb6c695f9, type: 3}
       propertyPath: bait
       value: 
@@ -33671,6 +33707,10 @@ PrefabInstance:
       propertyPath: biteRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3440190271661219943, guid: c54e090b74dcd304ebe9040968ffc1f2, type: 3}
+      propertyPath: swimSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3440190271853077721, guid: c54e090b74dcd304ebe9040968ffc1f2, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -34024,15 +34064,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7217006992301164133, guid: 6895743bae99fc941ab0f6826dc294f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -79.53
       objectReference: {fileID: 0}
     - target: {fileID: 7217006992301164133, guid: 6895743bae99fc941ab0f6826dc294f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7217006992301164133, guid: 6895743bae99fc941ab0f6826dc294f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.68
       objectReference: {fileID: 0}
     - target: {fileID: 7217006992301164133, guid: 6895743bae99fc941ab0f6826dc294f8, type: 3}
       propertyPath: m_LocalRotation.w
